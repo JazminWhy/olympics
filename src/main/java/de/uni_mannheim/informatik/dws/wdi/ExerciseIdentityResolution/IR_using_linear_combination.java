@@ -46,6 +46,7 @@ public class IR_using_linear_combination
     public static void main( String[] args ) throws Exception
     {
 		// loading data
+    	// Test
 		System.out.println("*\n*\tLoading datasets\n*");
 		HashedDataSet<Movie, Attribute> dataAcademyAwards = new HashedDataSet<>();
 		new MovieXMLReader().loadFromXML(new File("data/input/academy_awards.xml"), "/movies/movie", dataAcademyAwards);
