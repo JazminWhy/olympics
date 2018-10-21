@@ -3,6 +3,8 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 import java.io.File;
 import java.util.List;
 import org.apache.logging.log4j.Logger;
+
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByBirthdayYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.AthleteXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipation;
@@ -44,13 +46,13 @@ public class IR_using_linear_combination
 		// loading data
     	// Test 3
 		System.out.println("*\n*\tLoading datasets\n*");
-		HashedDataSet<Athlete, Attribute> dataAthletes = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181021_Rio.xml"), "/WinningAthletes/Athlete", dataAthletes);
-		HashedDataSet<Athlete, Attribute> dataOlympicParticipation = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181021_DBpedia.xml"), "/WinningAthletes/Athlete", dataOlympicParticipation);
+		HashedDataSet<Athlete, Attribute> dataAthletesRio = new HashedDataSet<>();
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181021_Rio.xml"), "/WinningAthletes/Athlete", dataAthletesRio);
+		HashedDataSet<Athlete, Attribute> dataAthletesDBpedia = new HashedDataSet<>();
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181021_DBpedia.xml"), "/WinningAthletes/Athlete", dataAthletesDBpedia);
 		
-		Athlete a = dataAthletes.getRecord("R-100001");
-		Athlete p = dataOlympicParticipation.getRecord("D-100001");		
+		Athlete a = dataAthletesRio.getRecord("R-100001");
+		Athlete p = dataAthletesDBpedia.getRecord("D-100001");		
 		
 		//for(int i =0; i < op.size(); i++) {
 		//	OlympicParticipation op1 = (OlympicParticipation) op.get(0);
@@ -85,9 +87,9 @@ public class IR_using_linear_combination
 		// add comparators
 		matchingRule.addComparator(new MovieDateComparator2Years(), 0.5);
 		matchingRule.addComparator(new MovieTitleComparatorJaccard(), 0.5);
-		
+		*/
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Movie, Attribute> blocker = new StandardRecordBlocker<Movie, Attribute>(new MovieBlockingKeyByTitleGenerator());
+		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByBirthdayYearGenerator());
 //		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
 //		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 1);
 		blocker.setMeasureBlockSizes(true);
@@ -95,11 +97,11 @@ public class IR_using_linear_combination
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
-		MatchingEngine<Movie, Attribute> engine = new MatchingEngine<>();
-
+		MatchingEngine<Athlete, Attribute> engine = new MatchingEngine<>();
+		/*
 		// Execute the matching
 		System.out.println("*\n*\tRunning identity resolution\n*");
-		Processable<Correspondence<Movie, Attribute>> correspondences = engine.runIdentityResolution(
+		Processable<Correspondence<Athlete, Attribute>> correspondences = engine.runIdentityResolution(
 				dataAcademyAwards, dataActors, null, matchingRule,
 				blocker);
 
