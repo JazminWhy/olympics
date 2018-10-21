@@ -43,7 +43,7 @@ public class Athlete implements Matchable {
 	private float Weight;
 	private float Height;
 	private List<OlympicParticipation> OlympicParticipations;
-
+	
 	public Athlete(String identifier, String provenance) {
 		id = identifier;
 		this.provenance = provenance;
