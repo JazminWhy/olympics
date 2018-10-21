@@ -2,15 +2,7 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import java.io.File;
 import java.util.List;
-
 import org.apache.logging.log4j.Logger;
-
-//import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByDecadeGenerator;
-//import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByTitleGenerator;
-//import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator10Years;
-//import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator2Years;
-//import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorJaccard;
-//import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.AthleteXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipation;
@@ -53,25 +45,25 @@ public class IR_using_linear_combination
     	// Test 3
 		System.out.println("*\n*\tLoading datasets\n*");
 		HashedDataSet<Athlete, Attribute> dataAthletes = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181021_Gymnast.xml"), "/WinningAthletes/Athlete", dataAthletes);
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181021_Rio_No_ID.xml"), "/WinningAthletes/Athlete", dataAthletes);
 		HashedDataSet<Athlete, Attribute> dataOlympicParticipation = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181021_DBpedia.xml"), "/WinningAthletes/Athlete", dataOlympicParticipation);
 		
-		Athlete a = dataAthletes.getRecord("G-100001");
-		Athlete p = dataOlympicParticipation.getRecord("D-100001");
-		List<OlympicParticipation> op = p.getOlympicParticipations();
+		Athlete a = dataAthletes.getRecord("R-100001");
+		Athlete p = dataOlympicParticipation.getRecord("D-100001");		
 		
-		for(int i =0; i < op.size(); i++) {
-			OlympicParticipation op1 = (OlympicParticipation) op.get(0);
-			System.out.println(op1.getCity());
-		}
-		String name = a.getName();
+		//for(int i =0; i < op.size(); i++) {
+		//	OlympicParticipation op1 = (OlympicParticipation) op.get(0);
+		//	System.out.println(op1.getCity());
+		//}
 		System.out.println(a.getName());
 		System.out.println(a.getHeight());
 		System.out.println(a.getWeight());
 		System.out.println(a.getBirthday());
 		System.out.println(a.getNationality());
 		System.out.println(a.getSex());
+		System.out.println(a.getOlympicParticipations());
+		
 		//System.out.println(dataAthletes.getRecord("G-100001"));
 		//System.out.println(dataOlympicParticipation.size());
 		//System.out.println(dataAthletes);

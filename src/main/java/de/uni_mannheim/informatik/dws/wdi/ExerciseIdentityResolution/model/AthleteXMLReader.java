@@ -99,8 +99,8 @@ public class AthleteXMLReader extends XMLMatchableReader<Athlete, Attribute>  {
 		}
 
 		// load the list of actors
-		List<OlympicParticipation> olympicParticipations = getObjectListFromChildElement(node, "OlypmicParticipations",
-				"OlypmicParticipation", new OlympicParticipationXMLReader(), provenanceInfo);
+		List<OlympicParticipation> olympicParticipations = getObjectListFromChildElement(node, "olympicParticipations",
+				"olympicParticipation", new OlympicParticipationXMLReader(), provenanceInfo);
 		athlete.setOlympicParticipations(olympicParticipations);
 
 		return athlete;

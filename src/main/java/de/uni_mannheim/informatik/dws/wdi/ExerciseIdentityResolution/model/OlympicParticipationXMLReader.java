@@ -33,7 +33,7 @@ public class OlympicParticipationXMLReader extends XMLMatchableReader<OlympicPar
 	@Override
 	public OlympicParticipation createModelFromElement(Node node, String provenanceInfo) {
 		String id = getValueFromChildElement(node, "id");
-
+		
 		// create the object with id and provenance information
 		OlympicParticipation olympicparticipation = new OlympicParticipation(id, provenanceInfo);
 
@@ -45,6 +45,8 @@ public class OlympicParticipationXMLReader extends XMLMatchableReader<OlympicPar
 		olympicparticipation.setDisciplines(getValueFromChildElement(node, "disciplines"));
 		olympicparticipation.setEvent(getValueFromChildElement(node, "event"));
 		olympicparticipation.setMedal(getValueFromChildElement(node, "medal"));
+
+		System.out.println(olympicparticipation.getSeason());
 
 
 		// convert the date string into a DateTime object

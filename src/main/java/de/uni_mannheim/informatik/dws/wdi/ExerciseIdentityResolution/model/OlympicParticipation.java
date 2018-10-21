@@ -32,7 +32,7 @@ public class OlympicParticipation extends AbstractRecord<Attribute> implements S
 	 * </OlypmicParticipation>
 	 */
 
-	// private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 	private String id;
 	private int year;
 	private String season;
@@ -44,14 +44,6 @@ public class OlympicParticipation extends AbstractRecord<Attribute> implements S
 
 	public OlympicParticipation(String identifier, String provenance) {
 		super(identifier, provenance);
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
 	}
 
 	public int getYear() {
