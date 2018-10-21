@@ -45,7 +45,7 @@ public class IR_using_linear_combination
     	// Test 3
 		System.out.println("*\n*\tLoading datasets\n*");
 		HashedDataSet<Athlete, Attribute> dataAthletes = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181021_Rio_No_ID.xml"), "/WinningAthletes/Athlete", dataAthletes);
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181021_Rio.xml"), "/WinningAthletes/Athlete", dataAthletes);
 		HashedDataSet<Athlete, Attribute> dataOlympicParticipation = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181021_DBpedia.xml"), "/WinningAthletes/Athlete", dataOlympicParticipation);
 		
@@ -62,7 +62,11 @@ public class IR_using_linear_combination
 		System.out.println(a.getBirthday());
 		System.out.println(a.getNationality());
 		System.out.println(a.getSex());
-		System.out.println(a.getOlympicParticipations());
+		List<OlympicParticipation> a_participation = a.getOlympicParticipations();
+		
+		System.out.println(a.getOlympicParticipations().get(0).getId());
+		
+		
 		
 		//System.out.println(dataAthletes.getRecord("G-100001"));
 		//System.out.println(dataOlympicParticipation.size());

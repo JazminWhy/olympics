@@ -32,26 +32,26 @@ public class OlympicParticipationXMLReader extends XMLMatchableReader<OlympicPar
 
 	@Override
 	public OlympicParticipation createModelFromElement(Node node, String provenanceInfo) {
-		String id = getValueFromChildElement(node, "id");
+		String id = getValueFromChildElement(node, "ID");
 		
 		// create the object with id and provenance information
 		OlympicParticipation olympicparticipation = new OlympicParticipation(id, provenanceInfo);
 
 		// fill the attributes
 		//olympicparticipation.setYear(getValueFromChildElement(node, "year"));
-		olympicparticipation.setSeason(getValueFromChildElement(node, "season"));
-		olympicparticipation.setCity(getValueFromChildElement(node, "city"));
-		olympicparticipation.setOlympicTeam(getValueFromChildElement(node, "olympicTeam"));
-		olympicparticipation.setDisciplines(getValueFromChildElement(node, "disciplines"));
-		olympicparticipation.setEvent(getValueFromChildElement(node, "event"));
-		olympicparticipation.setMedal(getValueFromChildElement(node, "medal"));
+		olympicparticipation.setSeason(getValueFromChildElement(node, "Season"));
+		olympicparticipation.setCity(getValueFromChildElement(node, "City"));
+		olympicparticipation.setOlympicTeam(getValueFromChildElement(node, "OlympicTeam"));
+		olympicparticipation.setDisciplines(getValueFromChildElement(node, "Disciplines"));
+		olympicparticipation.setEvent(getValueFromChildElement(node, "Event"));
+		olympicparticipation.setMedal(getValueFromChildElement(node, "Medal"));
 
-		System.out.println(olympicparticipation.getSeason());
+		//System.out.println(olympicparticipation.getSeason());
 
 
 		// convert the date string into a DateTime object
 		try {
-			String year = getValueFromChildElement(node, "year");
+			String year = getValueFromChildElement(node, "Year");
 			if (year != null && !year.isEmpty()) {
 				int dt = Integer.parseInt(year);
 				olympicparticipation.setYear(dt);

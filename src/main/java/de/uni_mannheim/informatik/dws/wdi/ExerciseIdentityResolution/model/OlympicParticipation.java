@@ -46,6 +46,14 @@ public class OlympicParticipation extends AbstractRecord<Attribute> implements S
 		super(identifier, provenance);
 	}
 
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
 	public int getYear() {
 		return year;
 	}
@@ -135,7 +143,7 @@ public class OlympicParticipation extends AbstractRecord<Attribute> implements S
 		return true;
 	}
 	
-
+	public static final Attribute ID = new Attribute("ID");
 	public static final Attribute YEAR = new Attribute("Year");
 	public static final Attribute SEASON = new Attribute("Season");
 	public static final Attribute CITY = new Attribute("City");
@@ -150,7 +158,9 @@ public class OlympicParticipation extends AbstractRecord<Attribute> implements S
 	 * @see de.uni_mannheim.informatik.wdi.model.Record#hasValue(java.lang.Object)
 	 */
 	public boolean hasValue(Attribute attribute) {
-		if (attribute == YEAR)
+		if (attribute == ID)
+			return false;
+		else if (attribute == YEAR)
 			return false; // Year != null;
 		else if (attribute == SEASON)
 			return season != null;
