@@ -34,13 +34,13 @@ public class OlympicParticipation extends AbstractRecord<Attribute> implements S
 
 	// private static final long serialVersionUID = 1L;
 	private String id;
-	private int Year;
-	private String Season;
-	private String City;
-	private String OlympicTeam;
-	private String Disciplines;
-	private String Event;
-	private String Medal;
+	private int year;
+	private String season;
+	private String city;
+	private String olympicTeam;
+	private String disciplines;
+	private String event;
+	private String medal;
 
 	public OlympicParticipation(String identifier, String provenance) {
 		super(identifier, provenance);
@@ -55,59 +55,59 @@ public class OlympicParticipation extends AbstractRecord<Attribute> implements S
 	}
 
 	public int getYear() {
-		return Year;
+		return year;
 	}
 
 	public void setYear(int year) {
-		Year = year;
+		this.year = year;
 	}
 
 	public String getSeason() {
-		return Season;
+		return season;
 	}
 
 	public void setSeason(String season) {
-		Season = season;
+		this.season = season;
 	}
 
 	public String getCity() {
-		return City;
+		return city;
 	}
 
 	public void setCity(String city) {
-		City = city;
+		this.city = city;
 	}
 
 	public String getOlympicTeam() {
-		return OlympicTeam;
+		return olympicTeam;
 	}
 
 	public void setOlympicTeam(String olympicTeam) {
-		OlympicTeam = olympicTeam;
+		this.olympicTeam = olympicTeam;
 	}
 
 	public String getDisciplines() {
-		return Disciplines;
+		return disciplines;
 	}
 
 	public void setDisciplines(String disciplines) {
-		Disciplines = disciplines;
+		this.disciplines = disciplines;
 	}
 
 	public String getEvent() {
-		return Event;
+		return event;
 	}
 
 	public void setEvent(String event) {
-		Event = event;
+		this.event = event;
 	}
 
 	public String getMedal() {
-		return Medal;
+		return medal;
 	}
 
 	public void setMedal(String medal) {
-		Medal = medal;
+		this.medal = medal;
 	}
 
 	/*
@@ -115,23 +115,34 @@ public class OlympicParticipation extends AbstractRecord<Attribute> implements S
 	 * 
 	 * @see java.lang.Object#hashCode()
 	 */
-	/*
-	 * @Override public int hashCode() { int result = 31 + ((name == null) ? 0 :
-	 * name.hashCode()); return result; }
-	 */
+	@Override
+	public int hashCode() {
+		int result = 31 + ((season == null) ? 0 : season.hashCode());
+		return result;
+	}
 
 	/*
 	 * (non-Javadoc)
 	 * 
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
-	/*
-	 * public boolean equals(Object obj) { if (this == obj) return true; if (obj ==
-	 * null) return false; if (getClass() != obj.getClass()) return false;
-	 * OlympicParticipation other = (OlympicParticipation) obj; if (Name == null) {
-	 * if (other.name != null) return false; } else if (!name.equals(other.name))
-	 * return false; return true; }
-	 */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		OlympicParticipation other = (OlympicParticipation) obj;
+		if (season == null) {
+			if (other.season != null)
+				return false;
+		} else if (!season.equals(other.season))
+			return false;
+		return true;
+	}
+	
 
 	public static final Attribute YEAR = new Attribute("Year");
 	public static final Attribute SEASON = new Attribute("Season");
@@ -150,17 +161,17 @@ public class OlympicParticipation extends AbstractRecord<Attribute> implements S
 		if (attribute == YEAR)
 			return false; // Year != null;
 		else if (attribute == SEASON)
-			return Season != null;
+			return season != null;
 		else if (attribute == CITY)
-			return City != null;
+			return city != null;
 		else if (attribute == OLYMPICTEAM)
-			return OlympicTeam != null;
+			return olympicTeam != null;
 		else if (attribute == DISCIPLINES)
-			return Disciplines != null;
+			return disciplines != null;
 		else if (attribute == EVENT)
-			return Event != null;
+			return event != null;
 		else if (attribute == MEDAL)
-			return Medal != null;
+			return medal != null;
 		return false;
 	}
 }
