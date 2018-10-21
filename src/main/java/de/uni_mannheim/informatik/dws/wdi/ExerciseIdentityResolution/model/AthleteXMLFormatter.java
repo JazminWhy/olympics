@@ -27,7 +27,7 @@ import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
  */
 public class AthleteXMLFormatter extends XMLFormatter<Athlete> {
 
-	OlympicParticipationsXMLFormatter OlympicParticipationsFormatter = new OlympicParticipationsXMLFormatter();
+	OlympicParticipationXMLFormatter OlympicParticipationsFormatter = new OlympicParticipationXMLFormatter();
 
 	@Override
 	public Element createRootElement(Document doc) {
