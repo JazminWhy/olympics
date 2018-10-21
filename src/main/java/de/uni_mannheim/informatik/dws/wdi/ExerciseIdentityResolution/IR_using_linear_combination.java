@@ -57,7 +57,7 @@ public class IR_using_linear_combination
 		HashedDataSet<Athlete, Attribute> dataOlympicParticipation = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/DBpediaFinalTarget.xml"), "/WinningAthletes/Athlete", dataOlympicParticipation);
 
-		
+		System.out.println(dataAthletes.getRecord("G-100002"));
 		/*
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
