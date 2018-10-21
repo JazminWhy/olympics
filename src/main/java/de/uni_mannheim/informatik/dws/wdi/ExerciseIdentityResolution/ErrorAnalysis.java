@@ -5,7 +5,7 @@ import java.util.Set;
 
 import org.apache.logging.log4j.Logger;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
 import de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard;
@@ -18,27 +18,27 @@ public class ErrorAnalysis {
 	
 	private static final Logger logger = WinterLogManager.getLogger();
 
-	public void printFalsePositives(Processable<Correspondence<Movie, Attribute>> correspondences, MatchingGoldStandard gs) {
+	public void printFalsePositives(Processable<Correspondence<Athlete, Attribute>> correspondences, MatchingGoldStandard gs) {
 		
 		// go through the correspondences and check if they are incorrect
-		for(Correspondence<Movie, Attribute> c : correspondences.get()) {
+		for(Correspondence<Athlete, Attribute> c : correspondences.get()) {
 			
 			// is the match incorrect?
 			if(gs.containsNegative(c.getFirstRecord(), c.getSecondRecord())) {
 				
 				// if yes, print the records to the console
-				Movie m1 = c.getFirstRecord();
-				Movie m2 = c.getSecondRecord();
+				Athlete a1 = c.getFirstRecord();
+				Athlete a2 = c.getSecondRecord();
 				
 				// print both records to the console
 				logger.info("[Incorrect Correspondence]");
-				logger.info(String.format("\t%s", m1));	
-				logger.info(String.format("\t%s", m2));	
+				logger.info(String.format("\t%s", a1));	
+				logger.info(String.format("\t%s", a2));	
 			}
 		}		
 	}
 	
-	public void printFalseNegatives(DataSet<Movie, Attribute> ds1, DataSet<Movie, Attribute> ds2, Processable<Correspondence<Movie, Attribute>> correspondences, MatchingGoldStandard gs) {
+	public void printFalseNegatives(DataSet<Athlete, Attribute> ds1, DataSet<Athlete, Attribute> ds2, Processable<Correspondence<Athlete, Attribute>> correspondences, MatchingGoldStandard gs) {
 		
 		// first generate a set of all correct correspondences in the gold standard
 		// (if a pair is not in the gold standard, we cannot say if its correct or not)
@@ -46,7 +46,7 @@ public class ErrorAnalysis {
 		allPairs.addAll(gs.getPositiveExamples());
 		
 		// then go through the correspondences and remove all correct matches from the set
-		for(Correspondence<Movie, Attribute> c : correspondences.get()) {
+		for(Correspondence<Athlete, Attribute> c : correspondences.get()) {
 			
 			// create a pair of both record ids
 			Pair<String, String> p1 = new Pair<>(c.getFirstRecord().getIdentifier(), c.getSecondRecord().getIdentifier());
@@ -68,21 +68,21 @@ public class ErrorAnalysis {
 		for(Pair<String, String> p : allPairs) {
 			
 			// get the first record
-			Movie m1 = ds1.getRecord(p.getFirst());
-			if(m1==null) {
-				m1 = ds2.getRecord(p.getFirst());
+			Athlete a1 = ds1.getRecord(p.getFirst());
+			if(a1==null) {
+				a1 = ds2.getRecord(p.getFirst());
 			}
 			
 			// get the second record
-			Movie m2 = ds1.getRecord(p.getSecond());
-			if(m2==null) {
-				m2 = ds2.getRecord(p.getSecond());
+			Athlete a2 = ds1.getRecord(p.getSecond());
+			if(a2==null) {
+				a2 = ds2.getRecord(p.getSecond());
 			}
 			
 			// print both records to the console
 			logger.info("[Missing Correspondence]");
-			logger.info(String.format("\t%s", m1));	
-			logger.info(String.format("\t%s", m2));	
+			logger.info(String.format("\t%s", a1));	
+			logger.info(String.format("\t%s", a2));	
 		}
 	}
 }
