@@ -49,14 +49,13 @@ public class AthleteXMLReader extends XMLMatchableReader<Athlete, Attribute>  {
 		Athlete athlete = new Athlete(id, provenanceInfo);
 
 		// fill the attributes
-		athlete.setWeight(Float.parseFloat(getValueFromChildElement(node, "Weight")));
-		athlete.setHeight(Float.parseFloat(getValueFromChildElement(node, "Height")));
 		athlete.setName(getValueFromChildElement(node, "Name"));
 		athlete.setNationality(getValueFromChildElement(node, "Nationality"));
 		athlete.setPlaceOfBirth(getValueFromChildElement(node, "PlaceOfBirth"));
 		athlete.setSex(getValueFromChildElement(node, "Sex"));
 		
 		// convert the date string into a DateTime object
+		
 		try {
 			String date = getValueFromChildElement(node, "Birthdate");
 			if (date != null && !date.isEmpty()) {
@@ -71,6 +70,25 @@ public class AthleteXMLReader extends XMLMatchableReader<Athlete, Attribute>  {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
+		}
+		
+				
+		try {
+			String weight = getValueFromChildElement(node, "Weight");
+			String height = getValueFromChildElement(node, "Height");
+			if (weight!= null && !weight.isEmpty()) {
+				float weight_fl =Float.parseFloat(weight);
+				athlete.setWeight(weight_fl);
+			}
+			if (height != null && !height.isEmpty()) {
+				float height_fl= Float.parseFloat(height);
+				athlete.setHeight(height_fl);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			float zero = 0.0f;
+			athlete.setHeight(zero);
+			athlete.setWeight(zero);
 		}
 
 		// load the list of actors

@@ -50,7 +50,7 @@ public class OlympicParticipationXMLReader extends XMLMatchableReader<OlympicPar
 		// convert the date string into a DateTime object
 		try {
 			String year = getValueFromChildElement(node, "year");
-			if (year != null) {
+			if (year != null && !year.isEmpty()) {
 				int dt = Integer.parseInt(year);
 				olympicparticipation.setYear(dt);
 			}
