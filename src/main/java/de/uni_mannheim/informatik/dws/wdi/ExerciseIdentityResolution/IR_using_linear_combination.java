@@ -1,6 +1,7 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import java.io.File;
+import java.util.List;
 
 import org.apache.logging.log4j.Logger;
 
@@ -26,6 +27,7 @@ import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard;
 import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
+import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Record;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
@@ -53,11 +55,25 @@ public class IR_using_linear_combination
     	// Test 3
 		System.out.println("*\n*\tLoading datasets\n*");
 		HashedDataSet<Athlete, Attribute> dataAthletes = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/gymnasts.xml"), "/WinningAthletes/Athlete", dataAthletes);
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181021_Gymnast.xml"), "/WinningAthletes/Athlete", dataAthletes);
 		HashedDataSet<Athlete, Attribute> dataOlympicParticipation = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/DBpediaFinalTarget.xml"), "/WinningAthletes/Athlete", dataOlympicParticipation);
-
-		System.out.println(dataAthletes.getRecord("G-100002"));
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181021_DBpedia.xml"), "/WinningAthletes/Athlete", dataOlympicParticipation);
+		
+		Athlete a = dataAthletes.getRecord("G-100001");
+		Athlete p = dataOlympicParticipation.getRecord("D-100001");
+		List<OlympicParticipation> op = p.getOlympicParticipations();
+		
+		for(int i =0; i < op.size(); i++) {
+			OlympicParticipation op1 = (OlympicParticipation) op.get(0);
+			System.out.println(op1.getCity());
+		}
+		String name = a.getName();
+		System.out.println(name);
+		System.out.println(name);
+		System.out.println(dataAthletes.getRecord("G-100001"));
+		System.out.println(dataOlympicParticipation.size());
+		//System.out.println(dataAthletes);
+		//System.out.println(dataOlympicParticipation.size());
 		/*
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();

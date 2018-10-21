@@ -49,7 +49,7 @@ public class AthleteXMLFormatter extends XMLFormatter<Athlete> {
 	public Element createElementFromRecord(Athlete record, Document doc) {
 		Element Athlete = doc.createElement("Athlete");
 
-		Athlete.appendChild(createTextElement("id", record.getIdentifier(), doc));
+		Athlete.appendChild(createTextElement("ID", record.getIdentifier(), doc));
 		Athlete.appendChild(createTextElement("Name", record.getName(), doc));
 		Athlete.appendChild(createTextElement("Birthday", record.getBirthday().toString(), doc));
 		Athlete.appendChild(createTextElement("PlaceOfBirth", record.getPlaceOfBirth(), doc));

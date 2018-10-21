@@ -18,6 +18,7 @@ import java.time.temporal.ChronoField;
 import java.util.List;
 import java.util.Locale;
 
+import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
@@ -40,11 +41,17 @@ public class AthleteXMLReader extends XMLMatchableReader<Athlete, Attribute>  {
 		super.initialiseDataset(dataset);
 		
 	}
+	public Node node;
 	
+	public NamedNodeMap getDataJ(Node node) {
+		NamedNodeMap results = node.getAttributes();
+		
+		return results;
+	}
 	@Override
 	public Athlete createModelFromElement(Node node, String provenanceInfo) {
-		String id = getValueFromChildElement(node, "id");
-
+		String id = getValueFromChildElement(node, "ID");
+		this.node = node;
 		// create the object with id and provenance information
 		Athlete athlete = new Athlete(id, provenanceInfo);
 
@@ -57,7 +64,7 @@ public class AthleteXMLReader extends XMLMatchableReader<Athlete, Attribute>  {
 		// convert the date string into a DateTime object
 		
 		try {
-			String date = getValueFromChildElement(node, "Birthdate");
+			String date = getValueFromChildElement(node, "Birthday");
 			if (date != null && !date.isEmpty()) {
 				DateTimeFormatter formatter = new DateTimeFormatterBuilder()
 				        .appendPattern("yyyy-MM-dd")
@@ -92,8 +99,8 @@ public class AthleteXMLReader extends XMLMatchableReader<Athlete, Attribute>  {
 		}
 
 		// load the list of actors
-		List<OlympicParticipation> olympicParticipations = getObjectListFromChildElement(node, "OlympicParticipations",
-				"OlympicParticipation", new OlympicParticipationXMLReader(), provenanceInfo);
+		List<OlympicParticipation> olympicParticipations = getObjectListFromChildElement(node, "OlypmicParticipations",
+				"OlypmicParticipation", new OlympicParticipationXMLReader(), provenanceInfo);
 		athlete.setOlympicParticipations(olympicParticipations);
 
 		return athlete;
