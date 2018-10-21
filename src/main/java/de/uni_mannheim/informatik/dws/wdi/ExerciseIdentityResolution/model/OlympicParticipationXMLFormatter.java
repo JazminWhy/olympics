@@ -22,7 +22,7 @@ import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class OlympicParticipationsXMLFormatter extends XMLFormatter<OlympicParticipation> {
+public class OlympicParticipationXMLFormatter extends XMLFormatter<OlympicParticipation> {
 
 	@Override
 	public Element createRootElement(Document doc) {
