@@ -27,7 +27,7 @@ import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
  */
 public class AthleteXMLFormatter extends XMLFormatter<Athlete> {
 
-	OlympicParticipationXMLFormatter OlympicParticipationsFormatter = new OlympicParticipationXMLFormatter();
+	OlympicParticipationXMLFormatter OlympicParticipationFormatter = new OlympicParticipationXMLFormatter();
 
 	@Override
 	public Element createRootElement(Document doc) {
@@ -70,10 +70,10 @@ public class AthleteXMLFormatter extends XMLFormatter<Athlete> {
 	}
 
 	protected Element createOlympicParticipationsElement(Athlete record, Document doc) {
-		Element OlympicParticipationsRoot = OlympicParticipationsFormatter.createRootElement(doc);
+		Element OlympicParticipationsRoot = OlympicParticipationFormatter.createRootElement(doc);
 
 		for (OlympicParticipation o : record.getOlympicParticipations()) {
-			OlympicParticipationsRoot.appendChild(OlympicParticipationsFormatter.createElementFromRecord(o, doc));
+			OlympicParticipationsRoot.appendChild(OlympicParticipationFormatter.createElementFromRecord(o, doc));
 		}
 
 		return OlympicParticipationsRoot;
