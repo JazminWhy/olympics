@@ -12,42 +12,85 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.utils.query.Q;
 
-public class AthleteParticipationMedalComparator  implements Comparator<Athlete, Attribute> {
+public class AthleteParticipationMedalComparator implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	private ComparatorLogger comparisonLog;
 
 	@Override
-	public double compare(
-			Athlete record1,
-			Athlete record2,
+	public double compare(Athlete record1, Athlete record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
-		
-		Set<String> participationMedals1 = new HashSet<>();
-		Set<String> participationMedals2 = new HashSet<>();
-		
-		for(OlympicParticipation a : record1.getOlympicParticipations()) {
-			participationMedals1.add(a.getMedal() + a.getYear());
+
+//		Set<String> participationMedals1 = new HashSet<>();
+//		Set<String> participationMedals2 = new HashSet<>();
+//		
+		int goldA = 0;
+		int silverA = 0;
+		int bronzeA = 0;
+
+		int goldB = 0;
+		int silverB = 0;
+		int bronzeB = 0;
+
+		for (OlympicParticipation a : record1.getOlympicParticipations()) {
+			switch (a.getMedal()) {
+			case "gold":
+				goldA++;
+				break;
+
+			case "silver":
+				silverA++;
+				break;
+
+			case "bronze":
+				bronzeA++;
+				break;
+
+			default:
+				break;
+			}
 		}
-		for(OlympicParticipation a : record2.getOlympicParticipations()) {
-			participationMedals2.add(a.getMedal() + a.getYear());
+
+		for (OlympicParticipation b : record1.getOlympicParticipations()) {
+			switch (b.getMedal()) {
+			case "gold":
+				goldB++;
+				break;
+
+			case "silver":
+				silverB++;
+				break;
+
+			case "bronze":
+				bronzeB++;
+				break;
+
+			default:
+				break;
+			}
 		}
+		int difGold = Math.abs(goldA - goldB);
+		int difSilver = Math.abs(silverA - silverB);
+		int difBronze = Math.abs(bronzeA - bronzeB);
+		int difSum = difGold + difSilver +difBronze;
 		
-		double similarity = Q.intersection(participationMedals1, participationMedals2).size() / (double)Math.max(participationMedals1.size(), participationMedals2.size());
-		
-		if(this.comparisonLog != null){
+		double similarity = 1 / 1 + difSum;
+
+		if (this.comparisonLog != null) {
 			this.comparisonLog.setComparatorName(getClass().getName());
-		
-			this.comparisonLog.setRecord1Value(participationMedals1.toString());
-			this.comparisonLog.setRecord2Value(participationMedals2.toString());
-    	
+
+			this.comparisonLog.setRecord1Value(Integer.toString(difGold) + "-" 
+			+ Integer.toString(difSilver) + "-" + Integer.toString(difBronze) + "-");
+			this.comparisonLog.setRecord2Value(Integer.toString(difGold) + "-" 
+			+ Integer.toString(difSilver) + "-" + Integer.toString(difBronze) + "-");
+
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
-		
+
 		return similarity;
 	}
-	
+
 	@Override
 	public ComparatorLogger getComparisonLog() {
 		return this.comparisonLog;

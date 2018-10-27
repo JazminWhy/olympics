@@ -11,6 +11,11 @@
 // */
 //
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipation;
 //
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.BlockingKeyGenerator;
@@ -41,7 +46,12 @@ public class AthleteBlockingKeyByEarliestParticipationYearGenerator extends
 	@Override
 	public void generateBlockingKeys(Athlete record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Athlete>> resultCollector) {
-		resultCollector.next(new Pair<>(Integer.toString(record.getBirthday().getYear()), record));
+		Set<String> OlympicParticipations1 = new HashSet<>();
+		for(OlympicParticipation a : record.getOlympicParticipations()) {
+			OlympicParticipations1.add(a.getYear()+a.getOlympicTeam());
+		}
+		
+		resultCollector.next(new Pair<>(Collections.min(OlympicParticipations1), record));
 	}
 
 }
