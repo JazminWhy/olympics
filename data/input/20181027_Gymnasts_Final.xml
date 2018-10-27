@@ -1,0 +1,7703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WinningAthletes xsi:schemaLocation="https://wdi.org/Project/OlympicDataIntegration file:///C:/Users/hroed/Desktop/Uni%20Mannheim%20MMDS/Web%20Data%20Integration/Project/Zweite%20H%C3%A4lfte/20181025_TargetXML_Alternative.xsd" xmlns="https://wdi.org/Project/OlympicDataIntegration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Athlete>
+		<ID>G-100001</ID>
+		<Name>georgia bonora</Name>
+		<Birthday>1990-05-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100002</ID>
+		<Name>ashleigh brennan</Name>
+		<Birthday>1991-01-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100003</ID>
+		<Name>daria joura</Name>
+		<Birthday>1990-05-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100004</ID>
+		<Name>emily little</Name>
+		<Birthday>1994-03-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100005</ID>
+		<Name>lauren mitchell</Name>
+		<Birthday>1991-07-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100006</ID>
+		<Name>monette russo</Name>
+		<Birthday>1988-08-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100007</ID>
+		<Name>lisa skinner</Name>
+		<Birthday>1981-02-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100008</ID>
+		<Name>allana slater</Name>
+		<Birthday>1984-04-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100009</ID>
+		<Name>yulia inshina</Name>
+		<Birthday>1995-04-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>azerbaijan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100010</ID>
+		<Name>anna pavlova</Name>
+		<Birthday>1987-09-06</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>azerbaijan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100011</ID>
+		<Name>svetlana boguinskaya</Name>
+		<Birthday>1973-02-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100012</ID>
+		<Name>nellie kim</Name>
+		<Birthday>1957-07-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100013</ID>
+		<Name>olga korbut</Name>
+		<Birthday>1955-05-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100014</ID>
+		<Name>rebeca andrade</Name>
+		<Birthday>1999-05-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>brazil</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100015</ID>
+		<Name>jade barbosa</Name>
+		<Birthday>1991-07-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>brazil</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100016</ID>
+		<Name>daniele hyp�lito</Name>
+		<Birthday>1984-09-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>brazil</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100017</ID>
+		<Name>lorrane oliveira</Name>
+		<Birthday>1998-04-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>brazil</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100018</ID>
+		<Name>daiane dos santos</Name>
+		<Birthday>1983-02-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>brazil</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100019</ID>
+		<Name>fl�via saraiva</Name>
+		<Birthday>1999-09-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>brazil</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100020</ID>
+		<Name>ellie black</Name>
+		<Birthday>1995-08-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>canada</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100021</ID>
+		<Name>elyse hopfner-hibbs</Name>
+		<Birthday>1989-09-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>canada</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100022</ID>
+		<Name>victoria moors</Name>
+		<Birthday>1996-11-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>canada</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100023</ID>
+		<Name>kate richardson</Name>
+		<Birthday>1984-06-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>canada</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100024</ID>
+		<Name>elfi schlegel</Name>
+		<Birthday>1964-05-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>canada</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100025</ID>
+		<Name>eva bos�kov�</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>czechoslovakia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100026</ID>
+		<Name>v_ra _�slavsk�</Name>
+		<Birthday>1942-05-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>czechoslovakia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100027</ID>
+		<Name>vlasta d_kanov�</Name>
+		<Birthday>2009-09-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>czechoslovakia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100028</ID>
+		<Name>jana komrskov�</Name>
+		<Birthday>1983-05-06</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>czechoslovakia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100029</ID>
+		<Name>cheng fei</Name>
+		<Birthday>1988-05-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100030</ID>
+		<Name>deng linlin</Name>
+		<Birthday>1992-04-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100031</ID>
+		<Name>fan ye</Name>
+		<Birthday>1986-10-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100032</ID>
+		<Name>fan yilin</Name>
+		<Birthday>1999-11-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100033</ID>
+		<Name>he kexin</Name>
+		<Birthday>1992-01-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100034</ID>
+		<Name>he ning</Name>
+		<Birthday>1990-11-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100035</ID>
+		<Name>kui yuanyuan</Name>
+		<Birthday>1981-06-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100036</ID>
+		<Name>li li</Name>
+		<Birthday>1975-02-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100037</ID>
+		<Name>li shanshan</Name>
+		<Birthday>1996-08-31</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100038</ID>
+		<Name>li ya</Name>
+		<Birthday>1988-06-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100039</ID>
+		<Name>liu xuan</Name>
+		<Birthday>1979-03-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100040</ID>
+		<Name>lu li</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100041</ID>
+		<Name>jiang yuyuan</Name>
+		<Birthday>1991-11-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100042</ID>
+		<Name>ma yanhong</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100043</ID>
+		<Name>mo huilan</Name>
+		<Birthday>1979-07-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100044</ID>
+		<Name>shang chunsong</Name>
+		<Birthday>1996-03-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100045</ID>
+		<Name>sang lan</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100046</ID>
+		<Name>sui lu</Name>
+		<Birthday>1992-04-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100047</ID>
+		<Name>wang yan</Name>
+		<Birthday>1999-10-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100048</ID>
+		<Name>xiao sha</Name>
+		<Birthday>1992-06-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100049</ID>
+		<Name>yang yilin</Name>
+		<Birthday>1991-08-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100050</ID>
+		<Name>yao jinnan</Name>
+		<Birthday>1995-02-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100051</ID>
+		<Name>zhang nan</Name>
+		<Birthday>1986-04-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100052</ID>
+		<Name>zhou zhuoru</Name>
+		<Birthday>1988-09-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100053</ID>
+		<Name>yamilet pe�a</Name>
+		<Birthday>1992-12-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>dominican republic</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100054</ID>
+		<Name>ludivine furnon</Name>
+		<Birthday>1980-10-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>france</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100055</ID>
+		<Name>�milie le pennec</Name>
+		<Birthday>1987-12-31</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>france</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100056</ID>
+		<Name>elvire teza</Name>
+		<Birthday>1981-03-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>france</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100057</ID>
+		<Name>daria bijak</Name>
+		<Birthday>1985-11-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100058</ID>
+		<Name>anja brinker</Name>
+		<Birthday>1991-01-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100059</ID>
+		<Name>karin b�ttner-janz</Name>
+		<Birthday>1952-02-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100060</ID>
+		<Name>oksana chusovitina</Name>
+		<Birthday>1975-06-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100061</ID>
+		<Name>maxi gnauck</Name>
+		<Birthday>1964-10-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100062</ID>
+		<Name>dagmar kersten</Name>
+		<Birthday>1970-10-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100063</ID>
+		<Name>steffi kraker</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100064</ID>
+		<Name>erika zuchold</Name>
+		<Birthday>1947-03-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100065</ID>
+		<Name>ana sof�a g�mez</Name>
+		<Birthday>1995-11-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>guatemala</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100066</ID>
+		<Name>�gnes keleti</Name>
+		<Birthday>2021-06-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>hungary</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100067</ID>
+		<Name>margit korondi</Name>
+		<Birthday>1932-06-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>hungary</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100068</ID>
+		<Name>henrietta �nodi</Name>
+		<Birthday>1974-05-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>hungary</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100069</ID>
+		<Name>dipa karmakar</Name>
+		<Birthday>2010-05-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>india</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100070</ID>
+		<Name>erika fasana</Name>
+		<Birthday>1996-02-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100071</ID>
+		<Name>carlotta ferlito</Name>
+		<Birthday>1995-02-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100072</ID>
+		<Name>vanessa ferrari</Name>
+		<Birthday>1990-11-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100073</ID>
+		<Name>mai murakami</Name>
+		<Birthday>1996-08-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100074</ID>
+		<Name>elsa garc�a</Name>
+		<Birthday>1990-02-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>mexico</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100075</ID>
+		<Name>denisse l�pez</Name>
+		<Birthday>1976-12-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>mexico</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100076</ID>
+		<Name>brenda maga�a</Name>
+		<Birthday>1977-07-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>mexico</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100077</ID>
+		<Name>laura del carmen moreno</Name>
+		<Birthday>1978-11-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>mexico</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100078</ID>
+		<Name>c�line van gerner</Name>
+		<Birthday>1994-12-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>netherlands</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100079</ID>
+		<Name>tisha volleman</Name>
+		<Birthday>2005-06-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>netherlands</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100080</ID>
+		<Name>lieke wevers</Name>
+		<Birthday>1991-09-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>netherlands</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100081</ID>
+		<Name>sanne wevers</Name>
+		<Birthday>1991-09-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>netherlands</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100082</ID>
+		<Name>kim gwang-suk</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>north korea</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100083</ID>
+		<Name>hong su-jong</Name>
+		<Birthday>1986-03-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>north korea</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100084</ID>
+		<Name>hong un-jong</Name>
+		<Birthday>1989-03-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>north korea</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100085</ID>
+		<Name>helena rakoczy</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>poland</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100086</ID>
+		<Name>marta pihan-kulesza</Name>
+		<Birthday>1987-07-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>poland</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100087</ID>
+		<Name>lavinia agache</Name>
+		<Birthday>1966-02-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100088</ID>
+		<Name>simona am�nar</Name>
+		<Birthday>1979-10-07</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100089</ID>
+		<Name>oana ban</Name>
+		<Birthday>1986-01-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100090</ID>
+		<Name>cristina bonta_</Name>
+		<Birthday>1973-12-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100091</ID>
+		<Name>diana bulimar</Name>
+		<Birthday>1995-08-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100092</ID>
+		<Name>diana chelaru</Name>
+		<Birthday>1993-08-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100093</ID>
+		<Name>nadia com_neci</Name>
+		<Birthday>1961-11-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100094</ID>
+		<Name>laura cutina</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100095</ID>
+		<Name>aurelia dobre</Name>
+		<Birthday>1972-11-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100096</ID>
+		<Name>emilia eberle</Name>
+		<Birthday>1964-03-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100097</ID>
+		<Name>alexandra eremia</Name>
+		<Birthday>1987-02-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100098</ID>
+		<Name>gina gogean</Name>
+		<Birthday>1977-11-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100099</ID>
+		<Name>anca grigora_</Name>
+		<Birthday>1957-11-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100100</ID>
+		<Name>larisa iordache</Name>
+		<Birthday>1996-06-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100101</ID>
+		<Name>sandra izba_a</Name>
+		<Birthday>1990-06-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100102</ID>
+		<Name>lavinia milo_ovici</Name>
+		<Birthday>1976-10-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100103</ID>
+		<Name>steliana nistor</Name>
+		<Birthday>1989-09-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100104</ID>
+		<Name>maria olaru</Name>
+		<Birthday>1982-06-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100105</ID>
+		<Name>c_t_lina ponor</Name>
+		<Birthday>1987-08-20</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100106</ID>
+		<Name>celestina popa</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100107</ID>
+		<Name>ana porgras</Name>
+		<Birthday>1993-12-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100108</ID>
+		<Name>claudia pres_can</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100109</ID>
+		<Name>andreea r_ducan</Name>
+		<Birthday>1983-09-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100110</ID>
+		<Name>monica ro_u</Name>
+		<Birthday>1987-05-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100111</ID>
+		<Name>daniela siliva_</Name>
+		<Birthday>1970-05-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100112</ID>
+		<Name>daniela sofronie</Name>
+		<Birthday>1988-02-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100113</ID>
+		<Name>silvia stroescu</Name>
+		<Birthday>1985-05-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100114</ID>
+		<Name>ecaterina szabo</Name>
+		<Birthday>1967-01-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100115</ID>
+		<Name>corina ungureanu</Name>
+		<Birthday>1980-08-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100116</ID>
+		<Name>teodora ungureanu</Name>
+		<Birthday>1960-11-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100117</ID>
+		<Name>camelia voinea</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100118</ID>
+		<Name>ksenia afanasyeva</Name>
+		<Birthday>1991-09-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100119</ID>
+		<Name>elena dolgopolova</Name>
+		<Birthday>1980-01-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100120</ID>
+		<Name>anna dementyeva</Name>
+		<Birthday>1994-12-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100121</ID>
+		<Name>elena eremina</Name>
+		<Birthday>2001-07-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100122</ID>
+		<Name>ludmila ezhova</Name>
+		<Birthday>1982-03-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100123</ID>
+		<Name>rozalia galiyeva</Name>
+		<Birthday>1977-04-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100124</ID>
+		<Name>anastasia grishina</Name>
+		<Birthday>1996-01-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100125</ID>
+		<Name>anastasia ilyankova</Name>
+		<Birthday>2001-05-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100126</ID>
+		<Name>natalia kapitonova</Name>
+		<Birthday>2000-05-31</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100127</ID>
+		<Name>maria kharenkova</Name>
+		<Birthday>1998-10-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100128</ID>
+		<Name>svetlana khorkina</Name>
+		<Birthday>1979-01-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100129</ID>
+		<Name>anastasiya kolesnikova</Name>
+		<Birthday>1984-03-06</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100130</ID>
+		<Name>viktoria komova</Name>
+		<Birthday>1995-01-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100131</ID>
+		<Name>dina kochetkova</Name>
+		<Birthday>1977-07-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100132</ID>
+		<Name>ekaterina kramarenko</Name>
+		<Birthday>1991-04-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100133</ID>
+		<Name>natalia kuchinskaya</Name>
+		<Birthday>1949-03-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100134</ID>
+		<Name>yekaterina lobaznyuk</Name>
+		<Birthday>1983-07-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100135</ID>
+		<Name>yulia lozhechko</Name>
+		<Birthday>1989-12-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100136</ID>
+		<Name>sofia muratova</Name>
+		<Birthday>2029-07-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100137</ID>
+		<Name>angelina melnikova</Name>
+		<Birthday>2000-07-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100138</ID>
+		<Name>aliya mustafina</Name>
+		<Birthday>1994-09-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100139</ID>
+		<Name>tatiana nabieva</Name>
+		<Birthday>1994-11-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100140</ID>
+		<Name>maria paseka</Name>
+		<Birthday>1995-07-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100141</ID>
+		<Name>anna pavlova</Name>
+		<Birthday>1987-09-06</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100142</ID>
+		<Name>yelena produnova</Name>
+		<Birthday>1980-02-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100143</ID>
+		<Name>ksenia semenova</Name>
+		<Birthday>1992-10-20</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100144</ID>
+		<Name>natalia shaposhnikova</Name>
+		<Birthday>1961-06-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100145</ID>
+		<Name>daria spiridonova</Name>
+		<Birthday>1998-07-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100146</ID>
+		<Name>seda tutkhalyan</Name>
+		<Birthday>1999-07-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100147</ID>
+		<Name>elena zamolodchikova</Name>
+		<Birthday>1982-09-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100148</ID>
+		<Name>jo hyun-joo</Name>
+		<Birthday>1992-12-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>south korea</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100149</ID>
+		<Name>elena g�mez</Name>
+		<Birthday>1985-11-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100150</ID>
+		<Name>patricia moreno</Name>
+		<Birthday>1988-01-07</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100151</ID>
+		<Name>ana maria izurieta</Name>
+		<Birthday>1993-01-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100152</ID>
+		<Name>giulia steingruber</Name>
+		<Birthday>1994-03-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>switzerland</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100153</ID>
+		<Name>polina astakhova</Name>
+		<Birthday>1936-10-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100154</ID>
+		<Name>nina bocharova</Name>
+		<Birthday>2024-09-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100155</ID>
+		<Name>olesya dudnik</Name>
+		<Birthday>1974-08-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100156</ID>
+		<Name>maria gorokhovskaya</Name>
+		<Birthday>2021-10-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100157</ID>
+		<Name>tatiana gutsu</Name>
+		<Birthday>1976-09-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100158</ID>
+		<Name>viktoria karpenko</Name>
+		<Birthday>1981-03-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100159</ID>
+		<Name>larisa latynina</Name>
+		<Birthday>1934-12-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100160</ID>
+		<Name>lilia podkopayeva</Name>
+		<Birthday>1978-08-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100161</ID>
+		<Name>oksana omelianchik</Name>
+		<Birthday>1969-12-31</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100162</ID>
+		<Name>ludmilla tourischeva</Name>
+		<Birthday>1952-10-07</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100163</ID>
+		<Name>irina yarotska</Name>
+		<Birthday>1985-10-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100164</ID>
+		<Name>stella zakharova</Name>
+		<Birthday>1963-07-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100165</ID>
+		<Name>sophie brundish</Name>
+		<Birthday>1993-05-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100166</ID>
+		<Name>imogen cairns</Name>
+		<Birthday>1989-01-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100167</ID>
+		<Name>becky downie</Name>
+		<Birthday>1992-01-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100168</ID>
+		<Name>ellie downie</Name>
+		<Birthday>1999-07-20</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100169</ID>
+		<Name>claudia fragapane</Name>
+		<Birthday>1997-10-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100170</ID>
+		<Name>ruby harrold</Name>
+		<Birthday>1996-06-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100171</ID>
+		<Name>marissa king</Name>
+		<Birthday>1991-04-20</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100172</ID>
+		<Name>lisa mason</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100173</ID>
+		<Name>annika reeder</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100174</ID>
+		<Name>joanna sime</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100175</ID>
+		<Name>kelly simm</Name>
+		<Birthday>1995-04-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100176</ID>
+		<Name>amy tinkler</Name>
+		<Birthday>1999-10-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100177</ID>
+		<Name>beth tweddle</Name>
+		<Birthday>1985-04-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100178</ID>
+		<Name>hannah whelan</Name>
+		<Birthday>1992-07-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100179</ID>
+		<Name>alyssa baumann</Name>
+		<Birthday>1998-05-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100180</ID>
+		<Name>mohini bhardwaj</Name>
+		<Birthday>1978-09-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100181</ID>
+		<Name>jana bieger</Name>
+		<Birthday>1989-11-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100182</ID>
+		<Name>simone biles</Name>
+		<Birthday>1997-03-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100183</ID>
+		<Name>amanda borden</Name>
+		<Birthday>1977-05-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100184</ID>
+		<Name>rebecca bross</Name>
+		<Birthday>1993-07-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100185</ID>
+		<Name>amy chow</Name>
+		<Birthday>1978-05-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100186</ID>
+		<Name>dominique dawes</Name>
+		<Birthday>1976-11-20</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100187</ID>
+		<Name>nia dennis</Name>
+		<Birthday>1999-02-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100188</ID>
+		<Name>gabby douglas</Name>
+		<Birthday>1995-12-31</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100189</ID>
+		<Name>brenna dowell</Name>
+		<Birthday>1996-03-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100190</ID>
+		<Name>annia hatch</Name>
+		<Birthday>1978-06-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100191</ID>
+		<Name>katie heenan</Name>
+		<Birthday>1985-11-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100192</ID>
+		<Name>laurie hernandez</Name>
+		<Birthday>2000-06-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100193</ID>
+		<Name>ivana hong</Name>
+		<Birthday>1992-12-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100194</ID>
+		<Name>terin humphrey</Name>
+		<Birthday>1986-08-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100195</ID>
+		<Name>amelia hundley</Name>
+		<Birthday>1998-01-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100196</ID>
+		<Name>shawn johnson</Name>
+		<Birthday>1992-01-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100197</ID>
+		<Name>natasha kelley</Name>
+		<Birthday>1990-01-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100198</ID>
+		<Name>bailie key</Name>
+		<Birthday>1999-03-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100199</ID>
+		<Name>madison kocian</Name>
+		<Birthday>1997-06-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100200</ID>
+		<Name>courtney kupets</Name>
+		<Birthday>1986-07-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100201</ID>
+		<Name>mattie larson</Name>
+		<Birthday>1992-05-20</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100202</ID>
+		<Name>nastia liukin</Name>
+		<Birthday>1989-10-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100203</ID>
+		<Name>ashton locklear</Name>
+		<Birthday>1998-01-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100204</ID>
+		<Name>kristen maloney</Name>
+		<Birthday>1981-03-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100205</ID>
+		<Name>mckayla maroney</Name>
+		<Birthday>1995-12-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100206</ID>
+		<Name>courtney mccool</Name>
+		<Birthday>1988-04-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100207</ID>
+		<Name>chellsie memmel</Name>
+		<Birthday>1988-06-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100208</ID>
+		<Name>ashley miles</Name>
+		<Birthday>1985-03-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100209</ID>
+		<Name>shannon miller</Name>
+		<Birthday>1977-03-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100210</ID>
+		<Name>phoebe mills</Name>
+		<Birthday>1972-11-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100211</ID>
+		<Name>dominique moceanu</Name>
+		<Birthday>1981-09-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100212</ID>
+		<Name>maggie nichols</Name>
+		<Birthday>1997-09-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100213</ID>
+		<Name>carly patterson</Name>
+		<Birthday>1988-02-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100214</ID>
+		<Name>samantha peszek</Name>
+		<Birthday>1991-12-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100215</ID>
+		<Name>jaycie phelps</Name>
+		<Birthday>1979-09-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100216</ID>
+		<Name>ashley priess</Name>
+		<Birthday>1990-03-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100217</ID>
+		<Name>aly raisman</Name>
+		<Birthday>1994-05-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100218</ID>
+		<Name>mary lou retton</Name>
+		<Birthday>1968-01-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100219</ID>
+		<Name>kyla ross</Name>
+		<Birthday>1996-10-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100220</ID>
+		<Name>alicia sacramone</Name>
+		<Birthday>1987-12-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100221</ID>
+		<Name>mykayla skinner</Name>
+		<Birthday>1996-12-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100222</ID>
+		<Name>bridget sloan</Name>
+		<Birthday>1992-06-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100223</ID>
+		<Name>ragan smith</Name>
+		<Birthday>2000-08-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100224</ID>
+		<Name>kerri strug</Name>
+		<Birthday>1977-11-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100225</ID>
+		<Name>kristal uzelac</Name>
+		<Birthday>1985-06-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100226</ID>
+		<Name>jordyn wieber</Name>
+		<Birthday>1995-07-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100227</ID>
+		<Name>shayla worley</Name>
+		<Birthday>1990-09-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100228</ID>
+		<Name>kim zmeskal</Name>
+		<Birthday>1976-02-06</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100229</ID>
+		<Name>polina astakhova</Name>
+		<Birthday>1936-10-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100230</ID>
+		<Name>olga bicherova</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100231</ID>
+		<Name>nina bocharova</Name>
+		<Birthday>2024-09-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100232</ID>
+		<Name>svetlana boginskaya</Name>
+		<Birthday>1973-02-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100233</ID>
+		<Name>oksana chusovitina</Name>
+		<Birthday>1975-06-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100234</ID>
+		<Name>olesya dudnik</Name>
+		<Birthday>1974-08-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100235</ID>
+		<Name>maria filatova</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100236</ID>
+		<Name>rozalia galiyeva</Name>
+		<Birthday>1977-04-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100237</ID>
+		<Name>maria gorokhovskaya</Name>
+		<Birthday>2021-10-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100238</ID>
+		<Name>svetlana grozdova</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100239</ID>
+		<Name>tatiana gutsu</Name>
+		<Birthday>1976-09-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100240</ID>
+		<Name>natalia ilienko</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100241</ID>
+		<Name>nellie kim</Name>
+		<Birthday>1957-07-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100242</ID>
+		<Name>natalia kuchinskaya</Name>
+		<Birthday>1949-03-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100243</ID>
+		<Name>larisa latynina</Name>
+		<Birthday>1934-12-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100244</ID>
+		<Name>tamara lazakovich</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100245</ID>
+		<Name>tatiana lysenko</Name>
+		<Birthday>1975-06-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100246</ID>
+		<Name>tamara manina</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100247</ID>
+		<Name>olga mostepanova</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100248</ID>
+		<Name>elena mukhina</Name>
+		<Birthday>1960-06-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100249</ID>
+		<Name>sofia muratova</Name>
+		<Birthday>2029-07-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100250</ID>
+		<Name>oksana omelianchik</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100251</ID>
+		<Name>galina shamrai</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100252</ID>
+		<Name>natalia shaposhnikova</Name>
+		<Birthday>1961-06-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100253</ID>
+		<Name>yelena shushunova</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100254</ID>
+		<Name>ludmilla tourischeva</Name>
+		<Birthday>1952-10-07</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100255</ID>
+		<Name>zinaida voronina</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100256</ID>
+		<Name>natalia yurchenko</Name>
+		<Birthday>1955-01-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100257</ID>
+		<Name>stella zakharova</Name>
+		<Birthday>1963-07-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100258</ID>
+		<Name>oksana chusovitina</Name>
+		<Birthday>1975-06-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>uzbekistan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100259</ID>
+		<Name>rozalia galiyeva</Name>
+		<Birthday>1977-04-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>uzbekistan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100260</ID>
+		<Name>albert azaryan</Name>
+		<Birthday>2029-02-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>armenia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100261</ID>
+		<Name>artur davtyan</Name>
+		<Birthday>1992-08-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>armenia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100262</ID>
+		<Name>philippe rizzo</Name>
+		<Birthday>1981-02-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100263</ID>
+		<Name>joshua jefferis</Name>
+		<Birthday>1985-08-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100264</ID>
+		<Name>damian istria</Name>
+		<Birthday>1982-08-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100265</ID>
+		<Name>ivan ivankov</Name>
+		<Birthday>1975-04-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100266</ID>
+		<Name>vitaly scherbo</Name>
+		<Birthday>1972-01-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100267</ID>
+		<Name>diego hyp�lito</Name>
+		<Birthday>1986-06-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>brazil</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100268</ID>
+		<Name>arthur mariano</Name>
+		<Birthday>1993-09-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>brazil</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100269</ID>
+		<Name>arthur zanetti</Name>
+		<Birthday>1990-04-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>brazil</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100270</ID>
+		<Name>yordan yovchev</Name>
+		<Birthday>1973-02-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100271</ID>
+		<Name>kyle shewfelt</Name>
+		<Birthday>1982-05-06</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>canada</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100272</ID>
+		<Name>chen yibing</Name>
+		<Birthday>1984-12-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100273</ID>
+		<Name>li ning</Name>
+		<Birthday>1963-03-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100274</ID>
+		<Name>li xiaopeng</Name>
+		<Birthday>1981-07-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100275</ID>
+		<Name>lou yun</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100276</ID>
+		<Name>xiao qin</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100277</ID>
+		<Name>yang wei</Name>
+		<Birthday>1980-02-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100278</ID>
+		<Name>zou kai</Name>
+		<Birthday>1988-02-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100279</ID>
+		<Name>mahmoud safwat</Name>
+		<Birthday>2029-11-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>egypt</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100280</ID>
+		<Name>louis s�gura</Name>
+		<Birthday>1889-07-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>france</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100281</ID>
+		<Name>marco torr�s</Name>
+		<Birthday>1888-01-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>france</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100282</ID>
+		<Name>paavo aaltonen</Name>
+		<Birthday>2019-12-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>finland</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100283</ID>
+		<Name>veikko huhtanen</Name>
+		<Birthday>2019-06-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>finland</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100284</ID>
+		<Name>heikki savolainen</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>finland</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100285</ID>
+		<Name>valery belenky</Name>
+		<Birthday>1969-09-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100286</ID>
+		<Name>philipp boy</Name>
+		<Birthday>1987-07-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100287</ID>
+		<Name>andreas bretschneider</Name>
+		<Birthday>1989-08-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100288</ID>
+		<Name>roland br�ckner</Name>
+		<Birthday>1955-12-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100289</ID>
+		<Name>konrad frey</Name>
+		<Birthday>2009-04-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100290</ID>
+		<Name>eberhard gienger</Name>
+		<Birthday>1951-07-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100291</ID>
+		<Name>fabian hamb�chen</Name>
+		<Birthday>1987-10-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100292</ID>
+		<Name>sylvio kroll</Name>
+		<Birthday>1965-04-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100293</ID>
+		<Name>marcel nguyen</Name>
+		<Birthday>1987-09-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100294</ID>
+		<Name>sven tippelt</Name>
+		<Birthday>1965-06-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100295</ID>
+		<Name>andreas wecker</Name>
+		<Birthday>1970-01-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100296</ID>
+		<Name>vlasios maras</Name>
+		<Birthday>1983-03-31</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>greece</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100297</ID>
+		<Name>szilveszter csoll�ny</Name>
+		<Birthday>1970-04-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>hungary</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100298</ID>
+		<Name>zolt�n supola</Name>
+		<Birthday>1970-09-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>hungary</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100299</ID>
+		<Name>alberto braglia</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100300</ID>
+		<Name>igor cassina</Name>
+		<Birthday>1977-08-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100301</ID>
+		<Name>yuri chechi</Name>
+		<Birthday>1969-10-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100302</ID>
+		<Name>franco menichelli</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100303</ID>
+		<Name>romeo neri</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100304</ID>
+		<Name>giorgio zampori</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100305</ID>
+		<Name>takehiro kashima</Name>
+		<Birthday>1980-07-06</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100306</ID>
+		<Name>sawao kato</Name>
+		<Birthday>1946-10-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100307</ID>
+		<Name>ryohei kato</Name>
+		<Birthday>1993-09-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100308</ID>
+		<Name>hisashi mizutori</Name>
+		<Birthday>1980-07-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100309</ID>
+		<Name>akinori nakayama</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100310</ID>
+		<Name>takashi ono</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100311</ID>
+		<Name>kenzo shirai</Name>
+		<Birthday>1996-08-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100312</ID>
+		<Name>masao takemoto</Name>
+		<Birthday>2019-09-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100313</ID>
+		<Name>yusuke tanaka</Name>
+		<Birthday>1989-11-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100314</ID>
+		<Name>mitsuo tsukahara</Name>
+		<Birthday>1947-12-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100315</ID>
+		<Name>naoya tsukahara</Name>
+		<Birthday>1977-06-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100316</ID>
+		<Name>hiroyuki tomita</Name>
+		<Birthday>1980-11-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100317</ID>
+		<Name>k_hei uchimura</Name>
+		<Birthday>1989-01-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100318</ID>
+		<Name>isao yoneda</Name>
+		<Birthday>1977-08-20</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100319</ID>
+		<Name>evgeni sapronenko</Name>
+		<Birthday>1978-11-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>lativa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100320</ID>
+		<Name>igors vihrovs</Name>
+		<Birthday>1978-06-06</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>lativa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100321</ID>
+		<Name>daniel corral</Name>
+		<Birthday>1990-01-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>mexico</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100322</ID>
+		<Name>yuri van gelder</Name>
+		<Birthday>1993-04-20</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>netherlands</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100323</ID>
+		<Name>jeffrey wammes</Name>
+		<Birthday>1987-04-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>netherlands</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100324</ID>
+		<Name>epke zonderland</Name>
+		<Birthday>1986-04-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>netherlands</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100325</ID>
+		<Name>pae gil-su</Name>
+		<Birthday>1972-03-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>north korea</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100326</ID>
+		<Name>ri se-gwang</Name>
+		<Birthday>1985-01-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>north korea</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100327</ID>
+		<Name>marian dr_gulescu</Name>
+		<Birthday>1980-12-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100328</ID>
+		<Name>ioan silviu suciu</Name>
+		<Birthday>1977-11-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100329</ID>
+		<Name>marius urzic_</Name>
+		<Birthday>1975-09-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100330</ID>
+		<Name>denis ablyazin</Name>
+		<Birthday>1992-08-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100331</ID>
+		<Name>nikolai andrianov</Name>
+		<Birthday>1952-10-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100332</ID>
+		<Name>aleksandr balandin</Name>
+		<Birthday>1989-06-20</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100333</ID>
+		<Name>david belyavskiy</Name>
+		<Birthday>1992-02-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100334</ID>
+		<Name>dmitry bilozerchev</Name>
+		<Birthday>1966-12-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100335</ID>
+		<Name>alexei bondarenko</Name>
+		<Birthday>1978-08-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100336</ID>
+		<Name>yuri busse</Name>
+		<Birthday>2001-07-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100337</ID>
+		<Name>artur dalaloyan</Name>
+		<Birthday>1996-04-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100338</ID>
+		<Name>emin garibov</Name>
+		<Birthday>1990-08-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100339</ID>
+		<Name>anton golotsutskov</Name>
+		<Birthday>1985-07-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100340</ID>
+		<Name>nikita ignatyev</Name>
+		<Birthday>1992-06-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100341</ID>
+		<Name>yuri korolev</Name>
+		<Birthday>1962-08-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100342</ID>
+		<Name>nikolai kryukov</Name>
+		<Birthday>1978-11-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100343</ID>
+		<Name>nikolai kuksenkov</Name>
+		<Birthday>1989-06-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100344</ID>
+		<Name>valeri liukin</Name>
+		<Birthday>1969-09-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100345</ID>
+		<Name>andrey makolov</Name>
+		<Birthday>1998-06-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100346</ID>
+		<Name>nikita nagornyy</Name>
+		<Birthday>1997-02-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100347</ID>
+		<Name>sergei naidin</Name>
+		<Birthday>2001-07-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100348</ID>
+		<Name>alexei nemov</Name>
+		<Birthday>1976-04-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100349</ID>
+		<Name>yuri ryazanov</Name>
+		<Birthday>1987-03-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100350</ID>
+		<Name>ivan stretovich</Name>
+		<Birthday>1996-10-06</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100351</ID>
+		<Name>boris shakhlin</Name>
+		<Birthday>1932-01-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100352</ID>
+		<Name>yuri titov</Name>
+		<Birthday>1935-11-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100353</ID>
+		<Name>aleksandr tkachyov</Name>
+		<Birthday>1957-10-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100354</ID>
+		<Name>mikhail voronin</Name>
+		<Birthday>1945-03-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100355</ID>
+		<Name>mitja petkov_ek</Name>
+		<Birthday>1977-02-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>slovenia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100356</ID>
+		<Name>miro cerar</Name>
+		<Birthday>1939-10-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>slovenia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100357</ID>
+		<Name>alja_ pegan</Name>
+		<Birthday>1974-06-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>slovenia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100358</ID>
+		<Name>leon _tukelj</Name>
+		<Birthday>1898-11-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>slovenia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100359</ID>
+		<Name>kim dae-eun</Name>
+		<Birthday>1984-09-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>south korea</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100360</ID>
+		<Name>yang hak-seon</Name>
+		<Birthday>1992-12-06</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>south korea</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100361</ID>
+		<Name>park min-soo</Name>
+		<Birthday>1994-11-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>south korea</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100362</ID>
+		<Name>yang tae-young</Name>
+		<Birthday>1980-07-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>south korea</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100363</ID>
+		<Name>joaqu�n blume</Name>
+		<Birthday>1933-06-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100364</ID>
+		<Name>gervasio deferr</Name>
+		<Birthday>1980-11-07</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100365</ID>
+		<Name>rafael martinez</Name>
+		<Birthday>1983-12-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100366</ID>
+		<Name>eugen mack</Name>
+		<Birthday>2007-09-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>switzerland</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100367</ID>
+		<Name>alexander beresch</Name>
+		<Birthday>1977-10-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100368</ID>
+		<Name>valeri goncharov</Name>
+		<Birthday>1977-09-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100369</ID>
+		<Name>igor radivilov</Name>
+		<Birthday>1992-10-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100370</ID>
+		<Name>oleg stepko</Name>
+		<Birthday>1994-03-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100371</ID>
+		<Name>oleg verniaiev</Name>
+		<Birthday>1993-09-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100372</ID>
+		<Name>brinn bevan</Name>
+		<Birthday>1997-06-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100373</ID>
+		<Name>daniel keatings</Name>
+		<Birthday>1990-01-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100374</ID>
+		<Name>sam oldham</Name>
+		<Birthday>1993-02-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100375</ID>
+		<Name>daniel purvis</Name>
+		<Birthday>1990-11-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100376</ID>
+		<Name>giarnni regini-moran</Name>
+		<Birthday>1998-08-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100377</ID>
+		<Name>louis smith</Name>
+		<Birthday>1989-04-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100378</ID>
+		<Name>kristian thomas</Name>
+		<Birthday>1989-02-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100379</ID>
+		<Name>max whitlock</Name>
+		<Birthday>1993-01-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100380</ID>
+		<Name>nile wilson</Name>
+		<Birthday>1996-01-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100381</ID>
+		<Name>alexander artemev</Name>
+		<Birthday>1985-08-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100382</ID>
+		<Name>raj bhavsar</Name>
+		<Birthday>1980-09-07</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100383</ID>
+		<Name>chris brooks</Name>
+		<Birthday>1986-12-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100384</ID>
+		<Name>bart conner</Name>
+		<Birthday>1958-03-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100385</ID>
+		<Name>tim daggett</Name>
+		<Birthday>1965-04-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100386</ID>
+		<Name>jacob dalton</Name>
+		<Birthday>1991-08-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100387</ID>
+		<Name>george eyser</Name>
+		<Birthday>1870-08-31</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100388</ID>
+		<Name>mitch gaylord</Name>
+		<Birthday>1961-03-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100389</ID>
+		<Name>morgan hamm</Name>
+		<Birthday>1982-09-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100390</ID>
+		<Name>paul hamm</Name>
+		<Birthday>1982-09-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100391</ID>
+		<Name>anton heida</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100392</ID>
+		<Name>johnathan horton</Name>
+		<Birthday>1985-12-31</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100393</ID>
+		<Name>danell leyva</Name>
+		<Birthday>1991-10-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100394</ID>
+		<Name>sam mikulak</Name>
+		<Birthday>1992-10-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100395</ID>
+		<Name>alexander naddour</Name>
+		<Birthday>1991-03-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100396</ID>
+		<Name>john orozco</Name>
+		<Birthday>1992-12-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100397</ID>
+		<Name>paul ruggeri</Name>
+		<Birthday>1988-11-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100398</ID>
+		<Name>justin spring</Name>
+		<Birthday>1984-03-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100399</ID>
+		<Name>kevin tan</Name>
+		<Birthday>1981-09-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100400</ID>
+		<Name>kurt thomas</Name>
+		<Birthday>1956-03-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100401</ID>
+		<Name>peter vidmar</Name>
+		<Birthday>1961-06-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100402</ID>
+		<Name>donnell whittenburg</Name>
+		<Birthday>1994-08-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100403</ID>
+		<Name>blaine wilson</Name>
+		<Birthday>1974-08-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100404</ID>
+		<Name>brandon wynn</Name>
+		<Birthday>1988-11-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>usa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100405</ID>
+		<Name>nikolai andrianov</Name>
+		<Birthday>1952-10-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100406</ID>
+		<Name>albert azaryan</Name>
+		<Birthday>1993-11-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100407</ID>
+		<Name>valery belenky</Name>
+		<Birthday>1969-09-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100408</ID>
+		<Name>dmitry bilozerchev</Name>
+		<Birthday>1966-12-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100409</ID>
+		<Name>viktor chukarin</Name>
+		<Birthday>2021-11-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100410</ID>
+		<Name>alexander dityatin</Name>
+		<Birthday>1957-08-07</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100411</ID>
+		<Name>yuri korolev</Name>
+		<Birthday>1962-08-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100412</ID>
+		<Name>valeri liukin</Name>
+		<Birthday>1969-09-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100413</ID>
+		<Name>boris shakhlin</Name>
+		<Birthday>1932-01-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100414</ID>
+		<Name>yuri titov</Name>
+		<Birthday>1935-11-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100415</ID>
+		<Name>aleksandr tkachyov</Name>
+		<Birthday>1957-10-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100416</ID>
+		<Name>mikhail voronin</Name>
+		<Birthday>1945-03-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100417</ID>
+		<Name>naazmi johnston</Name>
+		<Birthday>1988-11-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100418</ID>
+		<Name>janine murray</Name>
+		<Birthday>1990-03-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100419</ID>
+		<Name>danielle prince</Name>
+		<Birthday>1992-06-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100420</ID>
+		<Name>kasumi takahashi</Name>
+		<Birthday>1980-05-06</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>australia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100421</ID>
+		<Name>nicol ruprecht</Name>
+		<Birthday>1992-10-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>austria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100422</ID>
+		<Name>caroline weber</Name>
+		<Birthday>1986-05-31</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>austria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100423</ID>
+		<Name>marina durunda</Name>
+		<Birthday>1997-06-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>azerbaijan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100424</ID>
+		<Name>dinara gimatova</Name>
+		<Birthday>1986-11-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>azerbaijan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100425</ID>
+		<Name>anna gurbanova</Name>
+		<Birthday>1986-09-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>azerbaijan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100426</ID>
+		<Name>aliya garayeva</Name>
+		<Birthday>1988-01-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>azerbaijan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100427</ID>
+		<Name>zeynab javadli</Name>
+		<Birthday>1991-07-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>azerbaijan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100428</ID>
+		<Name>zhala piriyeva</Name>
+		<Birthday>2000-05-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>azerbaijan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100429</ID>
+		<Name>lala yusifova</Name>
+		<Birthday>1996-10-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>azerbaijan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100430</ID>
+		<Name>hanna bazhko</Name>
+		<Birthday>1998-07-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100431</ID>
+		<Name>liubov charkashyna</Name>
+		<Birthday>1987-12-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100432</ID>
+		<Name>arina charopa</Name>
+		<Birthday>1995-10-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100433</ID>
+		<Name>olga gontar</Name>
+		<Birthday>2019-01-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100434</ID>
+		<Name>katsiaryna halkina</Name>
+		<Birthday>1997-02-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100435</ID>
+		<Name>alina harnasko</Name>
+		<Birthday>2001-08-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100436</ID>
+		<Name>maria kadobina</Name>
+		<Birthday>1997-02-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100437</ID>
+		<Name>nataliya leshchyk</Name>
+		<Birthday>1995-07-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100438</ID>
+		<Name>marina lobatch</Name>
+		<Birthday>1970-06-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100439</ID>
+		<Name>larissa loukianenko</Name>
+		<Birthday>1973-08-07</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100440</ID>
+		<Name>aliaksandra narkevich</Name>
+		<Birthday>1995-12-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100441</ID>
+		<Name>tatiana ogrizko</Name>
+		<Birthday>1976-05-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100442</ID>
+		<Name>evgenia pavlina</Name>
+		<Birthday>1978-07-20</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100443</ID>
+		<Name>yulia raskina</Name>
+		<Birthday>1982-04-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100444</ID>
+		<Name>melitina staniouta</Name>
+		<Birthday>1993-11-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100445</ID>
+		<Name>elena tkachenko</Name>
+		<Birthday>1983-07-31</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100446</ID>
+		<Name>mariya trubach</Name>
+		<Birthday>1999-11-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100447</ID>
+		<Name>alina tumilovich</Name>
+		<Birthday>1990-04-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100448</ID>
+		<Name>inna zhukova</Name>
+		<Birthday>1986-09-06</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>belarus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100449</ID>
+		<Name>ang�lica kvieczynski</Name>
+		<Birthday>1991-09-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>brazil</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100450</ID>
+		<Name>nat�lia gaudio</Name>
+		<Birthday>1992-12-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>brazil</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100451</ID>
+		<Name>boyanka angelova</Name>
+		<Birthday>1994-10-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100452</ID>
+		<Name>diliana gueorguieva</Name>
+		<Birthday>1965-02-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100453</ID>
+		<Name>adriana dunavska</Name>
+		<Birthday>1970-04-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100454</ID>
+		<Name>maria gigova</Name>
+		<Birthday>1947-04-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100455</ID>
+		<Name>kristina guiourova</Name>
+		<Birthday>1959-02-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100456</ID>
+		<Name>lilia ignatova</Name>
+		<Birthday>1975-05-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100457</ID>
+		<Name>lyubomira kazanova</Name>
+		<Birthday>1996-05-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100458</ID>
+		<Name>boryana kaleyn</Name>
+		<Birthday>2000-08-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100459</ID>
+		<Name>reneta kamberova</Name>
+		<Birthday>1990-09-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100460</ID>
+		<Name>elizabeth koleva</Name>
+		<Birthday>1972-11-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100461</ID>
+		<Name>mihaela maevska</Name>
+		<Birthday>1990-10-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100462</ID>
+		<Name>katerina marinova</Name>
+		<Birthday>1999-07-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100463</ID>
+		<Name>mila marinova</Name>
+		<Birthday>1975-06-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100464</ID>
+		<Name>sylvia miteva</Name>
+		<Birthday>1986-06-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100465</ID>
+		<Name>tsvetelina naydenova</Name>
+		<Birthday>1994-04-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100466</ID>
+		<Name>elizabeth paisieva</Name>
+		<Birthday>1986-12-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100467</ID>
+		<Name>bianka panova</Name>
+		<Birthday>1970-05-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100468</ID>
+		<Name>maria petrova</Name>
+		<Birthday>1975-11-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100469</ID>
+		<Name>simona peycheva</Name>
+		<Birthday>1985-05-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100470</ID>
+		<Name>diana popova</Name>
+		<Birthday>1976-12-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100471</ID>
+		<Name>anelia ralenkova</Name>
+		<Birthday>1964-01-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100472</ID>
+		<Name>iliana raeva</Name>
+		<Birthday>1963-03-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100473</ID>
+		<Name>neshka robeva</Name>
+		<Birthday>1946-05-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100474</ID>
+		<Name>katrin taseva</Name>
+		<Birthday>1997-11-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100475</ID>
+		<Name>hristiana todorova</Name>
+		<Birthday>1994-11-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100476</ID>
+		<Name>julia trashlieva</Name>
+		<Birthday>1936-02-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100477</ID>
+		<Name>neviana vladinova</Name>
+		<Birthday>1994-02-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>bulgaria</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100478</ID>
+		<Name>patricia bezzoubenko</Name>
+		<Birthday>1997-02-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>canada</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100479</ID>
+		<Name>lori fung</Name>
+		<Birthday>1963-02-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>canada</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100480</ID>
+		<Name>maria kitkarska</Name>
+		<Birthday>1995-07-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>canada</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100481</ID>
+		<Name>alexandra orlando</Name>
+		<Birthday>1987-01-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>canada</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100482</ID>
+		<Name>mary sanders</Name>
+		<Birthday>1985-08-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>canada</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100483</ID>
+		<Name>deng senyue</Name>
+		<Birthday>1992-02-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100484</ID>
+		<Name>shang rong</Name>
+		<Birthday>2000-02-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100485</ID>
+		<Name>sun dan</Name>
+		<Birthday>1986-09-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100486</ID>
+		<Name>zhong ling</Name>
+		<Birthday>1983-10-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100487</ID>
+		<Name>zhang shuo</Name>
+		<Birthday>1984-01-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100488</ID>
+		<Name>zhao yating</Name>
+		<Birthday>2001-05-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100489</ID>
+		<Name>chrystalleni trikomiti</Name>
+		<Birthday>1993-11-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>cyprus</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100490</ID>
+		<Name>hana machatov�-bogu_ovsk�</Name>
+		<Birthday>1938-07-31</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>czech republic</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100491</ID>
+		<Name>dominika _ervenkov�</Name>
+		<Birthday>1988-04-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>czech republic</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100492</ID>
+		<Name>monika mickova</Name>
+		<Birthday>1991-07-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>czech republic</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100493</ID>
+		<Name>hana mi_echov�</Name>
+		<Birthday>1946-01-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>czech republic</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100494</ID>
+		<Name>jouki tikkanen</Name>
+		<Birthday>1995-07-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>finland</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100495</ID>
+		<Name>ekaterina volkova</Name>
+		<Birthday>1997-07-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>finland</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100496</ID>
+		<Name>nathalie fauquette</Name>
+		<Birthday>1987-03-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>france</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100497</ID>
+		<Name>delphine ledoux</Name>
+		<Birthday>1985-05-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>france</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100498</ID>
+		<Name>kseniya moustafaeva</Name>
+		<Birthday>1995-06-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>france</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100499</ID>
+		<Name>eva serrano</Name>
+		<Birthday>1978-04-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>france</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100500</ID>
+		<Name>irina gabashvili</Name>
+		<Birthday>1960-08-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>georgia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100501</ID>
+		<Name>salome pazhava</Name>
+		<Birthday>1997-09-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>georgia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100502</ID>
+		<Name>jana berezko-marggrander</Name>
+		<Birthday>1995-10-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100503</ID>
+		<Name>magdalena brzeska</Name>
+		<Birthday>1978-05-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100504</ID>
+		<Name>lisa ingildeeva</Name>
+		<Birthday>1988-12-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100505</ID>
+		<Name>laura jung</Name>
+		<Birthday>1995-06-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100506</ID>
+		<Name>ute lehmann</Name>
+		<Birthday/>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100507</ID>
+		<Name>edita schaufler</Name>
+		<Birthday>1980-07-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100508</ID>
+		<Name>carmen rischer</Name>
+		<Birthday>1956-05-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100509</ID>
+		<Name>christiana rosenberg</Name>
+		<Birthday>2005-05-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100510</ID>
+		<Name>regina weber</Name>
+		<Birthday>1963-04-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100511</ID>
+		<Name>eleni andriola</Name>
+		<Birthday>1986-11-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>greece</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100512</ID>
+		<Name>eleni kelaiditi</Name>
+		<Birthday>2000-04-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>greece</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100513</ID>
+		<Name>varvara filiou</Name>
+		<Birthday>1994-12-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>greece</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100514</ID>
+		<Name>linoy ashram</Name>
+		<Birthday>1999-05-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>israel</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100515</ID>
+		<Name>olena dvornichenko</Name>
+		<Birthday>1990-11-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>israel</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100516</ID>
+		<Name>victoria veinberg filanovsky</Name>
+		<Birthday>1995-02-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>israel</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100517</ID>
+		<Name>katia pisetsky</Name>
+		<Birthday>1986-02-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>israel</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100518</ID>
+		<Name>irina risenzon</Name>
+		<Birthday>1988-01-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>israel</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100519</ID>
+		<Name>neta rivkin</Name>
+		<Birthday>1991-06-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>israel</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100520</ID>
+		<Name>maria savenkov</Name>
+		<Birthday>1988-08-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>israel</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100521</ID>
+		<Name>rahel vigdozchik</Name>
+		<Birthday>1989-05-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>israel</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100522</ID>
+		<Name>veronika vitenberg</Name>
+		<Birthday>1988-09-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>israel</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100523</ID>
+		<Name>polina zakaluzny</Name>
+		<Birthday>1992-02-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>israel</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100524</ID>
+		<Name>nicol zelikman</Name>
+		<Birthday>2001-01-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>israel</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100525</ID>
+		<Name>alexandra agiurgiuculese</Name>
+		<Birthday>2001-01-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100526</ID>
+		<Name>milena baldassarri</Name>
+		<Birthday>2001-10-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100527</ID>
+		<Name>veronica bertolini</Name>
+		<Birthday>1995-10-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100528</ID>
+		<Name>elisa blanchi</Name>
+		<Birthday>1987-10-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100529</ID>
+		<Name>julieta cantaluppi</Name>
+		<Birthday>1985-01-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100530</ID>
+		<Name>romina laurito</Name>
+		<Birthday>1987-04-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100531</ID>
+		<Name>alessia maurelli</Name>
+		<Birthday>1996-08-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100532</ID>
+		<Name>marta pagnini</Name>
+		<Birthday>1991-01-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100533</ID>
+		<Name>elisa santoni</Name>
+		<Birthday>1987-12-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100534</ID>
+		<Name>anzhelika savrayuk</Name>
+		<Birthday>1989-08-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100535</ID>
+		<Name>andreea stefanescu</Name>
+		<Birthday>1993-12-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>italy</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100536</ID>
+		<Name>kaho minagawa</Name>
+		<Birthday>1997-08-20</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100537</ID>
+		<Name>airi hatakeyama</Name>
+		<Birthday>1994-08-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100538</ID>
+		<Name>sakura hayakawa</Name>
+		<Birthday>1997-03-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100539</ID>
+		<Name>sumire kita</Name>
+		<Birthday>2001-01-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100540</ID>
+		<Name>mao kunii</Name>
+		<Birthday>1996-04-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100541</ID>
+		<Name>rie matsubara</Name>
+		<Birthday>1993-10-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100542</ID>
+		<Name>sayuri sugimoto</Name>
+		<Birthday>1996-01-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100543</ID>
+		<Name>kiko yokota</Name>
+		<Birthday>1997-05-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>japan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100544</ID>
+		<Name>anna alyabyeva</Name>
+		<Birthday>1993-11-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>kazakhstan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100545</ID>
+		<Name>aliya assymova</Name>
+		<Birthday>1997-12-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>kazakhstan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100546</ID>
+		<Name>sabina ashirbayeva</Name>
+		<Birthday>1998-11-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>kazakhstan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100547</ID>
+		<Name>aliya yussupova</Name>
+		<Birthday>1984-04-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>kazakhstan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100548</ID>
+		<Name>cynthia valdez</Name>
+		<Birthday>1987-12-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>mexico</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100549</ID>
+		<Name>joanna mitrosz</Name>
+		<Birthday>1988-08-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>poland</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100550</ID>
+		<Name>aleksandra szutenberg</Name>
+		<Birthday>1988-10-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>poland</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100551</ID>
+		<Name>irina deleanu</Name>
+		<Birthday>1975-11-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100552</ID>
+		<Name>ana luiza filiorianu</Name>
+		<Birthday>1999-07-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100553</ID>
+		<Name>alexandra piscupescu</Name>
+		<Birthday>1994-06-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100554</ID>
+		<Name>doina st_iculescu</Name>
+		<Birthday>1967-01-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>romania</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100555</ID>
+		<Name>margarita aliychuk</Name>
+		<Birthday>1990-08-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100556</ID>
+		<Name>daria anenkova</Name>
+		<Birthday>1999-04-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100557</ID>
+		<Name>irina annenkova</Name>
+		<Birthday>1999-02-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100558</ID>
+		<Name>arina averina</Name>
+		<Birthday>1998-08-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100559</ID>
+		<Name>dina averina</Name>
+		<Birthday>1998-08-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100560</ID>
+		<Name>yulia barsukova</Name>
+		<Birthday>1978-12-31</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100561</ID>
+		<Name>yanina batyrchina</Name>
+		<Birthday>1979-10-07</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100562</ID>
+		<Name>galina beloglazova</Name>
+		<Birthday>1967-06-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100563</ID>
+		<Name>olga belova</Name>
+		<Birthday>1983-01-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100564</ID>
+		<Name>vera biryukova</Name>
+		<Birthday>1998-04-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100565</ID>
+		<Name>anastasia bliznyuk</Name>
+		<Birthday>1994-06-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100566</ID>
+		<Name>diana borisova</Name>
+		<Birthday>1997-03-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100567</ID>
+		<Name>iuliia bravikova</Name>
+		<Birthday>1999-07-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100568</ID>
+		<Name>irina devina</Name>
+		<Birthday>1959-05-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100569</ID>
+		<Name>daria dmitrieva</Name>
+		<Birthday>1993-06-22</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100570</ID>
+		<Name>uliana donskova</Name>
+		<Birthday>1992-08-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100571</ID>
+		<Name>tatiana druchinina</Name>
+		<Birthday>1969-04-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100572</ID>
+		<Name>daria dubova</Name>
+		<Birthday>1999-01-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100573</ID>
+		<Name>ksenia dudkina</Name>
+		<Birthday>1995-02-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100574</ID>
+		<Name>alina ermolova</Name>
+		<Birthday>2001-02-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100575</ID>
+		<Name>anna gavrilenko</Name>
+		<Birthday>1990-07-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100576</ID>
+		<Name>zarina gizikova</Name>
+		<Birthday>1985-06-20</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100577</ID>
+		<Name>tatiana gorbunova</Name>
+		<Birthday>1990-01-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100578</ID>
+		<Name>olga ilina</Name>
+		<Birthday>1995-01-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100579</ID>
+		<Name>victoria ilina</Name>
+		<Birthday>1999-03-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100580</ID>
+		<Name>alina kabaeva</Name>
+		<Birthday>1983-05-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100581</ID>
+		<Name>evgenia kanaeva</Name>
+		<Birthday>1990-04-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100582</ID>
+		<Name>olga kapranova</Name>
+		<Birthday>1987-12-06</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100583</ID>
+		<Name>elena karpuchina</Name>
+		<Birthday>1951-03-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100584</ID>
+		<Name>daria kondakova</Name>
+		<Birthday>1991-07-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100585</ID>
+		<Name>oxana kostina</Name>
+		<Birthday>1973-04-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100586</ID>
+		<Name>lala kramarenko</Name>
+		<Birthday>2004-12-06</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100587</ID>
+		<Name>yana kudryavtseva</Name>
+		<Birthday>1997-09-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100588</ID>
+		<Name>natalia lavrova</Name>
+		<Birthday>1984-08-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100589</ID>
+		<Name>natalia lipkovskaya</Name>
+		<Birthday>1979-04-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100590</ID>
+		<Name>yana lukonina</Name>
+		<Birthday>1993-09-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100591</ID>
+		<Name>margarita mamun</Name>
+		<Birthday>1995-11-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100592</ID>
+		<Name>alina makarenko</Name>
+		<Birthday>1995-01-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100593</ID>
+		<Name>anastasia maksimova</Name>
+		<Birthday>1991-06-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100594</ID>
+		<Name>alexandra merkulova</Name>
+		<Birthday>1995-11-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100595</ID>
+		<Name>anastasia nazarenko</Name>
+		<Birthday>1993-01-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100596</ID>
+		<Name>natalia pichuzhkina</Name>
+		<Birthday>1991-06-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100597</ID>
+		<Name>yelena posevina</Name>
+		<Birthday>1986-02-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100598</ID>
+		<Name>julia rosliakova</Name>
+		<Birthday>1975-01-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100599</ID>
+		<Name>natalia safonova</Name>
+		<Birthday>1999-07-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100600</ID>
+		<Name>ekaterina selezneva</Name>
+		<Birthday>1995-05-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100601</ID>
+		<Name>maria sergeeva</Name>
+		<Birthday>2001-02-07</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100602</ID>
+		<Name>vera sessina</Name>
+		<Birthday>1986-02-23</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100603</ID>
+		<Name>karolina sevastyanova</Name>
+		<Birthday>1995-04-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100604</ID>
+		<Name>daria shkurikhina</Name>
+		<Birthday>1990-10-03</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100605</ID>
+		<Name>polina shmatko</Name>
+		<Birthday>2003-03-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100606</ID>
+		<Name>galima shugurova</Name>
+		<Birthday>1953-11-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100607</ID>
+		<Name>sofya skomorokh</Name>
+		<Birthday>1999-08-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100608</ID>
+		<Name>aleksandra soldatova</Name>
+		<Birthday>1998-06-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100609</ID>
+		<Name>daria svatkovskaya</Name>
+		<Birthday>1996-12-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100610</ID>
+		<Name>anastasiia tatareva</Name>
+		<Birthday>1997-07-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100611</ID>
+		<Name>irina tchachina</Name>
+		<Birthday>1982-04-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100612</ID>
+		<Name>maria titova</Name>
+		<Birthday>1997-08-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100613</ID>
+		<Name>maria tolkacheva</Name>
+		<Birthday>1997-08-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100614</ID>
+		<Name>laysan utiasheva</Name>
+		<Birthday>1985-06-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100615</ID>
+		<Name>amina zaripova</Name>
+		<Birthday>1976-08-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100616</ID>
+		<Name>grace legote</Name>
+		<Birthday>1992-05-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>south africa</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100617</ID>
+		<Name>aja jerman</Name>
+		<Birthday>1999-08-20</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>slovenia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100618</ID>
+		<Name>monija cebasek</Name>
+		<Birthday>1997-04-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>slovenia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100619</ID>
+		<Name>sara kragulj</Name>
+		<Birthday>1996-10-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>slovenia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100620</ID>
+		<Name>spela kratochwill</Name>
+		<Birthday>1998-01-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>slovenia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100621</ID>
+		<Name>tja_a _eme</Name>
+		<Birthday>1986-11-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>slovenia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100622</ID>
+		<Name>shin soo-ji</Name>
+		<Birthday>1991-01-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>south korea</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100623</ID>
+		<Name>son yeon-jae</Name>
+		<Birthday>1994-05-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>south korea</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100624</ID>
+		<Name>galina beloglazova</Name>
+		<Birthday>1967-06-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100625</ID>
+		<Name>irina deriugina</Name>
+		<Birthday>1958-01-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100626</ID>
+		<Name>irina devina</Name>
+		<Birthday>1959-05-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100627</ID>
+		<Name>tatiana druchinina</Name>
+		<Birthday>1969-04-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100628</ID>
+		<Name>irina gabashvili</Name>
+		<Birthday>1960-08-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100629</ID>
+		<Name>elena karpuchina</Name>
+		<Birthday>1951-03-21</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100630</ID>
+		<Name>oxana kostina</Name>
+		<Birthday>1973-04-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100631</ID>
+		<Name>anna kotchneva</Name>
+		<Birthday>1970-01-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100632</ID>
+		<Name>dalia kutkait_</Name>
+		<Birthday>1965-02-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100633</ID>
+		<Name>tatiana kravtchenko</Name>
+		<Birthday>1936-06-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100634</ID>
+		<Name>marina lobatch</Name>
+		<Birthday>1970-06-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100635</ID>
+		<Name>alfia nazmutdinova</Name>
+		<Birthday>1949-04-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100636</ID>
+		<Name>ludmila savinkova</Name>
+		<Birthday>1936-01-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100637</ID>
+		<Name>galima shugurova</Name>
+		<Birthday>1953-11-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100638</ID>
+		<Name>oxana skaldina</Name>
+		<Birthday>1972-10-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100639</ID>
+		<Name>olexandra timoshenko</Name>
+		<Birthday>1972-02-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100640</ID>
+		<Name>elena tomas</Name>
+		<Birthday>1961-01-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>soviet union</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100641</ID>
+		<Name>carmen acedo</Name>
+		<Birthday>1975-01-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100642</ID>
+		<Name>sandra aguilar</Name>
+		<Birthday>1992-08-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100643</ID>
+		<Name>marta bald�</Name>
+		<Birthday>1979-04-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100644</ID>
+		<Name>nuria cabanillas</Name>
+		<Birthday>1980-08-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100645</ID>
+		<Name>almudena cid</Name>
+		<Birthday>1980-06-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100646</ID>
+		<Name>artemi gavezou</Name>
+		<Birthday>1994-06-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100647</ID>
+		<Name>estela gim�nez</Name>
+		<Birthday>1979-03-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100648</ID>
+		<Name>lorena gur�ndez</Name>
+		<Birthday>1981-05-07</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100649</ID>
+		<Name>tania lamarca</Name>
+		<Birthday>1980-04-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100650</ID>
+		<Name>elena l�pez</Name>
+		<Birthday>1994-10-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100651</ID>
+		<Name>est�baliz mart�nez</Name>
+		<Birthday>1980-05-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100652</ID>
+		<Name>lourdes mohedano</Name>
+		<Birthday>1995-06-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100653</ID>
+		<Name>carolina pascual</Name>
+		<Birthday>1976-06-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100654</ID>
+		<Name>alejandra quereda</Name>
+		<Birthday>1992-07-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100655</ID>
+		<Name>carolina rodr�guez</Name>
+		<Birthday>1986-05-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>spain</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100656</ID>
+		<Name>anna bessonova</Name>
+		<Birthday>1984-07-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100657</ID>
+		<Name>irina deriugina</Name>
+		<Birthday>1958-01-11</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100658</ID>
+		<Name>olena diachenko</Name>
+		<Birthday>2001-06-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100659</ID>
+		<Name>olena dmytrash</Name>
+		<Birthday>1991-12-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100660</ID>
+		<Name>natalia godunko</Name>
+		<Birthday>1984-12-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100661</ID>
+		<Name>yevgeniya gomon</Name>
+		<Birthday>1995-03-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100662</ID>
+		<Name>oleksandra gridasova</Name>
+		<Birthday>1995-07-05</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100663</ID>
+		<Name>kateryna lutsenko</Name>
+		<Birthday>1995-09-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100664</ID>
+		<Name>alina maksimenko</Name>
+		<Birthday>1991-07-10</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100665</ID>
+		<Name>viktoria mazur</Name>
+		<Birthday>1994-10-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100666</ID>
+		<Name>anastasiia mulmina</Name>
+		<Birthday>1997-04-27</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100667</ID>
+		<Name>ludmila savinkova</Name>
+		<Birthday>1936-01-01</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100668</ID>
+		<Name>oxana skaldina</Name>
+		<Birthday>1972-10-24</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100669</ID>
+		<Name>ekaterina serebrianskaya</Name>
+		<Birthday>1977-10-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100670</ID>
+		<Name>olexandra timoshenko</Name>
+		<Birthday>1972-02-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100671</ID>
+		<Name>olena vitrichenko</Name>
+		<Birthday>1976-11-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100672</ID>
+		<Name>ganna rizatdinova</Name>
+		<Birthday>1993-07-16</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100673</ID>
+		<Name>eleonora romanova</Name>
+		<Birthday>1998-08-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100674</ID>
+		<Name>tamara yerofeeva</Name>
+		<Birthday>1982-03-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100675</ID>
+		<Name>laura halford</Name>
+		<Birthday>1996-02-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100676</ID>
+		<Name>francesca jones</Name>
+		<Birthday>1990-11-09</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100677</ID>
+		<Name>stephani sherlock</Name>
+		<Birthday>1996-09-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united kingdom</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100678</ID>
+		<Name>jasmine kerber</Name>
+		<Birthday>1996-04-12</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united states</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100679</ID>
+		<Name>mary sanders</Name>
+		<Birthday>1985-08-26</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united states</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100680</ID>
+		<Name>laura zeng</Name>
+		<Birthday>1999-10-14</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united states</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100681</ID>
+		<Name>julie zetlin</Name>
+		<Birthday>1990-06-30</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>united states</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100682</ID>
+		<Name>valeriya davidova</Name>
+		<Birthday>1997-12-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>uzbekistan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100683</ID>
+		<Name>elizaveta nazarenkova</Name>
+		<Birthday>1995-08-17</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>uzbekistan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100684</ID>
+		<Name>anastasiya serdyukova</Name>
+		<Birthday>1997-05-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>uzbekistan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100685</ID>
+		<Name>djamila rakhmatova</Name>
+		<Birthday>1990-09-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>uzbekistan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100686</ID>
+		<Name>ulyana trofimova</Name>
+		<Birthday>1990-02-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>uzbekistan</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100687</ID>
+		<Name>milena reljin</Name>
+		<Birthday>1967-05-25</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>yugoslavia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100688</ID>
+		<Name>karen cockburn</Name>
+		<Birthday>1980-10-02</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>canada</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100689</ID>
+		<Name>rosie maclennan</Name>
+		<Birthday>1989-08-28</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>canada</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100690</ID>
+		<Name>he wenna</Name>
+		<Birthday>1989-01-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100691</ID>
+		<Name>huang shanshan</Name>
+		<Birthday>1986-01-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100692</ID>
+		<Name>li dan</Name>
+		<Birthday>1988-09-19</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100693</ID>
+		<Name>anna dogonadze</Name>
+		<Birthday>1973-02-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100694</ID>
+		<Name>irina karavayeva</Name>
+		<Birthday>1975-05-18</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100695</ID>
+		<Name>dong dong</Name>
+		<Birthday>1989-04-13</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100696</ID>
+		<Name>lu chunlong</Name>
+		<Birthday>1989-04-08</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>china</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100697</ID>
+		<Name>henrik stehlik</Name>
+		<Birthday>1980-12-29</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>germany</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100698</ID>
+		<Name>alexander moskalenko</Name>
+		<Birthday>1969-11-04</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100699</ID>
+		<Name>dmitry ushakov</Name>
+		<Birthday>1988-08-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>russia</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+	<Athlete>
+		<ID>G-100700</ID>
+		<Name>yuri nikitin</Name>
+		<Birthday>1978-07-15</Birthday>
+		<PlaceOfBirth/>
+		<Sex/>
+		<Nationality>ukraine</Nationality>
+		<Weight/>
+		<Height/>
+		<OlympicParticipations/>
+	</Athlete>
+</WinningAthletes>
