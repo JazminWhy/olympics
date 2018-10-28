@@ -35,6 +35,7 @@ public class AthleteParticipationMedal_inclYearDiscipline_Comparator implements 
 		Collections.sort(b_list, new ParticipationSortingComparer());
 		
 		int same = 0;
+		
 		int total = Math.max(a_list.size(), b_list.size());
 		for (OlympicParticipation a : a_list) {
 			String medal_a = a.getMedal();
