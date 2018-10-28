@@ -52,7 +52,7 @@ public class AthleteParticipationMedalComparator implements Comparator<Athlete, 
 			}
 		}
 
-		for (OlympicParticipation b : record1.getOlympicParticipations()) {
+		for (OlympicParticipation b : record2.getOlympicParticipations()) {
 			switch (b.getMedal()) {
 			case "gold":
 				goldB++;
@@ -75,7 +75,7 @@ public class AthleteParticipationMedalComparator implements Comparator<Athlete, 
 		int difBronze = Math.abs(bronzeA - bronzeB);
 		int difSum = difGold + difSilver +difBronze;
 		
-		double similarity = 1 / 1 + difSum;
+		double similarity = 1 / (1 + difSum);
 
 		if (this.comparisonLog != null) {
 			this.comparisonLog.setComparatorName(getClass().getName());
