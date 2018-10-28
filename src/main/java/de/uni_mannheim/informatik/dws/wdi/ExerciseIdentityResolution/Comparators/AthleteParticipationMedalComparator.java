@@ -52,7 +52,7 @@ public class AthleteParticipationMedalComparator implements Comparator<Athlete, 
 			}
 		}
 
-		for (OlympicParticipation b : record1.getOlympicParticipations()) {
+		for (OlympicParticipation b : record2.getOlympicParticipations()) {
 			switch (b.getMedal()) {
 			case "gold":
 				goldB++;
