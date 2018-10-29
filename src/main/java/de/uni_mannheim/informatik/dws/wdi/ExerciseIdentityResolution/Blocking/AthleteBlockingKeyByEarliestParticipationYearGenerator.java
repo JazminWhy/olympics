@@ -48,7 +48,7 @@ public class AthleteBlockingKeyByEarliestParticipationYearGenerator extends
 			DataIterator<Pair<String, Athlete>> resultCollector) {
 		Set<String> OlympicParticipations1 = new HashSet<>();
 		for(OlympicParticipation a : record.getOlympicParticipations()) {
-			OlympicParticipations1.add(a.getYear()+a.getOlympicTeam());
+			OlympicParticipations1.add(a.getYear()+record.getNationality());
 		}
 		
 		resultCollector.next(new Pair<>(Collections.min(OlympicParticipations1), record));
