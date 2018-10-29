@@ -77,7 +77,7 @@ public class IR_kaggle_fig_linear_combination_2
 		
 		// load the training set
 		MatchingGoldStandard kfTraining = new MatchingGoldStandard();
-		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_kaggle_figshare_pre.csv"));
+		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_kaggle_figshare_merged.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
@@ -121,7 +121,7 @@ public class IR_kaggle_fig_linear_combination_2
 		System.out.println("*\n*\tLoading gold standard\n*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_kaggle_figshare_pre.csv"));
+				"data/goldstandard/gs_kaggle_figshare_merged.csv"));
 		
 		System.out.println("*\n*\tEvaluating result\n*");
 		// evaluate your result
