@@ -8,6 +8,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.At
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByEarliestParticipationYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteParticipationMedalComparator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteParticipationMedal_inclYearDiscipline_Comparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.AthleteXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipation;
@@ -87,7 +88,7 @@ public class IR_linear_combination_test
 		
 		// add comparators
 		matchingRule.addComparator(new AthleteNameComparatorJaccard(), 0.7);
-		matchingRule.addComparator(new AthleteParticipationMedalComparator(), 0.3);
+		matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator(), 0.3);
 		
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByEarliestParticipationYearGenerator());
