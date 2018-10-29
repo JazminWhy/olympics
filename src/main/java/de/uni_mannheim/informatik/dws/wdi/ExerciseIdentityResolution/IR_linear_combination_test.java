@@ -82,7 +82,7 @@ public class IR_linear_combination_test
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.7);
+				0.5);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, kfTraining);
 		
 		// add comparators
