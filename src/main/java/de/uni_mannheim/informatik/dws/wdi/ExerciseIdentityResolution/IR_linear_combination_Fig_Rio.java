@@ -6,7 +6,11 @@ import org.apache.logging.log4j.Logger;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByBirthdayYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByEarliestParticipationYearGenerator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByNameFirstLetters;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByNationality;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorNGramJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteParticipationMedalComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.AthleteXMLReader;
@@ -50,12 +54,12 @@ public class IR_linear_combination_Fig_Rio
 		// loading data
     	// Test 3
 		System.out.println("*\n*\tLoading datasets\n*");
-		HashedDataSet<Athlete, Attribute> dataAthletesKaggle = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_Kaggle_Final.xml"), "/WinningAthletes/Athlete", dataAthletesKaggle);
+		HashedDataSet<Athlete, Attribute> dataAthletesRio = new HashedDataSet<>();
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181025_Rio_Final.xml"), "/WinningAthletes/Athlete", dataAthletesRio);
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
 		
-		Athlete a = dataAthletesKaggle.getRecord("K-100001");
+		Athlete a = dataAthletesRio.getRecord("R-100001");
 		Athlete p = dataAthletesFigshare.getRecord("fig_10004");		
 		
 		//for(int i =0; i < op.size(); i++) {
@@ -77,20 +81,20 @@ public class IR_linear_combination_Fig_Rio
 		//System.out.println(dataOlympicParticipation.size());
 		
 		// load the training set
-		MatchingGoldStandard kfTraining = new MatchingGoldStandard();
-		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_kaggle_figshare_pre.csv"));
+		MatchingGoldStandard riofTraining = new MatchingGoldStandard();
+		riofTraining.loadFromCSVFile(new File("data/goldstandard/gs_rio_fig.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
 				0.5);
-		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, kfTraining);
+		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, riofTraining);
 		
 		// add comparators
-		matchingRule.addComparator(new AthleteNameComparatorJaccard(), 0.7);
-		matchingRule.addComparator(new AthleteParticipationMedalComparator(), 0.3);
+		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(2), 0.7);
+		matchingRule.addComparator(new AthleteNameComparatorEqual(), 0.3);
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByEarliestParticipationYearGenerator());
+		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNationality());
 //		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
 //		SortedNeighbourhoodBlocker<Athlete, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new AthleteBlockingKeyByEarliestParticipationYearGenerator(), 1500);
 		blocker.setMeasureBlockSizes(true);
@@ -103,7 +107,7 @@ public class IR_linear_combination_Fig_Rio
 		// Execute the matching
 		System.out.println("*\n*\tRunning identity resolution\n*");
 		Processable<Correspondence<Athlete, Attribute>> correspondences = engine.runIdentityResolution(
-				dataAthletesKaggle, dataAthletesFigshare, null, matchingRule,
+				dataAthletesRio, dataAthletesFigshare, null, matchingRule,
 				blocker);
 
 		// Create a top-1 global matching
@@ -115,13 +119,13 @@ public class IR_linear_combination_Fig_Rio
 		// correspondences = maxWeight.getResult();
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/kaggle_figshare_Athlete_correspondences_top_2.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/rio_figshare_Athlete_correspondences_top_2.csv"), correspondences);
 
 		// load the gold standard (test set)
 		System.out.println("*\n*\tLoading gold standard\n*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_kaggle_figshare_pre.csv"));
+				"data/goldstandard/gs_rio_fig.csv"));
 		
 		System.out.println("*\n*\tEvaluating result\n*");
 		// evaluate your result
@@ -130,7 +134,7 @@ public class IR_linear_combination_Fig_Rio
 				gsTest);
 
 		// print the evaluation result
-		System.out.println("Academy Awards <-> Actors");
+		System.out.println("Rio <-> Figshare");
 		System.out.println(String.format(
 				"Precision: %.4f",perfTest.getPrecision()));
 		System.out.println(String.format(
