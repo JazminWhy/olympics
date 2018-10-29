@@ -1,3 +1,4 @@
+package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 //package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 //
 //import java.io.File;
