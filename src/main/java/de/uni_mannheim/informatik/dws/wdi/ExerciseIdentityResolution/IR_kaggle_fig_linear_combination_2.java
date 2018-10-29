@@ -81,13 +81,13 @@ public class IR_kaggle_fig_linear_combination_2
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.6);
+				0.5);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, kfTraining);
 		
 		// add comparators
 		//matchingRule.addComparator(new AthleteNameComparatorJaccard(), 0.3);
-		matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator(), 0.6);
-		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.4);
+		matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator(), 0.5);
+		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.5);
 		
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByEarliestParticipationYearGenerator());

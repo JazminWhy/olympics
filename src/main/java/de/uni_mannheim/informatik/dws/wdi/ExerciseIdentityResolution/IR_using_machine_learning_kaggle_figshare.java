@@ -63,8 +63,8 @@ public class IR_using_machine_learning_kaggle_figshare {
 		Athlete p = dataAthletesFigshare.getRecord("fig_10004");	
 
 		// create a matching rule
-		String options[] = new String[] { "-S" };
-		String modelType = "SimpleLogistic"; // use a logistic regression
+		String options[] = new String[] { "-K" };
+		String modelType = "NaiveBayes"; // use a logistic regression
 		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000);
 		
@@ -76,7 +76,7 @@ public class IR_using_machine_learning_kaggle_figshare {
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_academy_awards_2_actors_training.csv")); //TODO
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_kaggle_figshare_merged.csv")); //TODO
 
 		// train the matching rule's model
 		System.out.println("*\n*\tLearning matching rule\n*");
@@ -105,7 +105,7 @@ public class IR_using_machine_learning_kaggle_figshare {
 		System.out.println("*\n*\tLoading gold standard\n*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_academy_awards_2_actors_test.csv"));
+				"data/goldstandard/gs_kaggle_figshare_merged.csv"));
 		
 		// evaluate your result
 		System.out.println("*\n*\tEvaluating result\n*");
