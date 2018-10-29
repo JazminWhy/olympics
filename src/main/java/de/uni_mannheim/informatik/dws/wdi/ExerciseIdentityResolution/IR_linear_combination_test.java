@@ -78,7 +78,7 @@ public class IR_linear_combination_test
 		
 		// load the training set
 		MatchingGoldStandard kfTraining = new MatchingGoldStandard();
-		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_kaggle_figshare_pre.csv"));
+		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_20181028_kaggle_figshare_hendrik.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
@@ -121,7 +121,7 @@ public class IR_linear_combination_test
 		System.out.println("*\n*\tLoading gold standard\n*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_kaggle_figshare_pre.csv"));
+				"data/goldstandard/Gs_20181028_Kaggle_figshare_Hendrik.csv"));
 		
 		System.out.println("*\n*\tEvaluating result\n*");
 		// evaluate your result
@@ -130,7 +130,7 @@ public class IR_linear_combination_test
 				gsTest);
 
 		// print the evaluation result
-		System.out.println("Academy Awards <-> Actors");
+		System.out.println("Kaggle <-> figshare");
 		System.out.println(String.format(
 				"Precision: %.4f",perfTest.getPrecision()));
 		System.out.println(String.format(
