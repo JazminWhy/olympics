@@ -39,6 +39,11 @@ public class AthleteParticipationMedal_inclYearDiscipline_Comparator implements 
 		
 		int same = 0;
 		
+		//do not take into account games that are only in figshare
+		for (OlympicParticipation i : b_list) {
+			if (i.getYear() == 2016||i.getYear() == 1906) b_list.remove(i);
+		}
+		
 		int total = Math.max(a_list.size(), b_list.size());
 		for (OlympicParticipation a : a_list) {
 			String medal_a = a.getMedal();
