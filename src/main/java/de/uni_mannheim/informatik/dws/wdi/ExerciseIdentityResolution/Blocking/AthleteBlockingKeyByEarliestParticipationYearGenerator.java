@@ -29,7 +29,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 //
 ///**
 // * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
-// * key based on the year.
+// * key based on the year and nationality.
 // * 
 // * @author Hendrik Roeder
 // * 
@@ -48,7 +48,14 @@ public class AthleteBlockingKeyByEarliestParticipationYearGenerator extends
 			DataIterator<Pair<String, Athlete>> resultCollector) {
 		Set<String> OlympicParticipations1 = new HashSet<>();
 		for(OlympicParticipation a : record.getOlympicParticipations()) {
-			OlympicParticipations1.add(a.getYear()+record.getNationality());
+			//The games of the year 1906 do not exist in the kaggle dataset, however there might be athletes in the figshare dataset
+			//that competed in 1906 and again later on. Using the large value 20.000 > 2016 in combination with later on taking the minimum of year
+			//means that if there is a year after 1906 we find this, if not there cannot be a match anyway as the person only competed in 1906
+			if (a.getYear() == 1906) {
+				OlympicParticipations1.add(20000 + record.getNationality());
+			} else {
+				OlympicParticipations1.add(a.getYear() + record.getNationality());
+			}
 		}
 		
 		resultCollector.next(new Pair<>(Collections.min(OlympicParticipations1), record));
