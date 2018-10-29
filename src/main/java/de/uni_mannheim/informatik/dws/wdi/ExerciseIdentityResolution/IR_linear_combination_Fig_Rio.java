@@ -8,7 +8,6 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.At
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByEarliestParticipationYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteParticipationMedalComparator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteParticipationMedal_inclYearDiscipline_Comparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.AthleteXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipation;
@@ -29,7 +28,7 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 
-public class IR_linear_combination_test 
+public class IR_linear_combination_Fig_Rio 
 {
 	/*
 	 * Logging Options:
@@ -79,7 +78,7 @@ public class IR_linear_combination_test
 		
 		// load the training set
 		MatchingGoldStandard kfTraining = new MatchingGoldStandard();
-		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_20181028_kaggle_figshare_hendrik.csv"));
+		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_kaggle_figshare_pre.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
@@ -88,7 +87,7 @@ public class IR_linear_combination_test
 		
 		// add comparators
 		matchingRule.addComparator(new AthleteNameComparatorJaccard(), 0.7);
-		matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator(), 0.3);
+		matchingRule.addComparator(new AthleteParticipationMedalComparator(), 0.3);
 		
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByEarliestParticipationYearGenerator());
@@ -122,7 +121,7 @@ public class IR_linear_combination_test
 		System.out.println("*\n*\tLoading gold standard\n*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/Gs_20181028_Kaggle_figshare_Hendrik.csv"));
+				"data/goldstandard/gs_kaggle_figshare_pre.csv"));
 		
 		System.out.println("*\n*\tEvaluating result\n*");
 		// evaluate your result
@@ -131,7 +130,7 @@ public class IR_linear_combination_test
 				gsTest);
 
 		// print the evaluation result
-		System.out.println("Kaggle <-> figshare");
+		System.out.println("Academy Awards <-> Actors");
 		System.out.println(String.format(
 				"Precision: %.4f",perfTest.getPrecision()));
 		System.out.println(String.format(
