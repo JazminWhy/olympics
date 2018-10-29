@@ -52,7 +52,7 @@ public class IR_kaggle_fig_linear_combination_2
 		HashedDataSet<Athlete, Attribute> dataAthletesKaggle = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_Kaggle_Final.xml"), "/WinningAthletes/Athlete", dataAthletesKaggle);
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
 		
 		Athlete a = dataAthletesKaggle.getRecord("K-100001");
 		Athlete p = dataAthletesFigshare.getRecord("fig_10004");		
