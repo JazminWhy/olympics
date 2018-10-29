@@ -29,7 +29,7 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 
-public class IR_linear_combination_test 
+public class IR_linear_combination_Kaggle_Fig_Hendrik 
 {
 	/*
 	 * Logging Options:
@@ -54,7 +54,7 @@ public class IR_linear_combination_test
 		HashedDataSet<Athlete, Attribute> dataAthletesKaggle = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_Kaggle_Final.xml"), "/WinningAthletes/Athlete", dataAthletesKaggle);
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
 		
 		Athlete a = dataAthletesKaggle.getRecord("K-100001");
 		Athlete p = dataAthletesFigshare.getRecord("fig_10004");		
