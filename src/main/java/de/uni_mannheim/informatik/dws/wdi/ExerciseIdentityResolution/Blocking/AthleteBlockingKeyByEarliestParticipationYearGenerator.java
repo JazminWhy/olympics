@@ -52,9 +52,9 @@ public class AthleteBlockingKeyByEarliestParticipationYearGenerator extends
 			//that competed in 1906 and again later on. Using the large value 20.000 > 2016 in combination with later on taking the minimum of year
 			//means that if there is a year after 1906 we find this, if not there cannot be a match anyway as the person only competed in 1906
 			if (a.getYear() == 1906) {
-				OlympicParticipations1.add(20000 + record.getNationality());
+				OlympicParticipations1.add(20000 + record.getNationality().toLowerCase());
 			} else {
-				OlympicParticipations1.add(a.getYear() + record.getNationality());
+				OlympicParticipations1.add(a.getYear() + record.getNationality().toLowerCase());
 			}
 		}
 		
