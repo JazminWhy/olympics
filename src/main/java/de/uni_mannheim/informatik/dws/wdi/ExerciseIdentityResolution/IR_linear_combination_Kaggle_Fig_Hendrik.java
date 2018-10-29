@@ -7,8 +7,11 @@ import org.apache.logging.log4j.Logger;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByBirthdayYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByEarliestParticipationYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorNGramJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteParticipationMedalComparator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteParticipationMedalYearDisciplineTeamComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteParticipationMedal_inclYearDiscipline_Comparator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteSexComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.AthleteXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipation;
@@ -54,10 +57,7 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 		HashedDataSet<Athlete, Attribute> dataAthletesKaggle = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_Kaggle_Final.xml"), "/WinningAthletes/Athlete", dataAthletesKaggle);
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
-		
-		Athlete a = dataAthletesKaggle.getRecord("K-100001");
-		Athlete p = dataAthletesFigshare.getRecord("fig_10004");		
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);		
 		
 		//for(int i =0; i < op.size(); i++) {
 		//	OlympicParticipation op1 = (OlympicParticipation) op.get(0);
@@ -79,16 +79,17 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 		
 		// load the training set
 		MatchingGoldStandard kfTraining = new MatchingGoldStandard();
-		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_20181028_kaggle_figshare_hendrik.csv"));
+		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_kaggle_figshare_merged.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.5);
+				0.7);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, kfTraining);
 		
 		// add comparators
-		matchingRule.addComparator(new AthleteNameComparatorJaccard(), 0.7);
-		matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator(), 0.3);
+		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.5);
+		matchingRule.addComparator(new AthleteParticipationMedalYearDisciplineTeamComparator(), 0.3);
+		matchingRule.addComparator(new AthleteSexComparator(), 0.2);
 		
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByEarliestParticipationYearGenerator());
@@ -122,7 +123,7 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 		System.out.println("*\n*\tLoading gold standard\n*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/Gs_20181028_Kaggle_figshare_Hendrik.csv"));
+				"data/goldstandard/gs_kaggle_figshare_merged.csv"));
 		
 		System.out.println("*\n*\tEvaluating result\n*");
 		// evaluate your result
