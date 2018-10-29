@@ -1,12 +1,9 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.LinkedList;
-import java.util.List;
-
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipation;
+
+import java.util.*;
+
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.Comparator;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.ComparatorLogger;
@@ -29,7 +26,12 @@ public class AthleteParticipationMedal_inclYearDiscipline_Comparator implements 
 //		Set<String> participationMedals2 = new HashSet<>();
 //		
 		List<OlympicParticipation> a_list = record1.getOlympicParticipations();
-		List<OlympicParticipation> b_list = record2.getOlympicParticipations();
+		List<OlympicParticipation> b_list_original = record2.getOlympicParticipations();
+		
+		List<OlympicParticipation> b_list = new ArrayList<OlympicParticipation>();
+		for (OlympicParticipation i : b_list_original) {
+		    b_list.add(i);
+		}
 		
 		Collections.sort(a_list, new ParticipationSortingComparer());
 		Collections.sort(b_list, new ParticipationSortingComparer());
