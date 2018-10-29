@@ -2883,17 +2883,6 @@
 		<OlympicParticipations/>
 	</Athlete>
 	<Athlete>
-		<ID>A-100263</ID>
-		<Name>name</Name>
-		<Birthday/>
-		<PlaceOfBirth/>
-		<Sex>female</Sex>
-		<Nationality>country</Nationality>
-		<Weight/>
-		<Height/>
-		<OlympicParticipations/>
-	</Athlete>
-	<Athlete>
 		<ID>A-100264</ID>
 		<Name>da silva, tânia</Name>
 		<Birthday>1986-12-17</Birthday>
@@ -11221,17 +11210,6 @@
 		<OlympicParticipations/>
 	</Athlete>
 	<Athlete>
-		<ID>A-101021</ID>
-		<Name>name</Name>
-		<Birthday/>
-		<PlaceOfBirth/>
-		<Sex>female</Sex>
-		<Nationality>country</Nationality>
-		<Weight/>
-		<Height/>
-		<OlympicParticipations/>
-	</Athlete>
-	<Athlete>
 		<ID>A-101022</ID>
 		<Name>qieyang, shijie</Name>
 		<Birthday>1990-11-11</Birthday>
@@ -13834,17 +13812,6 @@
 		<PlaceOfBirth/>
 		<Sex>female</Sex>
 		<Nationality>ethiopia</Nationality>
-		<Weight/>
-		<Height/>
-		<OlympicParticipations/>
-	</Athlete>
-	<Athlete>
-		<ID>A-101259</ID>
-		<Name>name</Name>
-		<Birthday/>
-		<PlaceOfBirth/>
-		<Sex>female</Sex>
-		<Nationality>country</Nationality>
 		<Weight/>
 		<Height/>
 		<OlympicParticipations/>
