@@ -23,20 +23,26 @@ public class AthleteParticipationMedal_inclYearDiscipline_Comparator implements 
 	private ComparatorLogger comparisonLog;
 	
 	private boolean compareDiscipline(String disc1, String disc2) {
+		boolean toBeReturned = false;
 		
 		try {
-			CSVReader reader = new CSVReader(new FileReader("20181025_discipline mapping_final.csv"));
+			CSVReader reader = new CSVReader(new FileReader("data/input/20181025_discipline mapping_final.csv"));
 			List<String[]> DisciplineMapping = reader.readAll();
 			for (String[] string : DisciplineMapping) {
-				if (string[0].equals(disc1)) {
-					return string[1].equals(disc2);
+				//System.out.println(string[0] + " - " + disc1);
+				//System.out.println(string[1] + " - " + disc2);
+				if (string[0].equalsIgnoreCase(disc1)) {
+					//System.out.println(string[0] + " - " + disc1);
+					//System.out.println(string[1] + " - " + disc2);
+					//System.out.println(string[1].equalsIgnoreCase(disc2));
+					toBeReturned = string[1].equalsIgnoreCase(disc2);
 				}
 			}
 			return false;
 		} catch (Exception e) {
-			
+			e.printStackTrace();
 		} finally {
-			return false;
+			return toBeReturned;
 		}
 	}
 	
@@ -52,22 +58,18 @@ public class AthleteParticipationMedal_inclYearDiscipline_Comparator implements 
 		List<OlympicParticipation> a_list = record1.getOlympicParticipations();
 		List<OlympicParticipation> b_list_original = record2.getOlympicParticipations();
 		
+		//do not take into account games that are only in figshare
 		List<OlympicParticipation> b_list = new ArrayList<OlympicParticipation>();
 		for (OlympicParticipation i : b_list_original) {
-		    b_list.add(i);
+			if ((i.getYear() != 2016) && (i.getYear() != 1906)) {
+				b_list.add(i);
+			}
 		}
 		
 		Collections.sort(a_list, new ParticipationSortingComparer());
 		Collections.sort(b_list, new ParticipationSortingComparer());
 		
-		
 		int same = 0;
-		
-		//do not take into account games that are only in figshare
-		for (OlympicParticipation i : b_list) {
-			if (i.getYear() == 2016||i.getYear() == 1906) b_list.remove(i);
-		}
-		
 		
 		int total = Math.max(a_list.size(), b_list.size());
 		for (OlympicParticipation a : a_list) {
@@ -80,10 +82,12 @@ public class AthleteParticipationMedal_inclYearDiscipline_Comparator implements 
 				int year_b = b.getYear();
 				String discipline_b = b.getDisciplines();
 				String participation_b = medal_b + year_b;
-				if (participation_a.equals(participation_b) && compareDiscipline(discipline_a, discipline_b)) {
-					same++;
-					b_list.remove(b);
-					break;
+				if (participation_a.equals(participation_b)) {
+					if (compareDiscipline(discipline_a, discipline_b)) {
+						same++;
+						b_list.remove(b);
+						break;
+					}
 				}
 			}
 		}
@@ -100,7 +104,7 @@ public class AthleteParticipationMedal_inclYearDiscipline_Comparator implements 
 
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
-
+		
 		return similarity;
 	}
 
