@@ -77,19 +77,19 @@ public class IR_kaggle_fig_linear_combination_2
 		
 		// load the training set
 		MatchingGoldStandard kfTraining = new MatchingGoldStandard();
-		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_kaggle_figshare_merged.csv"));
+		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_kaggle_figshare_merged_2.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.6);
+				0.7);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, kfTraining);
 		
 		// add comparators
-		//matchingRule.addComparator(new AthleteNameComparatorJaccard(), 0.3);
-		//matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator(), 0.3);
+		//matchingRule.addComparator(new AthleteNameComparatorJaccard(), 0.2);
+		matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator(), 0.3);
 		//matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.5);
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.7);
-		matchingRule.addComparator(new AthleteParticipationMedalinclYearDisciplineComparator_nonLinear(), 0.3);
+		//matchingRule.addComparator(new AthleteParticipationMedalinclYearDisciplineComparator_nonLinear(), 0.3);
 		
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByEarliestParticipationYearGenerator());
@@ -109,7 +109,7 @@ public class IR_kaggle_fig_linear_combination_2
 				blocker);
 
 		// Create a top-1 global matching
-		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 2, 0.0);
+		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
 
 		// Alternative: Create a maximum-weight, bipartite matching
 		// MaximumBipartiteMatchingAlgorithm<Movie,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
@@ -123,7 +123,7 @@ public class IR_kaggle_fig_linear_combination_2
 		System.out.println("*\n*\tLoading gold standard\n*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_kaggle_figshare_merged.csv"));
+				"data/goldstandard/gs_kaggle_figshare_merged_2.csv"));
 		
 		System.out.println("*\n*\tEvaluating result\n*");
 		// evaluate your result
