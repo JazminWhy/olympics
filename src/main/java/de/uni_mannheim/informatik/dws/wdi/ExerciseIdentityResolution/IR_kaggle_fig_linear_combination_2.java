@@ -87,7 +87,8 @@ public class IR_kaggle_fig_linear_combination_2
 		// add comparators
 		//matchingRule.addComparator(new AthleteNameComparatorJaccard(), 0.3);
 		matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator(), 0.5);
-		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.5);
+		//matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.5);
+		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.5);
 		
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByEarliestParticipationYearGenerator());

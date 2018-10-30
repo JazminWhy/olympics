@@ -8,9 +8,9 @@
 	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
@@ -23,5 +23,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/demar/Desktop/Studium/WDI/SecondString/secondstring-20120620.jar" sourcepath="C:/Users/demar/Desktop/Studium/WDI/SecondString/secondstring-20120620"/>
+	<classpathentry kind="lib" path="C:/Users/demar/Desktop/Studium/WDI/Simmetrics/simmetrics_jar_v1_6_2_d07_02_07.jar" sourcepath="C:/Users/demar/Desktop/Studium/WDI/Simmetrics/simmetrics_src_v1_6_2_d07_02_07.zip"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
