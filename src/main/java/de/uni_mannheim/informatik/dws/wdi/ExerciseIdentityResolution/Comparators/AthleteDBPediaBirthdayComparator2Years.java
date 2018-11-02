@@ -17,27 +17,58 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.date.YearSimilarity;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan;
+import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
+
+import com.wcohen.ss.Jaccard;
+import com.wcohen.ss.tokens.NGramTokenizer;
+import com.wcohen.ss.tokens.SimpleTokenizer;
+
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 
 //
 ///**
 // * {@link Comparator} for {@link Movie}s based on the {@link Movie#getDate()}
-// * value, with a maximal difference of 2 years.
+// * value, with a maximal difference of 5 years.
 // * 
-// * @author Max)
+// * @author Max
 // * 
 // */
+
+
+// Größe: beide minus 1, kleinere durch größere, ergebnis ^4
+// Gewicht: kleinere durch größere, ergebnis ^4
+
+
 public class AthleteDBPediaBirthdayComparator2Years implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private YearSimilarity sim = new YearSimilarity(2);
-
+	private YearSimilarity sim = new YearSimilarity(5);
+//	private int gramSize = 3;
+    private MongeElkan me;
+    
+    public AthleteDBPediaBirthdayComparator2Years() {
+    	me = new MongeElkan();
+    }
+    
+    public AthleteDBPediaBirthdayComparator2Years(AbstractStringMetric metricToUse) {
+    	me = new MongeElkan(metricToUse);
+    }
+    
+    public AthleteDBPediaBirthdayComparator2Years(InterfaceTokeniser tokeniserToUse, AbstractStringMetric metricToUse) {
+    	me = new MongeElkan(tokeniserToUse, metricToUse);
+    }
+   
 	private ComparatorLogger comparisonLog;
 
+//	 public AthleteDBPediaBirthdayComparator2Years(int n) {
+//	        gramSize = n;
+//	    }
+	
 	@Override
 	public double compare(Athlete record1, Athlete record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
-
 		double similarity = 0;
 		
 		if ((record1.getBirthday() != null) && (record2.getBirthday() != null)) {
@@ -52,6 +83,8 @@ public class AthleteDBPediaBirthdayComparator2Years implements Comparator<Athlet
 
 				this.comparisonLog.setSimilarity(Double.toString(similarity));
 			}
+		} else {
+			 similarity = calculate(record1.getName(), record2.getName());
 		}
 		return similarity;
 
@@ -66,5 +99,25 @@ public class AthleteDBPediaBirthdayComparator2Years implements Comparator<Athlet
 	public void setComparisonLog(ComparatorLogger comparatorLog) {
 		this.comparisonLog = comparatorLog;
 	}
+
+    public double calculate(String first, String second) {
+        if(first == null || second == null) {
+            return 0.0;
+        }
+        
+        return me.getSimilarity(first, second);
+    }
+	
+	
+    
+//    public double calculate(String first, String second) {
+//        if(first == null || second == null) {
+//            return 0.0;
+//        }
+//        
+//        NGramTokenizer tok = new NGramTokenizer(gramSize, gramSize, false, SimpleTokenizer.DEFAULT_TOKENIZER);
+//        Jaccard j = new Jaccard(tok);
+//        return j.score(first, second);
+//    }
 
 }
