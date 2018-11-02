@@ -55,7 +55,7 @@ public class AthleteBlockingKeyByNationality extends
 					blockingKeyValue += tokens[i].substring(0, Math.min(10,tokens[i].length())).toUpperCase();
 				}
 				
-				if (record.getNationality() == "female") {
+				if (record.getSex() == "female") {
 					blockingKeyValue = blockingKeyValue + "f";
 				}
 				else {

@@ -57,7 +57,7 @@ public class IR_linear_combination_Fig_Rio
 		HashedDataSet<Athlete, Attribute> dataAthletesRio = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181025_Rio_Final.xml"), "/WinningAthletes/Athlete", dataAthletesRio);
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
 		
 		Athlete a = dataAthletesRio.getRecord("R-100001");
 		Athlete p = dataAthletesFigshare.getRecord("fig_10004");		
@@ -86,7 +86,7 @@ public class IR_linear_combination_Fig_Rio
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.5);
+				0.4);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, riofTraining);
 		
 		// add comparators
@@ -94,7 +94,8 @@ public class IR_linear_combination_Fig_Rio
 		matchingRule.addComparator(new AthleteNameComparatorEqual(), 0.3);
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNationality());
+		//StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNationality());
+		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNameFirstLetters());
 //		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
 //		SortedNeighbourhoodBlocker<Athlete, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new AthleteBlockingKeyByEarliestParticipationYearGenerator(), 1500);
 		blocker.setMeasureBlockSizes(true);

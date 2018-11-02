@@ -11,9 +11,14 @@
 // */
 //
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
+
+import org.apache.jena.sparql.pfunction.library.listIndex;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipation;
 //
@@ -31,7 +36,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 // * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
 // * key based on the year.
 // * 
-// * @author Hendrik Roeder
+// * @author Blumi
 // * 
 // */
 public class AthleteBlockingKeyByNameFirstLetters extends
@@ -48,13 +53,52 @@ public class AthleteBlockingKeyByNameFirstLetters extends
 			DataIterator<Pair<String, Athlete>> resultCollector) {
 		
 		String[] tokens  = record.getName().split(" ");
+		int tokenLength = 0;
+		String firstToken, lastToken ="";
+		String blockingKeyValue = "";
+		//String[] tokensOrdered = new String[2];
+		List<String> tokensOrdered = new ArrayList<>();
 		
-				String blockingKeyValue = "";
 		
-				for(int i = 0; i <= 3 && i < tokens.length; i++) {
-					blockingKeyValue += tokens[i].substring(0, Math.min(3,tokens[i].length())).toUpperCase();
+		
+				tokenLength = tokens.length;
+				firstToken = tokens[0];
+				lastToken = tokens[tokenLength-1];
+				tokensOrdered.add(firstToken);
+				tokensOrdered.add(lastToken);
+				Collections.sort(tokensOrdered);
+
+				for(int i = 0; i < 2; i++) {
+					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(1,tokensOrdered.get(i).length())).toUpperCase();
 				}
 	
 				resultCollector.next(new Pair<>(blockingKeyValue, record));
+				
+				/* Get Nationality
+				String[] tokensStr  = record.getNationality().split(" ");
+				
+		
+				for(int i = 0; i <= 10 && i < tokens.length; i++) {
+					blockingKeyValue += tokensStr[i].substring(0, Math.min(10,tokens[i].length())).toUpperCase();
+				}
+				
+				*/
+				/* Block By Gender
+				if (record.getSex() == "female") {
+					blockingKeyValue = blockingKeyValue + "f";
+				}
+				else {
+					blockingKeyValue = blockingKeyValue + "m";
+				}
+				
+				*/
+				/* Max Year of Participation
+				Set<String> OlympicParticipations1 = new HashSet<>();
+				for(OlympicParticipation a : record.getOlympicParticipations()) {
+					OlympicParticipations1.add(blockingKeyValue + a.getYear());
+				}
+				
+				resultCollector.next(new Pair<>(Collections.max(OlympicParticipations1), record));
+				*/
 		}
 }
