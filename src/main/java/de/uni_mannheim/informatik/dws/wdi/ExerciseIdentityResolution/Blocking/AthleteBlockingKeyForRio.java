@@ -39,7 +39,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 // * @author Blumi
 // * 
 // */
-public class AthleteBlockingKeyByNameFirstLetters extends
+public class AthleteBlockingKeyForRio extends
 		RecordBlockingKeyGenerator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
