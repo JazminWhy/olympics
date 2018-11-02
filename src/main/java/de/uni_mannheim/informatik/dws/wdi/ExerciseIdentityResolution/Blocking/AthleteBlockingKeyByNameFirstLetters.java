@@ -72,26 +72,26 @@ public class AthleteBlockingKeyByNameFirstLetters extends
 					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(1,tokensOrdered.get(i).length())).toUpperCase();
 				}
 	
-				resultCollector.next(new Pair<>(blockingKeyValue, record));
 				
-				/* Get Nationality
+				
+				//Get Nationality
 				String[] tokensStr  = record.getNationality().split(" ");
 				
 		
-				for(int i = 0; i <= 10 && i < tokens.length; i++) {
-					blockingKeyValue += tokensStr[i].substring(0, Math.min(10,tokens[i].length())).toUpperCase();
+				for(int i = 0; i <= 2 && i < tokensStr.length; i++) {
+					blockingKeyValue += tokensStr[i].substring(0, Math.min(2,tokensStr[i].length())).toUpperCase();
 				}
 				
-				*/
-				/* Block By Gender
-				if (record.getSex() == "female") {
+				
+				// Block By Gender
+				if (record.getSex().equals("female")) {
 					blockingKeyValue = blockingKeyValue + "f";
 				}
 				else {
 					blockingKeyValue = blockingKeyValue + "m";
 				}
 				
-				*/
+				
 				/* Max Year of Participation
 				Set<String> OlympicParticipations1 = new HashSet<>();
 				for(OlympicParticipation a : record.getOlympicParticipations()) {
@@ -100,5 +100,6 @@ public class AthleteBlockingKeyByNameFirstLetters extends
 				
 				resultCollector.next(new Pair<>(Collections.max(OlympicParticipations1), record));
 				*/
+				resultCollector.next(new Pair<>(blockingKeyValue, record));
 		}
 }
