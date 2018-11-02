@@ -34,7 +34,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 // * @author Hendrik Roeder
 // * 
 // */
-public class AthleteBlockingKeyByNationalityNoParticipation extends
+public class AthleteBlockingKeyByGender extends
 		RecordBlockingKeyGenerator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
@@ -47,30 +47,29 @@ public class AthleteBlockingKeyByNationalityNoParticipation extends
 	public void generateBlockingKeys(Athlete record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Athlete>> resultCollector) {
 		
-		String[] tokens  = record.getNationality().split(" ");
+		String token  = record.getSex();
+		System.out.println(token);
 		
-				String blockingKeyValue = "";
+		String blockingKeyValue = "";
 		
-//				for(int i = 0; i <= 5 && i < tokens.length; i++) {
-//					blockingKeyValue += tokens[i].substring(0, Math.min(5,tokens[i].length())).toUpperCase();
-//				}
-				
-				if (record.getSex() == "female") {
-					blockingKeyValue = blockingKeyValue + "f";
-				}
-				else {
-					blockingKeyValue = blockingKeyValue + "m";
-				}
-				
-				//blockingKeyValue = blockingKeyValue + record.get
-				//resultCollector.next(new Pair<>(blockingKeyValue, record));
-				
-				//Set<String> Athletes = new HashSet<>();
-			
-				//Athletes.add(record.getNationality()+record.getSex());
+		if (token.equals("female")) {
+			blockingKeyValue = "f";
+		}
+		else {
+			blockingKeyValue = "m";
+		}
+		System.out.println(blockingKeyValue);
 
-				//resultCollector.next(new Pair<>(Collections.min(Athletes), record));
-				
-				resultCollector.next(new Pair<>(blockingKeyValue, record));
+		//blockingKeyValue = blockingKeyValue + record.get
+		//resultCollector.next(new Pair<>(blockingKeyValue, record));
+		
+		//Set<String> Athletes = new HashSet<>();
+	
+		//Athletes.add(record.getNationality()+record.getSex());
+
+		//resultCollector.next(new Pair<>(Collections.min(Athletes), record));
+		
+		
+		resultCollector.next(new Pair<>(blockingKeyValue, record));
 		}
 }
