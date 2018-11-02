@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByBirthdayYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByEarliestParticipationYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorMongeElkan;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorNGramJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteParticipationMedalComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteParticipationMedalYearDisciplineTeamComparator;
@@ -79,7 +80,7 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 		
 		// load the training set
 		MatchingGoldStandard kfTraining = new MatchingGoldStandard();
-		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_kaggle_figshare_merged.csv"));
+		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_kaggle_figshare_merged_2.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
@@ -87,8 +88,11 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, kfTraining);
 		
 		// add comparators
-		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.65);
-		matchingRule.addComparator(new AthleteParticipationMedalYearDisciplineTeamComparator(), 0.35);
+		//matchingRule.addComparator(new AthleteNameComparatorJaccard(), 0.2);
+		//matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator(), 0.3);
+		//matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.5);
+		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.70);
+		matchingRule.addComparator(new AthleteParticipationMedalYearDisciplineTeamComparator(), 0.30);
 		//matchingRule.addComparator(new AthleteSexComparator(), 0.2);
 		
 		// create a blocker (blocking strategy)
@@ -109,7 +113,7 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 				blocker);
 
 		// Create a top-1 global matching
-		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 2, 0.0);
+		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
 
 		// Alternative: Create a maximum-weight, bipartite matching
 		// MaximumBipartiteMatchingAlgorithm<Movie,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
@@ -123,7 +127,7 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 		System.out.println("*\n*\tLoading gold standard\n*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_kaggle_figshare_merged.csv"));
+				"data/goldstandard/gs_kaggle_figshare_merged_2.csv"));
 		
 		System.out.println("*\n*\tEvaluating result\n*");
 		// evaluate your result
