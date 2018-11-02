@@ -5,7 +5,7 @@ import java.util.List;
 import org.apache.logging.log4j.Logger;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByBirthdayYearGenerator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByEarliestParticipationYearGenerator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorNGramJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteParticipationMedalComparator;
@@ -59,6 +59,8 @@ public class IR_linear_combination_DBPedia_Fig_Max
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);		
 		
+//		Athlete a = dataAthletesDBPedia.getRecord("D-100306");
+		
 		//for(int i =0; i < op.size(); i++) {
 		//	OlympicParticipation op1 = (OlympicParticipation) op.get(0);
 		//	System.out.println(op1.getCity());
@@ -66,7 +68,10 @@ public class IR_linear_combination_DBPedia_Fig_Max
 //		System.out.println(a.getName());
 //		System.out.println(a.getHeight());
 //		System.out.println(a.getWeight());
-//		System.out.println(a.getBirthday());
+//		if (a.getBirthday() != null) {
+//			System.out.println(a.getBirthday().toString());
+//			
+//		}
 //		System.out.println(a.getNationality());
 //		System.out.println(a.getSex());
 		
@@ -79,7 +84,7 @@ public class IR_linear_combination_DBPedia_Fig_Max
 		
 		// load the training set
 		MatchingGoldStandard dfTraining = new MatchingGoldStandard();
-		dfTraining.loadFromCSVFile(new File("data/goldstandard/gs_dbpedia_2_figshare.csv"));
+		dfTraining.loadFromCSVFile(new File("data/goldstandard/gs_20181102_dbpedia_2_figshare.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
@@ -89,12 +94,12 @@ public class IR_linear_combination_DBPedia_Fig_Max
 		// add comparators
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.65);
 //		matchingRule.addComparator(new AthleteNameComparatorLevenshtein(), 0.3);
-		matchingRule.addComparator(new AthleteBirthdayComparator2Years(),0.35);
+		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator2Years(),0.35);
 		//matchingRule.addComparator(new AthleteSexComparator(), 0.2);
-		matchingRule.normalizeWeights();
+//		matchingRule.normalizeWeights();
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByEarliestParticipationYearGenerator());
+		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNameFirstLetters());
 //		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
 //		SortedNeighbourhoodBlocker<Athlete, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new AthleteBlockingKeyByEarliestParticipationYearGenerator(), 1500);
 		blocker.setMeasureBlockSizes(true);
@@ -125,7 +130,7 @@ public class IR_linear_combination_DBPedia_Fig_Max
 		System.out.println("*\n*\tLoading gold standard\n*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_dbpedia_2_figshare.csv"));
+				"data/goldstandard/gs_20181102_dbpedia_2_figshare.csv"));
 		
 		System.out.println("*\n*\tEvaluating result\n*");
 		// evaluate your result
