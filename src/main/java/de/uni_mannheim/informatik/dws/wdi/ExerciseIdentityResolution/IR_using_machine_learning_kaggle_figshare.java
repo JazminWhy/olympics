@@ -57,28 +57,27 @@ public class IR_using_machine_learning_kaggle_figshare {
 		HashedDataSet<Athlete, Attribute> dataAthletesKaggle = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_Kaggle_Final.xml"), "/WinningAthletes/Athlete", dataAthletesKaggle);
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
-		
-		Athlete a = dataAthletesKaggle.getRecord("K-100001");
-		Athlete p = dataAthletesFigshare.getRecord("fig_10004");	
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);	
 
 		// create a matching rule
 		String options[] = new String[] { "" };
 		String modelType = "SimpleLogistic"
 				+ ""; // use a logistic regression
-		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.4, modelType, options);
+		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.2, modelType, options);
+		
+		matchingRule.setBackwardSelection(true);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000);
 		
 		// add comparators
 		//TODO
-		//matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator());
+		matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator());
 		matchingRule.addComparator(new AthleteParticipationMedalYearDisciplineTeamComparator());
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(2));
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3));
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(4));
 		matchingRule.addComparator(new AthleteNameComparatorJaccard());
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan());
-		//matchingRule.addComparator(new AthleteParticipationMedalinclYearDisciplineComparator_nonLinear());
+		matchingRule.addComparator(new AthleteParticipationMedalinclYearDisciplineComparator_nonLinear());
 		
 		
 		// load the training set

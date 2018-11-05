@@ -90,8 +90,8 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 		// add comparators
 		//matchingRule.addComparator(new AthleteNameComparatorJaccard(), 0.2);
 		//matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator(), 0.3);
-		//matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.5);
-		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.70);
+		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.2);
+		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.5);
 		matchingRule.addComparator(new AthleteParticipationMedalYearDisciplineTeamComparator(), 0.30);
 		//matchingRule.addComparator(new AthleteSexComparator(), 0.2);
 		
