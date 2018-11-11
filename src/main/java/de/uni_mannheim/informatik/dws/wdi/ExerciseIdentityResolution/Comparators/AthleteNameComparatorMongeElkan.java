@@ -56,10 +56,14 @@ public class AthleteNameComparatorMongeElkan extends SimilarityMeasure<String> i
     
     @Override
     public double calculate(String first, String second) {
+    	// Added these two lines to remove commas from names as Standard Tokenizer does not seem to do this
+        //first = first.replace(",", " ");
+    	//second = second.replace(",", " ");
+        
         if(first == null || second == null) {
             return 0.0;
         }
-        
+
         return me.getSimilarity(first, second);
     }
 

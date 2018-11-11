@@ -32,6 +32,9 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Record;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein;
 
 public class IR_using_machine_learning_kaggle_figshare {
 	
@@ -78,6 +81,10 @@ public class IR_using_machine_learning_kaggle_figshare {
 		matchingRule.addComparator(new AthleteNameComparatorJaccard());
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan());
 		matchingRule.addComparator(new AthleteParticipationMedalinclYearDisciplineComparator_nonLinear());
+		//Matching rules added by Tido on 07.11.
+		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(new JaroWinkler()));
+		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(new Jaro()));
+		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(new Levenshtein()));
 		
 		
 		// load the training set
