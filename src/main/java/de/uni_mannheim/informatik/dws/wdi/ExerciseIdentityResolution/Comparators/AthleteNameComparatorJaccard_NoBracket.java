@@ -27,7 +27,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athle
 // * @author Oliver Lehmberg (oli@dwslab.de)
 // * 
 // */
-public class AthleteNameComparatorJaccard implements Comparator<Athlete, Attribute> {
+public class AthleteNameComparatorJaccard_NoBracket implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	private TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
@@ -41,9 +41,10 @@ public class AthleteNameComparatorJaccard implements Comparator<Athlete, Attribu
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
 		String s1 = record1.getName();
-    	s1 = s1.replaceAll("\\(.*\\)","");
+		s1 = s1.replaceAll("\\(.*\\)","");
 		String s2 = record2.getName();
-    	s2 = s2.replaceAll("\\(.*\\)","");
+		s2 = s2.replaceAll("\\(.*\\)","");
+    	
     	double similarity = sim.calculate(s1, s2);
     	
 		if(this.comparisonLog != null){
