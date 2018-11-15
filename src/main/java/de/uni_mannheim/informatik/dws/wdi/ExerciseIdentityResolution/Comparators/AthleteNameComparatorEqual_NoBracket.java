@@ -11,26 +11,27 @@
 // */
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators;
 
+
 import de.uni_mannheim.informatik.dws.winter.matching.rules.Comparator;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.EqualsSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
-
+//
 ///**
 // * {@link Comparator} for {@link Movie}s based on the {@link Movie#getTitle()}
-// * value and their {@link TokenizingJaccardSimilarity} value.
+// * value and their {@link LevenshteinSimilarity} value.
 // * 
-// * @author Robert Meusel (robert@dwslab.de)
 // * @author Oliver Lehmberg (oli@dwslab.de)
 // * 
 // */
-public class AthleteNameComparatorJaccard implements Comparator<Athlete, Attribute> {
+public class AthleteNameComparatorEqual_NoBracket implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
+	private EqualsSimilarity<String> sim = new EqualsSimilarity<String>();
 	
 	private ComparatorLogger comparisonLog;
 
@@ -40,7 +41,7 @@ public class AthleteNameComparatorJaccard implements Comparator<Athlete, Attribu
 			Athlete record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
-		String s1 = record1.getName();
+    	String s1 = record1.getName();
     	s1 = s1.replaceAll("\\(.*\\)","");
 		String s2 = record2.getName();
     	s2 = s2.replaceAll("\\(.*\\)","");
@@ -54,9 +55,9 @@ public class AthleteNameComparatorJaccard implements Comparator<Athlete, Attribu
     	
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
-		
 		return similarity;
 	}
+
 
 	@Override
 	public ComparatorLogger getComparisonLog() {

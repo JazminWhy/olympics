@@ -33,43 +33,45 @@ import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
  * 
  * Calculates Jaccard similarity on n-grams, which are created from the values
  * 
- * @author Oliver Lehmberg (oli@dwslab.de)
+ * @author Blumi
  *
  */
-public class AthleteNameComparatorMongeElkan extends SimilarityMeasure<String> implements Comparator<Athlete, Attribute>  {
+public class AthleteNameComparatorMongeElkan_NoBrackets extends SimilarityMeasure<String> implements Comparator<Athlete, Attribute>  {
 
     private static final long serialVersionUID = 1L;
     private ComparatorLogger comparisonLog;
     private MongeElkan me;
     
-    public AthleteNameComparatorMongeElkan() {
+    public AthleteNameComparatorMongeElkan_NoBrackets() {
     	me = new MongeElkan();
     }
     
-    public AthleteNameComparatorMongeElkan(AbstractStringMetric metricToUse) {
+    public AthleteNameComparatorMongeElkan_NoBrackets(AbstractStringMetric metricToUse) {
     	me = new MongeElkan(metricToUse);
     }
     
-    public AthleteNameComparatorMongeElkan(InterfaceTokeniser tokeniserToUse, AbstractStringMetric metricToUse) {
+    public AthleteNameComparatorMongeElkan_NoBrackets(InterfaceTokeniser tokeniserToUse, AbstractStringMetric metricToUse) {
     	me = new MongeElkan(tokeniserToUse, metricToUse);
     }
     
     @Override
     public double calculate(String first, String second) {
-    	// Added these two lines to remove commas from names as Standard Tokenizer does not seem to do this
-        //first = first.replace(",", " ");
-    	//second = second.replace(",", " ");
-        
         if(first == null || second == null) {
             return 0.0;
         }
-
+        
         return me.getSimilarity(first, second);
     }
 
     @Override
     public double compare(Athlete record1, Athlete record2, Correspondence<Attribute, Matchable> schemaCorrespondence) {
         
+    	String r1Name = record1.getName();
+    	r1Name = r1Name.replaceAll("\\(.*\\)","");
+    	
+    	String r2Name = record2.getName();
+    	r2Name = r2Name.replaceAll("\\(.*\\)","");
+    	
         double similarity = calculate(record1.getName(), record2.getName());
         
         if(this.comparisonLog != null){

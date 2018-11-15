@@ -26,6 +26,9 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Record;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein;
 
 public class IR_kaggle_fig_linear_combination_2 
 {
@@ -89,6 +92,9 @@ public class IR_kaggle_fig_linear_combination_2
 		matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator(), 0.3);
 		//matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.5);
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.7);
+		//matchingRule.addComparator(new AthleteNameComparatorMongeElkan(new JaroWinkler()), 0.7);
+		//matchingRule.addComparator(new AthleteNameComparatorMongeElkan(new Jaro()), 0.7);
+		//matchingRule.addComparator(new AthleteNameComparatorMongeElkan(new Levenshtein()), 0.7);
 		//matchingRule.addComparator(new AthleteParticipationMedalinclYearDisciplineComparator_nonLinear(), 0.3);
 		
 		// create a blocker (blocking strategy)

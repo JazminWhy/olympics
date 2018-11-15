@@ -39,7 +39,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 // * @author Blumi
 // * 
 // */
-public class AthleteBlockingKeyForRio extends
+public class AthleteBlockingKeyForRioByNameNation_no_preprocessing extends
 		RecordBlockingKeyGenerator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
@@ -52,11 +52,7 @@ public class AthleteBlockingKeyForRio extends
 	public void generateBlockingKeys(Athlete record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Athlete>> resultCollector) {
 		
-
-		String name_preprocessed = record.getName();
-		name_preprocessed = name_preprocessed.replaceAll("\\(.*\\)","");
-		String[] tokens  = name_preprocessed.split(" ");
-		//String[] tokens  = record.getName().split(" ");
+		String[] tokens  = record.getName().split(" ");
 		int tokenLength = 0;
 		String firstToken, lastToken ="";
 		String blockingKeyValue = "";
@@ -71,18 +67,18 @@ public class AthleteBlockingKeyForRio extends
 				tokensOrdered.add(firstToken);
 				tokensOrdered.add(lastToken);
 				Collections.sort(tokensOrdered);
-
-				for(int i = 0; i < 1; i++) {
+				
+				for(int i = 0; i < 2; i++) {
 					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(1,tokensOrdered.get(i).length())).toUpperCase();
 				}
 	
 				
-				
+				/*
 				//Get Nationality
 				String[] tokensStr  = record.getNationality().split(" ");
 				
 		
-				for(int i = 0; i <= 3 && i < tokensStr.length; i++) {
+				for(int i = 0; i <= 2 && i < tokensStr.length; i++) {
 					blockingKeyValue += tokensStr[i].substring(0, Math.min(2,tokensStr[i].length())).toUpperCase();
 				}
 				
@@ -95,13 +91,12 @@ public class AthleteBlockingKeyForRio extends
 					blockingKeyValue = blockingKeyValue + "m";
 				}
 				
-				
+				*/
 				// Max Year of Participation
 				Set<String> OlympicParticipations1 = new HashSet<>();
 				for(OlympicParticipation a : record.getOlympicParticipations()) {
 					OlympicParticipations1.add(blockingKeyValue + a.getYear());
 				}
-				
 				resultCollector.next(new Pair<>(Collections.max(OlympicParticipations1), record));
 				//*/
 				//resultCollector.next(new Pair<>(blockingKeyValue, record));

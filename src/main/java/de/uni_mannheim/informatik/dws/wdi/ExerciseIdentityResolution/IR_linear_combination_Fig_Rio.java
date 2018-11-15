@@ -4,22 +4,30 @@ import java.io.File;
 import java.util.List;
 import org.apache.logging.log4j.Logger;
 
+import com.wcohen.ss.JaroWinkler;
+
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByBirthdayYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByEarliestParticipationYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByNameFirstLetters;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByNationality;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyForRio;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteBirthdayComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorEqual;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorEqual_NoBracket;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorMongeElkan;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorMongeElkan_NoBrackets;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorNGramJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorNGramJaccard_NoBracket;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNationalityComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNationalityComparatorMongeElkan;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteParticipationMedalComparator;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteSexComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.AthleteXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipation;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipationXMLReader;
+import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.MaximumBipartiteMatchingAlgorithm;
@@ -35,6 +43,8 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Record;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein;
+import uk.ac.shef.wit.simmetrics.similaritymetrics.*;
 
 public class IR_linear_combination_Fig_Rio 
 {
@@ -66,45 +76,49 @@ public class IR_linear_combination_Fig_Rio
 		Athlete a = dataAthletesRio.getRecord("R-100001");
 		Athlete p = dataAthletesFigshare.getRecord("fig_10004");		
 		
-		//for(int i =0; i < op.size(); i++) {
-		//	OlympicParticipation op1 = (OlympicParticipation) op.get(0);
-		//	System.out.println(op1.getCity());
-		//}
-//		System.out.println(a.getName());
-//		System.out.println(a.getHeight());
-//		System.out.println(a.getWeight());
-//		System.out.println(a.getBirthday());
-//		System.out.println(a.getNationality());
-//		System.out.println(a.getSex());
-		
-		
-		
-		//System.out.println(dataAthletes.getRecord("G-100001"));
-		//System.out.println(dataOlympicParticipation.size());
-		//System.out.println(dataAthletes);
-		//System.out.println(dataOlympicParticipation.size());
-		
+
 		// load the training set
 		MatchingGoldStandard riofTraining = new MatchingGoldStandard();
 		riofTraining.loadFromCSVFile(new File("data/goldstandard/gs_rio_fig.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.4);
+				0.6);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, riofTraining);
 		
-		// add comparators
+		
+		// superold
+		/*
+		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.5);
+		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(new Jaro()), 0.5); 
+		 
+		*/
+		
+		// old 
+		/*
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(2), 0.4);
 		matchingRule.addComparator(new AthleteNameComparatorEqual(), 0.1);
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.3);
 		matchingRule.addComparator(new AthleteBirthdayComparator2Years(), 0.2);
-		//matchingRule.addComparator(new AthleteNationalityComparatorMongeElkan(), 0.15);
-		//matchingRule.addComparator(new AthleteNationalityComparatorLevenshtein(), 0.3);
+		*/
+		
+		
+		// new
+		
+		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(2), 0.2);
+		matchingRule.addComparator(new AthleteNameComparatorEqual_NoBracket(), 0.1);
+		matchingRule.addComparator(new AthleteNameComparatorMongeElkan_NoBrackets(), 0.2);
+		matchingRule.addComparator(new AthleteBirthdayComparator2Years(), 0.2);
+		matchingRule.addComparator(new AthleteSexComparator(), 0.1);
+		matchingRule.addComparator(new AthleteNationalityComparatorLevenshtein(), 0.1);
+		matchingRule.addComparator(new AthleteNameComparatorMongeElkan_NoBrackets(new Jaro()), 0.1);
+		
 		
 		
 		// create a blocker (blocking strategy)
-		//StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNationality());
-		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNameFirstLetters());
+		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNationality());
+		//StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNameFirstLetters());
+		//StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyForRio());
 //		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
 //		SortedNeighbourhoodBlocker<Athlete, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new AthleteBlockingKeyByEarliestParticipationYearGenerator(), 1500);
 		blocker.setMeasureBlockSizes(true);
@@ -121,15 +135,14 @@ public class IR_linear_combination_Fig_Rio
 				blocker);
 
 		// Create a top-1 global matching
-		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 2, 0.0);
-
+		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
 		// Alternative: Create a maximum-weight, bipartite matching
 		// MaximumBipartiteMatchingAlgorithm<Movie,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
 		// maxWeight.run();
 		// correspondences = maxWeight.getResult();
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/rio_figshare_Athlete_correspondences_top_2.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/rio_figshare_Athlete_correspondences_top_1.csv"), correspondences);
 
 		// load the gold standard (test set)
 		System.out.println("*\n*\tLoading gold standard\n*");
@@ -151,5 +164,7 @@ public class IR_linear_combination_Fig_Rio
 				"Recall: %.4f",	perfTest.getRecall()));
 		System.out.println(String.format(
 				"F1: %.4f",perfTest.getF1()));
+		
+	
     }
 }

@@ -52,7 +52,10 @@ public class AthleteBlockingKeyByNameFirstLetters extends
 	public void generateBlockingKeys(Athlete record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Athlete>> resultCollector) {
 		
-		String[] tokens  = record.getName().split(" ");
+		String name_preprocessed = record.getName();
+		name_preprocessed = name_preprocessed.replaceAll("\\(.*\\)","");
+		String[] tokens  = name_preprocessed.split(" ");
+	
 		int tokenLength = 0;
 		String firstToken, lastToken ="";
 		String blockingKeyValue = "";
@@ -67,13 +70,14 @@ public class AthleteBlockingKeyByNameFirstLetters extends
 				tokensOrdered.add(firstToken);
 				tokensOrdered.add(lastToken);
 				Collections.sort(tokensOrdered);
-
-				for(int i = 0; i < 2; i++) {
+				
+				// Get cpunt of letters from first and last token: i <2; only from token which is alphabetically lower i < 1
+				for(int i = 0; i < 1; i++) {
 					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(1,tokensOrdered.get(i).length())).toUpperCase();
 				}
 	
 				
-				/*
+				
 				//Get Nationality
 				String[] tokensStr  = record.getNationality().split(" ");
 				
@@ -82,7 +86,7 @@ public class AthleteBlockingKeyByNameFirstLetters extends
 					blockingKeyValue += tokensStr[i].substring(0, Math.min(2,tokensStr[i].length())).toUpperCase();
 				}
 				
-				
+				/*
 				// Block By Gender
 				if (record.getSex().equals("female")) {
 					blockingKeyValue = blockingKeyValue + "f";

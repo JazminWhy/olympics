@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.*;
 
 import au.com.bytecode.opencsv.CSVReader;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_linear_combination_Kaggle_Fig_Hendrik;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.Comparator;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.ComparatorLogger;
@@ -22,23 +23,23 @@ public class AthleteParticipationMedalYearDisciplineTeamComparator implements Co
 
 	private ComparatorLogger comparisonLog;
 	
+	private List<String[]> DisciplineMapping;
+	
+	
 	private boolean compareDiscipline(String disc1, String disc2) {
 		boolean toBeReturned = false;
 		
 		try {
-			CSVReader reader = new CSVReader(new FileReader("data/input/20181025_discipline mapping_final.csv"));
-			List<String[]> DisciplineMapping = reader.readAll();
-			for (String[] string : DisciplineMapping) {
-				//System.out.println(string[0] + " - " + disc1);
-				//System.out.println(string[1] + " - " + disc2);
+			//CSVReader reader = new CSVReader(new FileReader("data/input/20181025_discipline mapping_final.csv"));
+			//List<String[]> DisciplineMapping = reader.readAll();
+			for (String[] string : IR_linear_combination_Kaggle_Fig_Hendrik .DisciplineMapping) {
 				if (string[0].equalsIgnoreCase(disc1)) {
-					//System.out.println(string[0] + " - " + disc1);
-					//System.out.println(string[1] + " - " + disc2);
-					//System.out.println(string[1].equalsIgnoreCase(disc2));
 					toBeReturned = string[1].equalsIgnoreCase(disc2);
+					if ((string[0].equalsIgnoreCase("biathlon") == false) || (toBeReturned == true)) {
+						break;
+					}
 				}
 			}
-			return false;
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -94,6 +95,7 @@ public class AthleteParticipationMedalYearDisciplineTeamComparator implements Co
 			}
 		}
 		
+		
 		double similarity = same/total;
 
 		if (this.comparisonLog != null) {
@@ -106,7 +108,6 @@ public class AthleteParticipationMedalYearDisciplineTeamComparator implements Co
 
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
-		
 		return similarity;
 	}
 

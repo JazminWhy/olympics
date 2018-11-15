@@ -1,9 +1,11 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import java.io.File;
+import java.io.FileReader;
 import java.util.List;
 import org.apache.logging.log4j.Logger;
 
+import au.com.bytecode.opencsv.CSVReader;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByBirthdayYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByEarliestParticipationYearGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorJaccard;
@@ -50,6 +52,8 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 
 	private static final Logger logger = WinterLogManager.activateLogger("default");
 	
+	public static List<String[]> DisciplineMapping;
+	
     public static void main( String[] args ) throws Exception
     {
 		// loading data
@@ -58,7 +62,10 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 		HashedDataSet<Athlete, Attribute> dataAthletesKaggle = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_Kaggle_Final.xml"), "/WinningAthletes/Athlete", dataAthletesKaggle);
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);		
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
+		
+		CSVReader reader = new CSVReader(new FileReader("data/input/20181025_discipline mapping_final.csv"));
+		DisciplineMapping = reader.readAll();
 		
 		//for(int i =0; i < op.size(); i++) {
 		//	OlympicParticipation op1 = (OlympicParticipation) op.get(0);
@@ -90,9 +97,9 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 		// add comparators
 		//matchingRule.addComparator(new AthleteNameComparatorJaccard(), 0.2);
 		//matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator(), 0.3);
-		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.2);
-		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.5);
-		matchingRule.addComparator(new AthleteParticipationMedalYearDisciplineTeamComparator(), 0.30);
+		//matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.2);
+		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.6);
+		matchingRule.addComparator(new AthleteParticipationMedalYearDisciplineTeamComparator(), 0.4);
 		//matchingRule.addComparator(new AthleteSexComparator(), 0.2);
 		
 		// create a blocker (blocking strategy)

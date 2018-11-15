@@ -18,12 +18,8 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
-import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
-import uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan;
-import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import com.wcohen.ss.Jaccard;
-import com.wcohen.ss.api.SourcedStringWrapper;
 import com.wcohen.ss.tokens.NGramTokenizer;
 import com.wcohen.ss.tokens.SimpleTokenizer;
 
@@ -36,35 +32,25 @@ import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
  * @author Oliver Lehmberg (oli@dwslab.de)
  *
  */
-public class AthleteNameComparatorMongeElkan extends SimilarityMeasure<String> implements Comparator<Athlete, Attribute>  {
+public class AthleteNameComparatorNGramJaccard_NoBracket extends SimilarityMeasure<String> implements Comparator<Athlete, Attribute>  {
 
     private static final long serialVersionUID = 1L;
+    private int gramSize = 3;
     private ComparatorLogger comparisonLog;
-    private MongeElkan me;
     
-    public AthleteNameComparatorMongeElkan() {
-    	me = new MongeElkan();
-    }
-    
-    public AthleteNameComparatorMongeElkan(AbstractStringMetric metricToUse) {
-    	me = new MongeElkan(metricToUse);
-    }
-    
-    public AthleteNameComparatorMongeElkan(InterfaceTokeniser tokeniserToUse, AbstractStringMetric metricToUse) {
-    	me = new MongeElkan(tokeniserToUse, metricToUse);
+    public AthleteNameComparatorNGramJaccard_NoBracket(int n) {
+        gramSize = n;
     }
     
     @Override
     public double calculate(String first, String second) {
-    	// Added these two lines to remove commas from names as Standard Tokenizer does not seem to do this
-        //first = first.replace(",", " ");
-    	//second = second.replace(",", " ");
-        
         if(first == null || second == null) {
             return 0.0;
         }
-
-        return me.getSimilarity(first, second);
+        
+        NGramTokenizer tok = new NGramTokenizer(gramSize, gramSize, false, SimpleTokenizer.DEFAULT_TOKENIZER);
+        Jaccard j = new Jaccard(tok);
+        return j.score(first, second);
     }
 
     @Override
