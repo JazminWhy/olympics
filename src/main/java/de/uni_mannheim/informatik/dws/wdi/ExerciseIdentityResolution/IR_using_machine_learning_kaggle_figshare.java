@@ -63,7 +63,7 @@ public class IR_using_machine_learning_kaggle_figshare {
 		String options[] = new String[] { "" };
 		String modelType = "SimpleLogistic"
 				+ ""; // use a logistic regression
-		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.2, modelType, options);
+		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.50, modelType, options);
 		
 		matchingRule.setBackwardSelection(true);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000);
@@ -105,7 +105,12 @@ public class IR_using_machine_learning_kaggle_figshare {
 				blocker);
 		
 		// Global matching
-		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
+		// correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
+		
+		// Alternative: Create a maximum-weight, bipartite matching
+		MaximumBipartiteMatchingAlgorithm<Athlete,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
+		maxWeight.run();
+		correspondences = maxWeight.getResult();
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/kaggle_fingshare_correspondences.csv"), correspondences);
