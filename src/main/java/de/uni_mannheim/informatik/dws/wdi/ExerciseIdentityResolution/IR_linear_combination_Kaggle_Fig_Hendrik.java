@@ -66,6 +66,7 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 		
 		CSVReader reader = new CSVReader(new FileReader("data/input/20181025_discipline mapping_final.csv"));
 		DisciplineMapping = reader.readAll();
+		reader.close();
 		
 		//for(int i =0; i < op.size(); i++) {
 		//	OlympicParticipation op1 = (OlympicParticipation) op.get(0);
