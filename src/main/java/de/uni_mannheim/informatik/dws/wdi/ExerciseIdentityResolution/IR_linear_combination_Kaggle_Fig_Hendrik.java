@@ -120,12 +120,12 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 				blocker);
 
 		// Create a top-1 global matching
-		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
+		// correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
 
 		// Alternative: Create a maximum-weight, bipartite matching
-		// MaximumBipartiteMatchingAlgorithm<Movie,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
-		// maxWeight.run();
-		// correspondences = maxWeight.getResult();
+		MaximumBipartiteMatchingAlgorithm<Athlete,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
+		maxWeight.run();
+		correspondences = maxWeight.getResult();
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/kaggle_figshare_Athlete_correspondences_top_2.csv"), correspondences);

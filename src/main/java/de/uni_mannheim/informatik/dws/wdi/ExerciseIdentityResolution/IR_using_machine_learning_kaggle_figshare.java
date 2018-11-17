@@ -1,8 +1,11 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import java.io.File;
+import java.io.FileReader;
 
 import org.apache.logging.log4j.Logger;
+
+import au.com.bytecode.opencsv.CSVReader;
 
 import java.io.File;
 import java.util.List;
@@ -53,6 +56,8 @@ public class IR_using_machine_learning_kaggle_figshare {
 
 	private static final Logger logger = WinterLogManager.activateLogger("default");
 	
+	public static List<String[]> DisciplineMapping;
+	
     public static void main( String[] args ) throws Exception
     {
 		// loading data
@@ -62,11 +67,16 @@ public class IR_using_machine_learning_kaggle_figshare {
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);	
 
+		CSVReader reader = new CSVReader(new FileReader("data/input/20181025_discipline mapping_final.csv"));
+		DisciplineMapping = reader.readAll();
+		
+		reader.close();
+		
 		// create a matching rule
 		String options[] = new String[] { "" };
 		String modelType = "SimpleLogistic"
 				+ ""; // use a logistic regression
-		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.50, modelType, options);
+		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.5, modelType, options);
 		
 		matchingRule.setBackwardSelection(true);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000);
@@ -74,17 +84,12 @@ public class IR_using_machine_learning_kaggle_figshare {
 		// add comparators
 		//TODO
 		matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator());
-		matchingRule.addComparator(new AthleteParticipationMedalYearDisciplineTeamComparator());
+		matchingRule.addComparator(new AthleteParticipationMedalYearDisciplineTeamComparatorML());
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(2));
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3));
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(4));
 		matchingRule.addComparator(new AthleteNameComparatorJaccard());
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan());
-		matchingRule.addComparator(new AthleteParticipationMedalinclYearDisciplineComparator_nonLinear());
-		//Matching rules added by Tido on 07.11.
-		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(new JaroWinkler()));
-		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(new Jaro()));
-		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(new Levenshtein()));
 		
 		
 		// load the training set
