@@ -81,7 +81,7 @@ public class IR_using_machine_learning_kaggle_figshare {
 		// 0.1 for NaiveBayes, 0.4 for SimpleLogistic, 0.2 for J48
 		
 		matchingRule.setBackwardSelection(true);
-		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000);
+		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000);  
 		
 		// add comparators
 		matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator());

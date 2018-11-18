@@ -21,7 +21,7 @@ public class AthleteParticipationMedal_inclYearDiscipline_Comparator implements 
 
 	private static final long serialVersionUID = 1L;
 
-	private ComparatorLogger comparisonLog;
+	private ComparatorLogger comparisonLog;  
 
 	private boolean compareDiscipline(String disc1, String disc2) {
 		boolean toBeReturned = false;
