@@ -23,7 +23,7 @@ public class AthleteParticipationMedal_inclYearDiscipline_Comparator implements 
 
 	private ComparatorLogger comparisonLog;  
 
-	private boolean compareDiscipline(String disc1, String disc2) {
+	private boolean compareDiscipline(String disc1, String disc2) {  
 		boolean toBeReturned = false;
 
 		try {

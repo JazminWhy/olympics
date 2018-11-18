@@ -39,7 +39,7 @@ import uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.Levenshtein;
 
-public class IR_using_machine_learning_kaggle_figshare {
+public class IR_using_machine_learning_kaggle_figshare {  
 	
 	/*
 	 * Logging Options:
