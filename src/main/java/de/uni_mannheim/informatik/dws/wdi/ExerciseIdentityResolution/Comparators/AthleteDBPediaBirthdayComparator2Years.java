@@ -69,8 +69,9 @@ public class AthleteDBPediaBirthdayComparator2Years implements Comparator<Athlet
 	@Override
 	public double compare(Athlete record1, Athlete record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
-		double similarity = 0;
+		double similarity = 0.0;
 		
+		// Check whether records have missing values for Birthday
 		if ((record1.getBirthday() != null) && (record2.getBirthday() != null)) {
 
 			similarity = sim.calculate(record1.getBirthday(), record2.getBirthday());
@@ -83,6 +84,7 @@ public class AthleteDBPediaBirthdayComparator2Years implements Comparator<Athlet
 
 				this.comparisonLog.setSimilarity(Double.toString(similarity));
 			}
+			// If records have missing values for Birthday, use MongeElkan for Name comparator
 		} else {
 			 similarity = calculate(record1.getName(), record2.getName());
 		}

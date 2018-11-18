@@ -84,19 +84,23 @@ public class IR_linear_combination_DBPedia_Fig_Max
 		
 		// load the training set
 		MatchingGoldStandard dfTraining = new MatchingGoldStandard();
-		dfTraining.loadFromCSVFile(new File("data/goldstandard/gs_20181102_dbpedia_2_figshare.csv"));
+		dfTraining.loadFromCSVFile(new File("data/goldstandard/gs_20181114_dbpedia_2_figshare.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.8005);
+				0.6005);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, dfTraining);
 		
 		// add comparators
 		
-		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.4);
+		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.05);
+//		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(3), 0.4);
 //		matchingRule.addComparator(new AthleteNameComparatorLevenshtein(), 0.3);
-		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator2Years(),0.20);
-		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.4);
+		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator2Years(), 0.2);
+		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.75);
+//		matchingRule.addComparator(new AthleteDBPediaNationalityComparatorMongeElkan(), 0.1);
+//		matchingRule.addComparator(new AthleteNationalityComparatorLevenshtein(), 0.1);
+//		matchingRule.addComparator(new AthleteNameComparatorMongeElkan_NoBrackets(), 0.4);
 		//matchingRule.addComparator(new AthleteSexComparator(), 0.2);
 //		matchingRule.normalizeWeights();
 		
@@ -117,13 +121,13 @@ public class IR_linear_combination_DBPedia_Fig_Max
 				dataAthletesDBPedia, dataAthletesFigshare, null, matchingRule,
 				blocker);
 
-		// Create a top-1 global matching
-		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 2, 0.0);
+		// Create a top-1 global matching --> nehme nur den höchsten, daher 1 und nicht 2 (matche sonst die 2 wahrscheinlichsten und erzeuge damit duplikate)
+//		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
 
 		// Alternative: Create a maximum-weight, bipartite matching
-		// MaximumBipartiteMatchingAlgorithm<Movie,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
-		// maxWeight.run();
-		// correspondences = maxWeight.getResult();
+		 MaximumBipartiteMatchingAlgorithm<Athlete,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
+		 maxWeight.run();
+		 correspondences = maxWeight.getResult();
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/dbpedia_figshare_Athlete_correspondences.csv"), correspondences);
@@ -132,7 +136,7 @@ public class IR_linear_combination_DBPedia_Fig_Max
 		System.out.println("*\n*\tLoading gold standard\n*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
 		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_20181102_dbpedia_2_figshare.csv"));
+				"data/goldstandard/gs_20181114_dbpedia_2_figshare.csv"));
 		
 		System.out.println("*\n*\tEvaluating result\n*");
 		// evaluate your result
