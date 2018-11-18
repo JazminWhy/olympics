@@ -36,7 +36,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 // * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
 // * key based on the year.
 // * 
-// * @author Blumi
+// * @author Maxi
 // * 
 // */
 public class AthleteBlockingKeyByNameFirstLettersDBPedia extends
@@ -52,7 +52,10 @@ public class AthleteBlockingKeyByNameFirstLettersDBPedia extends
 	public void generateBlockingKeys(Athlete record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Athlete>> resultCollector) {
 		
-		String[] tokens  = record.getName().split(" ");
+		String name_preprocessed = record.getName();
+		name_preprocessed = name_preprocessed.replaceAll("\\(.*\\)","");
+		String[] tokens  = name_preprocessed.split(" ");
+//		String[] tokens  = record.getName().split(" ");
 		int tokenLength = 0;
 		String firstToken, lastToken ="";
 		String blockingKeyValue = "";
@@ -68,7 +71,9 @@ public class AthleteBlockingKeyByNameFirstLettersDBPedia extends
 				tokensOrdered.add(lastToken);
 				Collections.sort(tokensOrdered);
 
+				// i = anzahl der token 2
 				for(int i = 0; i < 2; i++) {
+					// 2 vor tokensordered entspricht der anzahl der buchstaben 2
 					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(2,tokensOrdered.get(i).length())).toUpperCase();
 				}
 	
@@ -91,6 +96,7 @@ public class AthleteBlockingKeyByNameFirstLettersDBPedia extends
 					blockingKeyValue = blockingKeyValue + "m";
 				}
 				resultCollector.next(new Pair<>(blockingKeyValue, record));
+		
 				
 				
 				/* Max Year of Participation
