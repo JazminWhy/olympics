@@ -67,6 +67,7 @@ public class IR_using_machine_learning_kaggle_figshare {
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);	
 
+		// Read discipline mapping
 		CSVReader reader = new CSVReader(new FileReader("data/input/20181025_discipline mapping_final.csv"));
 		DisciplineMapping = reader.readAll();
 		
@@ -83,7 +84,6 @@ public class IR_using_machine_learning_kaggle_figshare {
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000);
 		
 		// add comparators
-		//TODO
 		matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator());
 		matchingRule.addComparator(new AthleteParticipationMedalYearDisciplineTeamComparatorML());
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(2));
@@ -105,7 +105,6 @@ public class IR_using_machine_learning_kaggle_figshare {
 		
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByEarliestParticipationYearGenerator());
-//		SortedNeighbourhoodBlocker<Athlete, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new AthleteBlockingKeyByDecadeGenerator(), 1);
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// Initialize Matching Engine
