@@ -76,7 +76,8 @@ public class IR_using_machine_learning_kaggle_figshare {
 		String options[] = new String[] { "" };
 		String modelType = "SimpleLogistic"
 				+ ""; // use a logistic regression
-		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.5, modelType, options);
+		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.4, modelType, options);
+		// 0.1 for NaiveBayes, 0.4 for SimpleLogistic, 0.2 for J48
 		
 		matchingRule.setBackwardSelection(true);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000);

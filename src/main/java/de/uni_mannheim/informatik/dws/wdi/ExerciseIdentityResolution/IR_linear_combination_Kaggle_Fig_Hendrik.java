@@ -92,16 +92,15 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0.58);
+				0.75); // 0.75 for Monge Elkan, otherwise 0.57 or 0.58
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, kfTraining);
 		
 		// add comparators
-		//matchingRule.addComparator(new AthleteNameComparatorJaccard(), 0.2);
-		//matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator(), 0.3);
-		//matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.2);
+		//matchingRule.addComparator(new AthleteNameComparatorJaccard(), 0.6);
+		//matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.6);
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.6);
-		matchingRule.addComparator(new AthleteParticipationMedalYearDisciplineTeamComparator(), 0.4);
-		//matchingRule.addComparator(new AthleteSexComparator(), 0.2);
+		matchingRule.addComparator(new AthleteParticipationMedalYearDisciplineTeamComparator(), 0.4); //0.35 for Monge Elkan, otherwise 0.4
+		//matchingRule.addComparator(new AthleteParticipationMedalComparator(), 0.4);
 		
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByEarliestParticipationYearGenerator());
@@ -124,9 +123,9 @@ public class IR_linear_combination_Kaggle_Fig_Hendrik
 		// correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0.0);
 
 		// Alternative: Create a maximum-weight, bipartite matching
-		MaximumBipartiteMatchingAlgorithm<Athlete,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
-		maxWeight.run();
-		correspondences = maxWeight.getResult();
+		 MaximumBipartiteMatchingAlgorithm<Athlete,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
+		 maxWeight.run();
+		 correspondences = maxWeight.getResult();
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/kaggle_figshare_Athlete_correspondences_top_2.csv"), correspondences);
