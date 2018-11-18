@@ -78,7 +78,7 @@ public class IR_using_machine_learning_kaggle_figshare {
 		String modelType = "SimpleLogistic"
 				+ ""; // use a logistic regression
 		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.4, modelType, options);
-		// 0.1 for NaiveBayes, 0.4 for SimpleLogistic, 0.2 for J48
+		// 0.4 for SimpleLogistic and NaiveBayes, 0.2 for J48
 		
 		matchingRule.setBackwardSelection(true);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000);  
@@ -95,7 +95,7 @@ public class IR_using_machine_learning_kaggle_figshare {
 		
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_kaggle_figshare_merged_2.csv")); //TODO
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_Kaggle_balanced.csv"));
 
 		// train the matching rule's model
 		System.out.println("*\n*\tLearning matching rule\n*");
