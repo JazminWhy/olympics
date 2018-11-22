@@ -29,7 +29,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
  * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
- * key based on the year.
+ * key based on gender.
  * 
  * @author Hendrik Roeder & Tido Felix Marschall
  * 

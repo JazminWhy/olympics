@@ -19,6 +19,7 @@ import de.uni_mannheim.informatik.dws.winter.utils.query.Q;
 
 /**
 * {@link Comparator} for {@link Athlete}s based on the {@link OlympicParticipation#getMedal()} inclusive {@link OlympicParticipation#getYear()} value.
+* This comparator is an improvement of {@link AthleteParticipationMedal_inclYearDiscipline_Comparator}.
 * 
 * @author Tido Felix Marschall & Hendrik Roeder
 * 

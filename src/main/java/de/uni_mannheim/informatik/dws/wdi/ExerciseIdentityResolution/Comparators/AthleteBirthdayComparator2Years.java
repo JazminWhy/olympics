@@ -18,14 +18,14 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.date.YearSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
-//
-///**
-// * {@link Comparator} for {@link Movie}s based on the {@link Movie#getDate()}
-// * value, with a maximal difference of 2 years.
-// * 
-// * @author Oliver Lehmberg (oli@dwslab.de)
-// * 
-// */
+
+/**
+ * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getBirthday()}
+ * value, with a maximal difference of 2 years.
+ * 
+ * @author Hendrik Roeder
+ * 
+ */
 public class AthleteBirthdayComparator2Years implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;

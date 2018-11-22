@@ -19,8 +19,8 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.utils.query.Q;
 
 /**
- * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getWeight()}
- * value, with a maximal difference of 2 years.
+ * {@link Comparator} for {@link Athlete}s based on the {@link OlympicParticipation#getMedal()} inclusive {@link OlympicParticipation#getYear()} value.
+ * This is the version of {@link AthleteParticipationMedalYearDisciplineTeamComparator} used for Machine Learning
  * 
  * @author Hendrik Roeder & Tido Felix Marschall
  * 

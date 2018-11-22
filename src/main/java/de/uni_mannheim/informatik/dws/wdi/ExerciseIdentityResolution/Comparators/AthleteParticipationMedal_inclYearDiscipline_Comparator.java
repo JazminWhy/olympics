@@ -20,7 +20,7 @@ import uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan;
 
 /**
 * {@link Comparator} for {@link Athlete}s based on the {@link OlympicParticipation#getMedal()} inclusive {@link OlympicParticipation#getYear()}
-* and {@link OlympicParticipation#getDiscipline()} value.
+* and {@link OlympicParticipation#getDiscipline()} to compare athletes based on their medals.
 * 
 * @author Tido Felix Marschall & Hendrik Roeder
 * 
