@@ -18,19 +18,14 @@ import de.uni_mannheim.informatik.dws.winter.model.AbstractRecord;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
 /**
- * A {@link AbstractRecord} which represents an actor
+ * A {@link AbstractRecord} which represents a olympic participation
  * 
- * @author Oliver Lehmberg (oli@dwslab.de)
+ * @author Jasmin Weimueller & Marius Bock
  * 
  */
-public class OlympicParticipation extends AbstractRecord<Attribute> implements Serializable {
 
-	/*
-	 * example entry <OlypmicParticipation id="DP-100253"> <Year></Year>
-	 * <Season></Season> <City></City> <OlympicTeam></OlympicTeam>
-	 * <Disciplines></Disciplines> <Event></Event> <Medal></Medal>
-	 * </OlypmicParticipation>
-	 */
+@SuppressWarnings("unused")
+public class OlympicParticipation extends AbstractRecord<Attribute> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 	private String id;

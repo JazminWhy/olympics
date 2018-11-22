@@ -11,6 +11,7 @@
 // */
 //
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -33,15 +34,16 @@ import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import java.util.regex.*;
 
-//
-///**
-// * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
-// * key based on the year.
-// * 
-// * @author Blumi
-// * 
-// */
-public class AthleteBlockingKeyField_no_preprocessing extends
+/**
+ * {@link BlockingKeyGenerator} for the field athletes dataset, which generates a blocking
+ * key based on the first letter of the name and gender with preprocessing steps.
+ * 
+ * @author Marius Bock
+ * 
+ */
+
+@SuppressWarnings("unused")
+public class AthleteBlockingKeyField_NoPreprocessing extends
 		RecordBlockingKeyGenerator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
@@ -58,7 +60,6 @@ public class AthleteBlockingKeyField_no_preprocessing extends
 		int tokenLength = 0;
 		String firstToken, lastToken ="";
 		String blockingKeyValue = "";		
-		//String[] tokensOrdered = new String[2];
 		List<String> tokensOrdered = new ArrayList<>();
 		
 				// Block by name

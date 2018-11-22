@@ -24,12 +24,12 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 
-///**
-//* Identity resolution using machine learning for kaggle and figshare dataset.
-//* 
-//* @author Hendrik Roeder & Tido Felix Marschall
-//* 
-//*/
+/**
+* Identity resolution using machine learning for kaggle and figshare dataset.
+* 
+* @author Hendrik Roeder & Tido Felix Marschall
+* 
+*/
 
 public class IR_kaggle_figshare_machine_learning {  
 	

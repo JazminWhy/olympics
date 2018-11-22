@@ -18,16 +18,16 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.EqualsSimilarity;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
-//
-///**
-// * {@link Comparator} for {@link Movie}s based on the {@link Movie#getTitle()}
-// * value and their {@link LevenshteinSimilarity} value.
-// * 
-// * @author Oliver Lehmberg (oli@dwslab.de)
-// * 
-// */
+
+/**
+ * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getSex()}
+ * value and their {@link Equal} value.
+ * 
+ * 
+ * @author Jasmin Weimueller
+ * 
+ */
 public class AthleteSexComparator implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;

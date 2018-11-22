@@ -18,21 +18,26 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.utils.query.Q;
 
+/**
+ * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getWeight()}
+ * value, with a maximal difference of 2 years.
+ * 
+ * @author Hendrik Roeder & Tido Felix Marschall
+ * 
+ */
+
+@SuppressWarnings("unused")
 public class AthleteParticipationMedalYearDisciplineTeamComparatorML implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 
 	private ComparatorLogger comparisonLog;
 
-	private List<String[]> DisciplineMapping;
-
+	@SuppressWarnings("finally")
 	private boolean compareDiscipline(String disc1, String disc2) {
 		boolean toBeReturned = false;
 
 		try {
-			// CSVReader reader = new CSVReader(new
-			// FileReader("data/input/20181025_discipline mapping_final.csv"));
-			// List<String[]> DisciplineMapping = reader.readAll();
 			for (String[] string : IR_kaggle_figshare_machine_learning.DisciplineMapping) {
 				if (string[0].equalsIgnoreCase(disc1)) {
 					toBeReturned = string[1].equalsIgnoreCase(disc2);
@@ -51,10 +56,7 @@ public class AthleteParticipationMedalYearDisciplineTeamComparatorML implements 
 	@Override
 	public double compare(Athlete record1, Athlete record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
-
-//		Set<String> participationMedals1 = new HashSet<>();
-//		Set<String> participationMedals2 = new HashSet<>();
-//		
+		
 		List<OlympicParticipation> a_list = record1.getOlympicParticipations();
 		List<OlympicParticipation> b_list_original = record2.getOlympicParticipations();
 
@@ -98,12 +100,6 @@ public class AthleteParticipationMedalYearDisciplineTeamComparatorML implements 
 
 		if (this.comparisonLog != null) {
 			this.comparisonLog.setComparatorName(getClass().getName());
-
-			// this.comparisonLog.setRecord1Value(Integer.toString(difGold) + "-"
-			// + Integer.toString(difSilver) + "-" + Integer.toString(difBronze) + "-");
-			// this.comparisonLog.setRecord2Value(Integer.toString(difGold) + "-"
-			// + Integer.toString(difSilver) + "-" + Integer.toString(difBronze) + "-");
-
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
 		return similarity;

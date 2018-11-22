@@ -26,14 +26,14 @@ import de.uni_mannheim.informatik.dws.winter.model.Pair;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
-//
-///**
-// * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
-// * key based on the year and nationality.
-// * 
-// * @author Hendrik Roeder
-// * 
-// */
+
+/**
+ * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
+ * key based on earliest participation year.
+ * 
+ * @author Hendrik Roeder & Tido Felix Marschall
+ * 
+ */
 public class AthleteBlockingKeyByEarliestParticipationYearGenerator extends
 		RecordBlockingKeyGenerator<Athlete, Attribute> {
 

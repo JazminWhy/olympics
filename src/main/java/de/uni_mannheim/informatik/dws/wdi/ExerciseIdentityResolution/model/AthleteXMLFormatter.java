@@ -20,11 +20,12 @@ import org.w3c.dom.Element;
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
 
 /**
- * {@link XMLFormatter} for {@link Movie}s.
+ * {@link XMLFormatter} for {@link Athlete}s.
  * 
- * @author Oliver Lehmberg (oli@dwslab.de)
+ * @author Jasmin Weimueller & Marius Bock
  * 
  */
+@SuppressWarnings("unused")
 public class AthleteXMLFormatter extends XMLFormatter<Athlete> {
 
 	OlympicParticipationXMLFormatter OlympicParticipationFormatter = new OlympicParticipationXMLFormatter();
@@ -33,17 +34,6 @@ public class AthleteXMLFormatter extends XMLFormatter<Athlete> {
 	public Element createRootElement(Document doc) {
 		return doc.createElement("WinningAthletes");
 	}
-
-//	protected String id;
-//	protected String provenance;
-//	private String Name;
-//	private LocalDateTime Birthday;
-//	private String PlaceOfBirth;
-//	private String Sex;
-//	private String Nationality;
-//	private float Weight;
-//	private float Height;
-//	private List<OlympicParticipation> OlympicParticipations;
 
 	@Override
 	public Element createElementFromRecord(Athlete record, Document doc) {

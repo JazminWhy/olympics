@@ -19,14 +19,13 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 
-///**
-// * {@link Comparator} for {@link Movie}s based on the {@link Movie#getTitle()}
-// * value and their {@link TokenizingJaccardSimilarity} value.
-// * 
-// * @author Robert Meusel (robert@dwslab.de)
-// * @author Oliver Lehmberg (oli@dwslab.de)
-// * 
-// */
+/**
+ * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getName()}
+ * value and their {@link TokenizingJaccardSimilarity} value.
+ * 
+ * @author Hendrik Roeder
+ * 
+ */
 public class AthleteNameComparatorJaccard implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;

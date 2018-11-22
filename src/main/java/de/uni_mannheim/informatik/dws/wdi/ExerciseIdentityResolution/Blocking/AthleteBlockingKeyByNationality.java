@@ -26,19 +26,19 @@ import de.uni_mannheim.informatik.dws.winter.model.Pair;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
-//
-///**
-// * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
-// * key based on the year.
-// * 
-// * @author Hendrik Roeder
-// * 
-// */
+
+/**
+ * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
+ * key based on the year.
+ * 
+ * @author Hendrik Roeder
+ * 
+ */
+
 public class AthleteBlockingKeyByNationality extends
 		RecordBlockingKeyGenerator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.matching.blocking.generators.BlockingKeyGenerator#generateBlockingKeys(de.uni_mannheim.informatik.wdi.model.Matchable, de.uni_mannheim.informatik.wdi.model.Result, de.uni_mannheim.informatik.wdi.processing.DatasetIterator)
@@ -61,15 +61,6 @@ public class AthleteBlockingKeyByNationality extends
 				else {
 					blockingKeyValue = blockingKeyValue + "m";
 				}
-				
-				//blockingKeyValue = blockingKeyValue + record.get
-				//resultCollector.next(new Pair<>(blockingKeyValue, record));
-				
-				//Set<String> Athletes = new HashSet<>();
-			
-				//Athletes.add(record.getNationality()+record.getSex());
-
-				//resultCollector.next(new Pair<>(Collections.min(Athletes), record));
 				
 				Set<String> OlympicParticipations1 = new HashSet<>();
 				for(OlympicParticipation a : record.getOlympicParticipations()) {

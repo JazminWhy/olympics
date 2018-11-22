@@ -2,7 +2,7 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import java.io.File;
 import org.apache.logging.log4j.Logger;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyByNameFirstLettersDBPedia;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyDBPedia;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.AthleteXMLReader;
@@ -22,12 +22,12 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler;
 
-///**
-//* Identity resolution using machine learning for DBpedia and figshare dataset.
-//* 
-//* @author Maximilian Philipp Barth
-//* 
-//*/
+/**
+* Identity resolution using machine learning for DBpedia and figshare dataset.
+* 
+* @author Maximilian Philipp Barth
+* 
+*/
 
 public class IR_dbpedia_figshare_machine_learning {
 	
@@ -85,7 +85,7 @@ public class IR_dbpedia_figshare_machine_learning {
 		System.out.println(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNameFirstLettersDBPedia());
+		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyDBPedia());
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// initialize Matching Engine

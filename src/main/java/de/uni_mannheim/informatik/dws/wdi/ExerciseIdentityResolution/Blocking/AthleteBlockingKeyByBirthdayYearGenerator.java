@@ -11,7 +11,6 @@
 // */
 //
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking;
-//
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.BlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
@@ -21,19 +20,19 @@ import de.uni_mannheim.informatik.dws.winter.model.Pair;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
-//
-///**
-// * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
-// * key based on the year.
-// * 
-// * @author Hendrik Roeder
-// * 
-// */
+
+/**
+ * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
+ * key based on the birthdate.
+ * 
+ * @author Hendrik Roeder
+ * 
+ */
+
 public class AthleteBlockingKeyByBirthdayYearGenerator extends
 		RecordBlockingKeyGenerator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.matching.blocking.generators.BlockingKeyGenerator#generateBlockingKeys(de.uni_mannheim.informatik.wdi.model.Matchable, de.uni_mannheim.informatik.wdi.model.Result, de.uni_mannheim.informatik.wdi.processing.DatasetIterator)

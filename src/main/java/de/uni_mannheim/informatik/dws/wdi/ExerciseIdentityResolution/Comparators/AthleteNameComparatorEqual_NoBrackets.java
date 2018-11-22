@@ -22,13 +22,13 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athle
 
 /**
  * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getName()}
- * value and their {@link Equal} value.
+ * value and their {@link Equal} value with the no-brackets preprocessing.
  * 
- * @author Hendrik Roeder
+ * @author Jasmin Weimueller
  * 
  */
 
-public class AthleteNameComparatorEqual implements Comparator<Athlete, Attribute> {
+public class AthleteNameComparatorEqual_NoBrackets implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	private EqualsSimilarity<String> sim = new EqualsSimilarity<String>();
@@ -42,8 +42,9 @@ public class AthleteNameComparatorEqual implements Comparator<Athlete, Attribute
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
     	String s1 = record1.getName();
+    	s1 = s1.replaceAll("\\(.*\\)","");
 		String s2 = record2.getName();
-    	
+    	s2 = s2.replaceAll("\\(.*\\)","");
     	double similarity = sim.calculate(s1, s2);
     	
 		if(this.comparisonLog != null){

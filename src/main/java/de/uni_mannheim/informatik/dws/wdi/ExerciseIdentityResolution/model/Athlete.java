@@ -18,21 +18,14 @@ import de.uni_mannheim.informatik.dws.winter.model.AbstractRecord;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 
 /**
- * A {@link AbstractRecord} representing a movie.
+ * A {@link AbstractRecord} representing an athlete.
  * 
- * @author Oliver Lehmberg (oli@dwslab.de)
+ * @author Jasmin Weimueller & Marius Bock
  * 
  */
+
 public class Athlete implements Matchable {
-
-	/*
-	 * example entry <Athlete id="D-100253"> <Name>alain mimoun</Name>
-	 * <Birthday>1921-01-01</Birthday> <PlaceOfBirth>algeria</PlaceOfBirth>
-	 * <Sex>male</Sex> <Nationality>france</Nationality> <Weight>56</Weight>
-	 * <Height>1.7</Height> <OlypmicParticipations> <OlypmicParticipation
-	 * id="DP-100253"> </OlypmicParticipation> </OlypmicParticipations> </Athlete>
-	 */
-
+	
 	protected String id;
 	protected String provenance;
 	private String Name;
@@ -130,13 +123,12 @@ public class Athlete implements Matchable {
 		OlympicParticipations = olympicParticipations;
 	}
 
-	/*
-	 * @Override public String toString() { return
-	 * String.format("[Movie %s: %s / %s / %s]", getIdentifier(), getTitle(),
-	 * getDirector(), getDate().toString()); }
-	 * 
-	 * @Override public int hashCode() { return getIdentifier().hashCode(); }
-	 */
+	
+//	@Override public String toString() { return
+//	String.format("[Athlete %s: %s / %s / %s]", getIdentifier(), getTitle(),getDirector(), getDate().toString()); }
+//	
+//	@Override public int hashCode() { return getIdentifier().hashCode(); }
+//	 
 	@Override
 	public boolean equals(Object obj) {
 		if (obj instanceof Athlete) {

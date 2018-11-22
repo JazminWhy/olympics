@@ -16,17 +16,17 @@ import de.uni_mannheim.informatik.dws.winter.matching.rules.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.similarity.date.YearSimilarity;
 import de.uni_mannheim.informatik.dws.winter.similarity.numeric.AbsoluteDifferenceSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
-//
-///**
-// * {@link Comparator} for {@link Movie}s based on the {@link Movie#getDate()}
-// * value, with a maximal difference of 2 years.
-// * 
-// * @author Oliver Lehmberg (oli@dwslab.de)
-// * 
-// */
+
+/**
+ * {@link Comparator} for {@link Athlete}s based on the {@link Movie#getHeight()} and {@link Movie#getWeight()}
+ * values.
+ * 
+ * @author Jasmin Weimueller
+ * 
+ */
+
 public class AthleteHeightWeightcomparatorsRange implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;

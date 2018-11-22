@@ -11,6 +11,7 @@
 // */
 //
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -19,9 +20,6 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.jena.sparql.pfunction.library.listIndex;
-
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipation;
-//
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.BlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
@@ -31,19 +29,20 @@ import de.uni_mannheim.informatik.dws.winter.model.Pair;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
-//
-///**
-// * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
-// * key based on the year.
-// * 
-// * @author Marius Bock
-// * 
-// */
-public class AthleteBlockingKeyGymnast_no_preprocessing extends
+
+/**
+ * {@link BlockingKeyGenerator} for the DBpedia athlete dataset, which generates a blocking
+ * key based on the year and gender
+ * 
+ * @author Maximilian Philipp Barth 
+ * 
+ */
+
+@SuppressWarnings("unused")
+public class AthleteBlockingKeyDBPedia extends
 		RecordBlockingKeyGenerator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.matching.blocking.generators.BlockingKeyGenerator#generateBlockingKeys(de.uni_mannheim.informatik.wdi.model.Matchable, de.uni_mannheim.informatik.wdi.model.Result, de.uni_mannheim.informatik.wdi.processing.DatasetIterator)
@@ -52,14 +51,14 @@ public class AthleteBlockingKeyGymnast_no_preprocessing extends
 	public void generateBlockingKeys(Athlete record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Athlete>> resultCollector) {
 		
-		String[] tokens  = record.getName().split(" ");
+		String name_preprocessed = record.getName();
+		name_preprocessed = name_preprocessed.replaceAll("\\(.*\\)","");
+		String[] tokens  = name_preprocessed.split(" ");
 		int tokenLength = 0;
 		String firstToken, lastToken ="";
-		String blockingKeyValue = "";		
-		//String[] tokensOrdered = new String[2];
+		String blockingKeyValue = "";
 		List<String> tokensOrdered = new ArrayList<>();
 		
-				// Block by name
 				tokenLength = tokens.length;
 				firstToken = tokens[0];
 				lastToken = tokens[tokenLength-1];
@@ -67,20 +66,17 @@ public class AthleteBlockingKeyGymnast_no_preprocessing extends
 				tokensOrdered.add(lastToken);
 				Collections.sort(tokensOrdered);
 
-				for(int i = 0; i < 1; i++) {
-					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(1,tokensOrdered.get(i).length())).toUpperCase();
+				for(int i = 0; i < 2; i++) {
+					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(2,tokensOrdered.get(i).length())).toUpperCase();
 				}
-				
-				
-//				//Block by Nationality
-//				String[] tokensStr  = record.getNationality().split(" ");
-//				
-//		
-//				for(int i = 0; i <= 3 && i < tokensStr.length; i++) {
-//					blockingKeyValue += tokensStr[i].substring(0, Math.min(2,tokensStr[i].length())).toUpperCase();
-//				}
-				
-				
+	
+				// Block By Gender
+				if (record.getSex().equals("female")) {
+					blockingKeyValue = blockingKeyValue + "f";
+				}
+				else {
+					blockingKeyValue = blockingKeyValue + "m";
+				}
 				resultCollector.next(new Pair<>(blockingKeyValue, record));
 		}
 }

@@ -17,9 +17,9 @@ import org.w3c.dom.Element;
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
 
 /**
- * {@link XMLFormatter} for {@link Actor}s.
+ * {@link XMLFormatter} for {@link OlympicParticipation}s.
  * 
- * @author Oliver Lehmberg (oli@dwslab.de)
+ * @author Jasmin Weimueller & Marius Bock
  * 
  */
 public class OlympicParticipationXMLFormatter extends XMLFormatter<OlympicParticipation> {

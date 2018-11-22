@@ -2,7 +2,7 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import java.io.File;
 import org.apache.logging.log4j.Logger;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyField_no_preprocessing;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyField_NoPreprocessing;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.AthleteXMLReader;
@@ -21,12 +21,12 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 
-///**
-//* Identity resolution using machine learning for field athletes and figshare dataset.
-//* 
-//* @author Marius Bock
-//* 
-//*/
+/**
+* Identity resolution using machine learning for field athletes and figshare dataset.
+* 
+* @author Marius Bock
+* 
+*/
 
 public class IR_field_figshare_machine_learning {
 	
@@ -67,7 +67,7 @@ public class IR_field_figshare_machine_learning {
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(2));
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(3));
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(4));
-		matchingRule.addComparator(new AthleteNameComparatorEqual_NoBracket());
+		matchingRule.addComparator(new AthleteNameComparatorEqual_NoBrackets());
 		matchingRule.addComparator(new AthleteNameComparatorJaccard_NoBracket());
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan_NoBrackets());
 		matchingRule.addComparator(new AthleteNationalityComparatorLevenshtein());
@@ -83,7 +83,7 @@ public class IR_field_figshare_machine_learning {
 		System.out.println(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyField_no_preprocessing());
+		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyField_NoPreprocessing());
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// initialize Matching Engine

@@ -19,13 +19,14 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 
-///**
-// * {@link Comparator} for {@link Movie}s based on the {@link Movie#getTitle()}
-// * value and their {@link LevenshteinSimilarity} value.
-// * 
-// * @author Blumi
-// * 
-// */
+/**
+ * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getNationality()}
+ * value and their {@link LevenshteinSimilarity} value.
+ * 
+ * @author Jasmin Weimueller
+ * 
+ */
+
 public class AthleteNationalityComparatorLevenshtein implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;

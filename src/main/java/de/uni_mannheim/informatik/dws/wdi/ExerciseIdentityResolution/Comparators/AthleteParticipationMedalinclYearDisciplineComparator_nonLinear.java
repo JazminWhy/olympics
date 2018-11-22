@@ -16,6 +16,14 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.utils.query.Q;
 
+/**
+* {@link Comparator} for {@link Athlete}s based on the {@link OlympicParticipation#getMedal()} inclusive {@link OlympicParticipation#getYear()} value.
+* 
+* @author Tido Felix Marschall & Hendrik Roeder
+* 
+*/
+
+@SuppressWarnings("unused")
 public class AthleteParticipationMedalinclYearDisciplineComparator_nonLinear implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
@@ -24,6 +32,7 @@ public class AthleteParticipationMedalinclYearDisciplineComparator_nonLinear imp
 
 	private double similarity;
 	
+	@SuppressWarnings({ "finally", "resource" })
 	private boolean compareDiscipline(String disc1, String disc2) {
 		boolean toBeReturned = false;
 		
@@ -31,12 +40,7 @@ public class AthleteParticipationMedalinclYearDisciplineComparator_nonLinear imp
 			CSVReader reader = new CSVReader(new FileReader("data/input/20181025_discipline mapping_final.csv"));
 			List<String[]> DisciplineMapping = reader.readAll();
 			for (String[] string : DisciplineMapping) {
-				//System.out.println(string[0] + " - " + disc1);
-				//System.out.println(string[1] + " - " + disc2);
 				if (string[0].equalsIgnoreCase(disc1)) {
-					//System.out.println(string[0] + " - " + disc1);
-					//System.out.println(string[1] + " - " + disc2);
-					//System.out.println(string[1].equalsIgnoreCase(disc2));
 					toBeReturned = string[1].equalsIgnoreCase(disc2);
 				}
 			}
@@ -53,10 +57,7 @@ public class AthleteParticipationMedalinclYearDisciplineComparator_nonLinear imp
 	@Override
 	public double compare(Athlete record1, Athlete record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
-
-//		Set<String> participationMedals1 = new HashSet<>();
-//		Set<String> participationMedals2 = new HashSet<>();
-//		
+	
 		List<OlympicParticipation> a_list = record1.getOlympicParticipations();
 		List<OlympicParticipation> b_list_original = record2.getOlympicParticipations();
 		
@@ -101,12 +102,6 @@ public class AthleteParticipationMedalinclYearDisciplineComparator_nonLinear imp
 
 		if (this.comparisonLog != null) {
 			this.comparisonLog.setComparatorName(getClass().getName());
-
-			//this.comparisonLog.setRecord1Value(Integer.toString(difGold) + "-" 
-			//			+ Integer.toString(difSilver) + "-" + Integer.toString(difBronze) + "-");
-			//			this.comparisonLog.setRecord2Value(Integer.toString(difGold) + "-" 
-			//+ Integer.toString(difSilver) + "-" + Integer.toString(difBronze) + "-");
-
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
 		}
 		

@@ -2,7 +2,7 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import java.io.File;
 import org.apache.logging.log4j.Logger;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyGymnast_no_preprocessing;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyGymnast_NoPreprocessing;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.AthleteXMLReader;
@@ -20,12 +20,12 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 
-///**
-//* Identity resolution using linear combination for gymnasts and figshare dataset.
-//* 
-//* @author Marius Bock
-//* 
-//*/
+/**
+* Identity resolution using linear combination for gymnasts and figshare dataset.
+* 
+* @author Marius Bock
+* 
+*/
 
 public class IR_gym_figshare_linear_combination {
 	/*
@@ -65,12 +65,12 @@ public class IR_gym_figshare_linear_combination {
 		
 		// add comparators
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(2), 0.4);
-		matchingRule.addComparator(new AthleteNameComparatorEqual_NoBracket(), 0.1);
+		matchingRule.addComparator(new AthleteNameComparatorEqual_NoBrackets(), 0.1);
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan_NoBrackets(), 0.4);
 		matchingRule.addComparator(new AthleteNationalityComparatorLevenshtein(), 0.1);
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyGymnast_no_preprocessing());
+		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyGymnast_NoPreprocessing());
 	
 		blocker.setMeasureBlockSizes(true);
 		// write debug results to file:

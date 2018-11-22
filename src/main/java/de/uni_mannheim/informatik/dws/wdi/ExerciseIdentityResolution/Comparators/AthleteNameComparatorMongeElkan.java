@@ -17,7 +17,6 @@ import de.uni_mannheim.informatik.dws.winter.matching.rules.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan;
 import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
@@ -30,12 +29,14 @@ import com.wcohen.ss.tokens.SimpleTokenizer;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 
 /**
- * 
- * Calculates Jaccard similarity on n-grams, which are created from the values
- * 
- * @author Oliver Lehmberg (oli@dwslab.de)
- *
- */
+* {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getName()}
+* value and their {@link MongeElkan} value with the no-brackets preprocessing.
+* 
+* @author Tido Felix Marschall
+* 
+*/
+
+@SuppressWarnings("unused")
 public class AthleteNameComparatorMongeElkan extends SimilarityMeasure<String> implements Comparator<Athlete, Attribute>  {
 
     private static final long serialVersionUID = 1L;
