@@ -26,9 +26,9 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader;
 
 /**
- * A {@link XMLMatchableReader} for {@link Movie}s.
+ * A {@link XMLMatchableReader} for {@link Athlete}s.
  * 
- * @author Oliver Lehmberg (oli@dwslab.de)
+ * @author Jasmin Weimueller & Marius Bock
  * 
  */
 public class AthleteXMLReader extends XMLMatchableReader<Athlete, Attribute>  {
@@ -102,10 +102,7 @@ public class AthleteXMLReader extends XMLMatchableReader<Athlete, Attribute>  {
 		List<OlympicParticipation> olympicParticipations = getObjectListFromChildElement(node, "OlympicParticipations",
 				"OlympicParticipation", new OlympicParticipationXMLReader(), provenanceInfo);
 		athlete.setOlympicParticipations(olympicParticipations);
-		
-//		System.out.println("List of Participations");
-//		System.out.println(olympicParticipations);
-		
+				
 		return athlete;
 	}
 
