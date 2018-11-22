@@ -70,7 +70,7 @@ public class IR_dbpedia_figshare_linear_combination
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.75);
 
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNameFirstLettersDBPedia());
+		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyDBPedia());
 		blocker.setMeasureBlockSizes(true);
 		//Write debug results to file:
 		blocker.collectBlockSizeData("data/output/debugResultsBlockingTest.csv", 100);

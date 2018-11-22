@@ -21,7 +21,6 @@ import java.util.Set;
 import org.apache.jena.sparql.pfunction.library.listIndex;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipation;
-//
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.BlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
@@ -31,19 +30,20 @@ import de.uni_mannheim.informatik.dws.winter.model.Pair;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
-//
-///**
-// * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
-// * key based on the year.
-// * 
-// * @author Blumi
-// * 
-// */
+
+/**
+ * {@link BlockingKeyGenerator}  for the rio dataset, which generates a blocking
+ * key based on first letter of name, max i.e. last year of participation and gender
+ * 
+ * @author Jasmin Weimueller
+ * 
+ */
+
+@SuppressWarnings("unused")
 public class AthleteBlockingKeyForRio extends
 		RecordBlockingKeyGenerator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.matching.blocking.generators.BlockingKeyGenerator#generateBlockingKeys(de.uni_mannheim.informatik.wdi.model.Matchable, de.uni_mannheim.informatik.wdi.model.Result, de.uni_mannheim.informatik.wdi.processing.DatasetIterator)
@@ -56,14 +56,11 @@ public class AthleteBlockingKeyForRio extends
 		String name_preprocessed = record.getName();
 		name_preprocessed = name_preprocessed.replaceAll("\\(.*\\)","");
 		String[] tokens  = name_preprocessed.split(" ");
-		//String[] tokens  = record.getName().split(" ");
 		int tokenLength = 0;
 		String firstToken, lastToken ="";
 		String blockingKeyValue = "";
-		//String[] tokensOrdered = new String[2];
 		List<String> tokensOrdered = new ArrayList<>();
-		
-		
+	
 		
 				tokenLength = tokens.length;
 				firstToken = tokens[0];
@@ -75,17 +72,6 @@ public class AthleteBlockingKeyForRio extends
 				for(int i = 0; i < 1; i++) {
 					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(1,tokensOrdered.get(i).length())).toUpperCase();
 				}
-	
-				
-				
-//				//Get Nationality
-//				String[] tokensStr  = record.getNationality().split(" ");
-//				
-//		
-//				for(int i = 0; i <= 3 && i < tokensStr.length; i++) {
-//					blockingKeyValue += tokensStr[i].substring(0, Math.min(2,tokensStr[i].length())).toUpperCase();
-//				}
-				
 				
 				// Block By Gender
 				if (record.getSex().equals("female")) {
@@ -95,7 +81,6 @@ public class AthleteBlockingKeyForRio extends
 					blockingKeyValue = blockingKeyValue + "m";
 				}
 				
-				
 				// Max Year of Participation
 				Set<String> OlympicParticipations1 = new HashSet<>();
 				for(OlympicParticipation a : record.getOlympicParticipations()) {
@@ -103,7 +88,5 @@ public class AthleteBlockingKeyForRio extends
 				}
 				
 				resultCollector.next(new Pair<>(Collections.max(OlympicParticipations1), record));
-				//*/
-				//resultCollector.next(new Pair<>(blockingKeyValue, record));
 		}
 }

@@ -33,14 +33,15 @@ import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import java.util.regex.*;
 
-//
-///**
-// * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
-// * key based on the year.
-// * 
-// * @author Blumi
-// * 
-// */
+/**
+ * {@link BlockingKeyGenerator} for the field athletes dataset, which generates a blocking
+ * key based on the first letter of the name and gender with preprocessing steps.
+ * 
+ * @author Marius Bock
+ * 
+ */
+
+@SuppressWarnings("unused")
 public class AthleteBlockingKeyField extends
 		RecordBlockingKeyGenerator<Athlete, Attribute> {
 

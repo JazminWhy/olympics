@@ -21,7 +21,6 @@ import java.util.Set;
 import org.apache.jena.sparql.pfunction.library.listIndex;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipation;
-//
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.BlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
@@ -31,14 +30,16 @@ import de.uni_mannheim.informatik.dws.winter.model.Pair;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
-//
-///**
-// * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
-// * key based on the year.
-// * 
-// * @author Blumi
-// * 
-// */
+
+/**
+ * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
+ * key based on the first letter of the name.
+ * 
+ * @author Jasmin Weimueller
+ * 
+ */
+
+@SuppressWarnings("unused")
 public class AthleteBlockingKeyByNameFirstLetters extends
 		RecordBlockingKeyGenerator<Athlete, Attribute> {
 
@@ -75,8 +76,6 @@ public class AthleteBlockingKeyByNameFirstLetters extends
 				for(int i = 0; i < 1; i++) {
 					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(1,tokensOrdered.get(i).length())).toUpperCase();
 				}
-	
-				
 				
 				//Get Nationality
 				String[] tokensStr  = record.getNationality().split(" ");
@@ -86,16 +85,6 @@ public class AthleteBlockingKeyByNameFirstLetters extends
 					blockingKeyValue += tokensStr[i].substring(0, Math.min(2,tokensStr[i].length())).toUpperCase();
 				}
 				
-				/*
-				// Block By Gender
-				if (record.getSex().equals("female")) {
-					blockingKeyValue = blockingKeyValue + "f";
-				}
-				else {
-					blockingKeyValue = blockingKeyValue + "m";
-				}
-				
-				*/
 				// Max Year of Participation
 				Set<String> OlympicParticipations1 = new HashSet<>();
 				for(OlympicParticipation a : record.getOlympicParticipations()) {
@@ -103,7 +92,5 @@ public class AthleteBlockingKeyByNameFirstLetters extends
 				}
 				
 				resultCollector.next(new Pair<>(Collections.max(OlympicParticipations1), record));
-				//*/
-				//resultCollector.next(new Pair<>(blockingKeyValue, record));
 		}
 }

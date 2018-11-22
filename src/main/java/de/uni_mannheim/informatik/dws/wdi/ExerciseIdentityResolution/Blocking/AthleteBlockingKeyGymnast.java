@@ -19,9 +19,6 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.jena.sparql.pfunction.library.listIndex;
-
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipation;
-//
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.BlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
@@ -31,14 +28,16 @@ import de.uni_mannheim.informatik.dws.winter.model.Pair;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
-//
-///**
-// * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
-// * key based on the year.
-// * 
-// * @author Marius Bock
-// * 
-// */
+
+/**
+ * {@link BlockingKeyGenerator} for the gymnasts dataset, which generates a blocking
+ * key based on first letter of name including preprocessing steps.
+ * 
+ * @author Marius Bock
+ * 
+ */
+
+@SuppressWarnings("unused")
 public class AthleteBlockingKeyGymnast extends
 		RecordBlockingKeyGenerator<Athlete, Attribute> {
 
@@ -55,11 +54,9 @@ public class AthleteBlockingKeyGymnast extends
 		String name_preprocessed = record.getName();
 		name_preprocessed = name_preprocessed.replaceAll("\\(.*\\)","");
 		String[] tokens  = name_preprocessed.split(" ");
-		//String[] tokens  = record.getName().split(" ");
 		int tokenLength = 0;
 		String firstToken, lastToken ="";
 		String blockingKeyValue = "";
-		//String[] tokensOrdered = new String[2];
 		List<String> tokensOrdered = new ArrayList<>();
 		
 		
@@ -74,17 +71,7 @@ public class AthleteBlockingKeyGymnast extends
 				for(int i = 0; i < 1; i++) {
 					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(1,tokensOrdered.get(i).length())).toUpperCase();
 				}
-				
-				
-//				//Block by Nationality
-//				String[] tokensStr  = record.getNationality().split(" ");
-//				
-//		
-//				for(int i = 0; i <= 3 && i < tokensStr.length; i++) {
-//					blockingKeyValue += tokensStr[i].substring(0, Math.min(2,tokensStr[i].length())).toUpperCase();
-//				}
-				
-				
+
 				resultCollector.next(new Pair<>(blockingKeyValue, record));
 		}
 }
