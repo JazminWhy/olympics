@@ -125,7 +125,7 @@ public class IR_using_machine_learning_kaggle_figshare {
 		correspondences = maxWeight.getResult();
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/kaggle_fingshare_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/kaggle_figshare_correspondences.csv"), correspondences);
 
 		// load the gold standard (test set)
 		System.out.println("*\n*\tLoading gold standard\n*");
