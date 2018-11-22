@@ -2,7 +2,16 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparator
 
 import java.util.Comparator;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.OlympicParticipation;
+
+/**
+ * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getWeight()}
+ * value, with a maximal difference of 2 years.
+ * 
+ * @author Tido Felix Marschall
+ * 
+ */
 
 public class ParticipationSortingComparer implements Comparator<OlympicParticipation> {
 

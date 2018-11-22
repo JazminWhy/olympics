@@ -21,12 +21,12 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 
-///**
-//* Identity resolution using linear combination for dbpedia and figshare dataset.
-//* 
-//* @author Maximilian Philipp Barth
-//* 
-//*/
+/**
+* Identity resolution using linear combination for dbpedia and figshare dataset.
+* 
+* @author Maximilian Philipp Barth
+* 
+**/
 
 public class IR_dbpedia_figshare_linear_combination 
 {

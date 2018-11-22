@@ -12,6 +12,14 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.utils.query.Q;
 
+/**
+* {@link Comparator} for {@link Athlete}s based on the {@link OlympicParticipation#getMedal()} value.
+* 
+* @author Tido Felix Marschall & Hendrik Roeder
+* 
+*/
+
+@SuppressWarnings("unused")
 public class AthleteParticipationMedalComparator implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
@@ -22,9 +30,6 @@ public class AthleteParticipationMedalComparator implements Comparator<Athlete, 
 	public double compare(Athlete record1, Athlete record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 
-//		Set<String> participationMedals1 = new HashSet<>();
-//		Set<String> participationMedals2 = new HashSet<>();
-//		
 		int goldA = 0;
 		int silverA = 0;
 		int bronzeA = 0;

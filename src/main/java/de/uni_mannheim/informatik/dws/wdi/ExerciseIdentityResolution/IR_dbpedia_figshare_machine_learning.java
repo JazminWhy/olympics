@@ -22,12 +22,12 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.JaroWinkler;
 
-///**
-//* Identity resolution using machine learning for DBpedia and figshare dataset.
-//* 
-//* @author Maximilian Philipp Barth
-//* 
-//*/
+/**
+* Identity resolution using machine learning for DBpedia and figshare dataset.
+* 
+* @author Maximilian Philipp Barth
+* 
+*/
 
 public class IR_dbpedia_figshare_machine_learning {
 	

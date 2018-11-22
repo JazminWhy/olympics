@@ -10,7 +10,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteDBPediaBirthdayComparator2Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteHeightWeightcomparatorsRange;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorEqual;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorEqual_NoBracket;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorEqual_NoBrackets;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorMongeElkan;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorMongeElkan_NoBrackets;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorNGramJaccard;
@@ -35,12 +35,12 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.*;
 
-///**
-//* Identity resolution using linear combination for rio and figshare dataset.
-//* 
-//* @author Jasmin Weimueller
-//* 
-//*/
+/**
+* Identity resolution using linear combination for rio and figshare dataset.
+* 
+* @author Jasmin Weimueller
+* 
+*/
 
 @SuppressWarnings("unused")
 public class IR_rio_figshare_linear_combination 
@@ -115,7 +115,7 @@ public class IR_rio_figshare_linear_combination
 		// COMPLEX
 		
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(2), 0.2);
-		matchingRule.addComparator(new AthleteNameComparatorEqual_NoBracket(), 0.1);
+		matchingRule.addComparator(new AthleteNameComparatorEqual_NoBrackets(), 0.1);
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan_NoBrackets(), 0.2);
 		//matchingRule.addComparator(new AthleteBirthdayComparator2Years(), 0.2);
 		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator2Years(), 0.2);

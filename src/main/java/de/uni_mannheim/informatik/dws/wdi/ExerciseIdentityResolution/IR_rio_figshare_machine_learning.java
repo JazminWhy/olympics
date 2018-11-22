@@ -54,12 +54,12 @@ import weka.core.Instances;
 import weka.core.converters.CSVLoader;
 import weka.core.pmml.jaxbbindings.NeuralNetwork;
 
-///**
-//* Identity resolution using linear combination for rio and figshare dataset.
-//* 
-//* @author Jasmin Weimueller
-//* 
-//*/
+/**
+* Identity resolution using linear combination for rio and figshare dataset.
+* 
+* @author Jasmin Weimueller
+* 
+*/
 
 @SuppressWarnings("unused")
 public class IR_rio_figshare_machine_learning {
@@ -196,7 +196,7 @@ public class IR_rio_figshare_machine_learning {
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(2));
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(3));
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(4));
-		matchingRule.addComparator(new AthleteNameComparatorEqual_NoBracket());
+		matchingRule.addComparator(new AthleteNameComparatorEqual_NoBrackets());
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan_NoBrackets());
 		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator2Years());
 		matchingRule.addComparator(new AthleteHeightWeightcomparatorsRange());

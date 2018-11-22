@@ -17,16 +17,10 @@ import de.uni_mannheim.informatik.dws.winter.matching.rules.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan;
 import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
-import com.wcohen.ss.Jaccard;
-import com.wcohen.ss.api.SourcedStringWrapper;
-import com.wcohen.ss.tokens.NGramTokenizer;
-import com.wcohen.ss.tokens.SimpleTokenizer;
-
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 
 /**
@@ -36,6 +30,7 @@ import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
  * @author Oliver Lehmberg (oli@dwslab.de)
  *
  */
+
 public class AthleteDBPediaNationalityComparatorMongeElkan extends SimilarityMeasure<String>
 		implements Comparator<Athlete, Attribute> {
 

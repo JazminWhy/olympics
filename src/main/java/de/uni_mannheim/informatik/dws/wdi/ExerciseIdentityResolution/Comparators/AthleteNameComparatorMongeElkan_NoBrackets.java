@@ -17,12 +17,10 @@ import de.uni_mannheim.informatik.dws.winter.matching.rules.ComparatorLogger;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
-import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan;
 import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
-import com.wcohen.ss.Jaccard;
 import com.wcohen.ss.api.SourcedStringWrapper;
 import com.wcohen.ss.tokens.NGramTokenizer;
 import com.wcohen.ss.tokens.SimpleTokenizer;
@@ -30,12 +28,14 @@ import com.wcohen.ss.tokens.SimpleTokenizer;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 
 /**
- * 
- * Calculates Jaccard similarity on n-grams, which are created from the values
- * 
- * @author Blumi
- *
- */
+* {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getName()}
+* value and their {@link MongeElkan} value with the no-brackets preprocessing.
+* 
+* @author Jasmin Weimueller
+* 
+*/
+
+@SuppressWarnings("unused")
 public class AthleteNameComparatorMongeElkan_NoBrackets extends SimilarityMeasure<String> implements Comparator<Athlete, Attribute>  {
 
     private static final long serialVersionUID = 1L;

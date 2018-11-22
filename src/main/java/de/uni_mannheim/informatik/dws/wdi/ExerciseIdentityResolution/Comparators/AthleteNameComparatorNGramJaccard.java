@@ -26,12 +26,13 @@ import com.wcohen.ss.tokens.SimpleTokenizer;
 import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 
 /**
- * 
- * Calculates Jaccard similarity on n-grams, which are created from the values
- * 
- * @author Oliver Lehmberg (oli@dwslab.de)
- *
- */
+* {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getName()}
+* value and their {@link TokenizingJaccardSimilarity} value on n-grams.
+* 
+* @author Tido Felix Marschall
+* 
+*/
+
 public class AthleteNameComparatorNGramJaccard extends SimilarityMeasure<String> implements Comparator<Athlete, Attribute>  {
 
     private static final long serialVersionUID = 1L;
