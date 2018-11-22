@@ -54,7 +54,10 @@ public class AthleteBlockingKeyField extends
 	public void generateBlockingKeys(Athlete record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Athlete>> resultCollector) {
 		
-		String[] tokens  = record.getName().split(" ");
+		String name_preprocessed = record.getName();
+		name_preprocessed = name_preprocessed.replaceAll("\\(.*\\)","");
+		String[] tokens  = name_preprocessed.split(" ");
+		//String[] tokens  = record.getName().split(" ");
 		int tokenLength = 0;
 		String firstToken, lastToken ="";
 		String blockingKeyValue = "";
@@ -62,37 +65,19 @@ public class AthleteBlockingKeyField extends
 		List<String> tokensOrdered = new ArrayList<>();
 		
 		
-		
+				// Block by name
 				tokenLength = tokens.length;
 				firstToken = tokens[0];
 				lastToken = tokens[tokenLength-1];
-				
-				lastToken = lastToken.replaceAll("\\(-.*\\)", "");
-				lastToken = lastToken.replaceAll("\\(.*-\\)", "");
-				lastToken = lastToken.replaceAll("\\(.*\\)", "");
-				//firstToken = firstToken.replaceAll("\\(.*\\)", "");
-				//lastToken = lastToken.replaceAll("\\(.*\\)", "");
-				//firstToken = firstToken.replaceAll("\\(.*\\)", "");
-				firstToken = firstToken.replaceAll("  ", " ");
-				firstToken = lastToken.replaceAll("  ", " ");
-				
-				System.out.println(firstToken);
-				System.out.println(lastToken);
-
-
 				tokensOrdered.add(firstToken);
 				tokensOrdered.add(lastToken);
-				
 				Collections.sort(tokensOrdered);
 
-				for(int i = 0; i < 2; i++) {
+				for(int i = 0; i < 1; i++) {
 					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(1,tokensOrdered.get(i).length())).toUpperCase();
 				}
 				
-				System.out.println(blockingKeyValue);
-				
-				resultCollector.next(new Pair<>(blockingKeyValue, record));
-				
+
 				// Block By Gender
 				if (record.getSex().equals("female")) {
 					blockingKeyValue = blockingKeyValue + "f";
@@ -101,14 +86,8 @@ public class AthleteBlockingKeyField extends
 					blockingKeyValue = blockingKeyValue + "m";
 				}
 				
+
 				
-				/* Max Year of Participation
-				Set<String> OlympicParticipations1 = new HashSet<>();
-				for(OlympicParticipation a : record.getOlympicParticipations()) {
-					OlympicParticipations1.add(blockingKeyValue + a.getYear());
-				}
-				
-				resultCollector.next(new Pair<>(Collections.max(OlympicParticipations1), record));
-				*/
+				resultCollector.next(new Pair<>(blockingKeyValue, record));
 		}
 }

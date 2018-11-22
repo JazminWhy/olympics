@@ -31,15 +31,17 @@ import de.uni_mannheim.informatik.dws.winter.model.Pair;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
+import java.util.regex.*;
+
 //
 ///**
 // * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
 // * key based on the year.
 // * 
-// * @author Marius Bock
+// * @author Blumi
 // * 
 // */
-public class AthleteBlockingKeyGymnast extends
+public class AthleteBlockingKeyField_no_preprocessing extends
 		RecordBlockingKeyGenerator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
@@ -52,16 +54,12 @@ public class AthleteBlockingKeyGymnast extends
 	public void generateBlockingKeys(Athlete record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Athlete>> resultCollector) {
 		
-		String name_preprocessed = record.getName();
-		name_preprocessed = name_preprocessed.replaceAll("\\(.*\\)","");
-		String[] tokens  = name_preprocessed.split(" ");
-		//String[] tokens  = record.getName().split(" ");
+		String[] tokens  = record.getName().split(" ");
 		int tokenLength = 0;
 		String firstToken, lastToken ="";
-		String blockingKeyValue = "";
+		String blockingKeyValue = "";		
 		//String[] tokensOrdered = new String[2];
 		List<String> tokensOrdered = new ArrayList<>();
-		
 		
 				// Block by name
 				tokenLength = tokens.length;
@@ -75,15 +73,15 @@ public class AthleteBlockingKeyGymnast extends
 					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(1,tokensOrdered.get(i).length())).toUpperCase();
 				}
 				
+				// Block By Gender
+				if (record.getSex().equals("female")) {
+					blockingKeyValue = blockingKeyValue + "f";
+				}
+				else {
+					blockingKeyValue = blockingKeyValue + "m";
+				}
 				
-//				//Block by Nationality
-//				String[] tokensStr  = record.getNationality().split(" ");
-//				
-//		
-//				for(int i = 0; i <= 3 && i < tokensStr.length; i++) {
-//					blockingKeyValue += tokensStr[i].substring(0, Math.min(2,tokensStr[i].length())).toUpperCase();
-//				}
-				
+
 				
 				resultCollector.next(new Pair<>(blockingKeyValue, record));
 		}

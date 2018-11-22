@@ -39,7 +39,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 // * @author Marius Bock
 // * 
 // */
-public class AthleteBlockingKeyGymnast extends
+public class AthleteBlockingKeyGymnast_no_preprocessing extends
 		RecordBlockingKeyGenerator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
@@ -52,16 +52,12 @@ public class AthleteBlockingKeyGymnast extends
 	public void generateBlockingKeys(Athlete record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Athlete>> resultCollector) {
 		
-		String name_preprocessed = record.getName();
-		name_preprocessed = name_preprocessed.replaceAll("\\(.*\\)","");
-		String[] tokens  = name_preprocessed.split(" ");
-		//String[] tokens  = record.getName().split(" ");
+		String[] tokens  = record.getName().split(" ");
 		int tokenLength = 0;
 		String firstToken, lastToken ="";
-		String blockingKeyValue = "";
+		String blockingKeyValue = "";		
 		//String[] tokensOrdered = new String[2];
 		List<String> tokensOrdered = new ArrayList<>();
-		
 		
 				// Block by name
 				tokenLength = tokens.length;

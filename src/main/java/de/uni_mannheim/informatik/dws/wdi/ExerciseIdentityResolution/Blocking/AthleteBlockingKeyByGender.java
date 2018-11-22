@@ -58,7 +58,6 @@ public class AthleteBlockingKeyByGender extends
 		else {
 			blockingKeyValue = "m";
 		}
-		System.out.println(blockingKeyValue);
 
 		//blockingKeyValue = blockingKeyValue + record.get
 		//resultCollector.next(new Pair<>(blockingKeyValue, record));

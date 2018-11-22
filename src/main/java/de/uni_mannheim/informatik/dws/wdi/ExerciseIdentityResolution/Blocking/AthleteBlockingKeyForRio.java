@@ -78,13 +78,13 @@ public class AthleteBlockingKeyForRio extends
 	
 				
 				
-				//Get Nationality
-				String[] tokensStr  = record.getNationality().split(" ");
-				
-		
-				for(int i = 0; i <= 3 && i < tokensStr.length; i++) {
-					blockingKeyValue += tokensStr[i].substring(0, Math.min(2,tokensStr[i].length())).toUpperCase();
-				}
+//				//Get Nationality
+//				String[] tokensStr  = record.getNationality().split(" ");
+//				
+//		
+//				for(int i = 0; i <= 3 && i < tokensStr.length; i++) {
+//					blockingKeyValue += tokensStr[i].substring(0, Math.min(2,tokensStr[i].length())).toUpperCase();
+//				}
 				
 				
 				// Block By Gender

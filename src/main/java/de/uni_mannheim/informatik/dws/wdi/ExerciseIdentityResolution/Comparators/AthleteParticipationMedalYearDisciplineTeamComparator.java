@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.*;
 
 import au.com.bytecode.opencsv.CSVReader;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_linear_combination_Kaggle_Fig_Hendrik;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_kaggle_figshare_linear_combination;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.Comparator;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.ComparatorLogger;
@@ -32,7 +32,7 @@ public class AthleteParticipationMedalYearDisciplineTeamComparator implements Co
 		try {
 			//CSVReader reader = new CSVReader(new FileReader("data/input/20181025_discipline mapping_final.csv"));
 			//List<String[]> DisciplineMapping = reader.readAll();
-			for (String[] string : IR_linear_combination_Kaggle_Fig_Hendrik .DisciplineMapping) {
+			for (String[] string : IR_kaggle_figshare_linear_combination .DisciplineMapping) {
 				if (string[0].equalsIgnoreCase(disc1)) {
 					toBeReturned = string[1].equalsIgnoreCase(disc2);
 					if ((string[0].equalsIgnoreCase("biathlon") == false) || (toBeReturned == true)) {

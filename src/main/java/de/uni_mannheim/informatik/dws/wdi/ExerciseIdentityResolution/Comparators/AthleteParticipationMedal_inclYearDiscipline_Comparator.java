@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.*;
 
 import au.com.bytecode.opencsv.CSVReader;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_using_machine_learning_kaggle_figshare;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_kaggle_figshare_machine_learning;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.Comparator;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.ComparatorLogger;
@@ -30,7 +30,7 @@ public class AthleteParticipationMedal_inclYearDiscipline_Comparator implements 
 			// CSVReader reader = new CSVReader(new
 			// FileReader("data/input/20181025_discipline mapping_final.csv"));
 			// List<String[]> DisciplineMapping = reader.readAll();
-			for (String[] string : IR_using_machine_learning_kaggle_figshare.DisciplineMapping) {
+			for (String[] string : IR_kaggle_figshare_machine_learning.DisciplineMapping) {
 				// System.out.println(string[0] + " - " + disc1);
 				// System.out.println(string[1] + " - " + disc2);
 				if (string[0].equalsIgnoreCase(disc1)) {

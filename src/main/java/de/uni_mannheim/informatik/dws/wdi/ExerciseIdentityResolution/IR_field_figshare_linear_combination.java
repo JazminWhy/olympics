@@ -1,14 +1,14 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
-
 import java.io.File;
 import org.apache.logging.log4j.Logger;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyGymnast;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyField_no_preprocessing;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.AthleteXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
+import de.uni_mannheim.informatik.dws.winter.matching.algorithms.MaximumBipartiteMatchingAlgorithm;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -20,8 +20,14 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 
+///**
+//* Identity resolution using linear combination for field athletes and figshare dataset.
+//* 
+//* @author Marius Bock
+//* 
+//*/
 
-public class IR_gymnast_fig_linear_combination {
+public class IR_field_figshare_linear_combination {
 	/*
 	 * Logging Options:
 	 * 		default: 	level INFO	- console
@@ -41,71 +47,63 @@ public class IR_gymnast_fig_linear_combination {
     public static void main( String[] args ) throws Exception
     {
 		// loading data
-    	// Test 3
 		System.out.println("*\n*\tLoading datasets\n*");
-		HashedDataSet<Athlete, Attribute> dataAthletesGymnast = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_Gymnasts_Final.xml"), "/WinningAthletes/Athlete", dataAthletesGymnast);
+		HashedDataSet<Athlete, Attribute> dataAthletesField = new HashedDataSet<>();
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181102_FieldAthletes_Final.xml"), "/WinningAthletes/Athlete", dataAthletesField);
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
-		
 
+		
 		// load the training set
 		MatchingGoldStandard kfTraining = new MatchingGoldStandard();
-		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_fig_gym_v1.csv"));
+		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_figshare_field.csv"));
 
 		// create a matching rule
 		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-				0);
+				0.6);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, kfTraining);
 		
 		// add comparators
-		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 1);
-		//matchingRule.addComparator(new AthleteParticipationMedal_inclYearDiscipline_Comparator(), 0.6);
-		//matchingRule.addComparator(new AthleteNameComparatorLevenshtein(), 1);
-		//matchingRule.addComparator(new AthleteSexComparator(), 0.5);
-		//matchingRule.addComparator(new AthleteNameComparatorLevenshtein(), 0.5);
-		
+		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(2), 0.4);
+		matchingRule.addComparator(new AthleteNameComparatorEqual_NoBracket(), 0.1);
+		matchingRule.addComparator(new AthleteNameComparatorMongeElkan_NoBrackets(), 0.4);
+		matchingRule.addComparator(new AthleteNationalityComparatorLevenshtein(), 0.1);
+
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyGymnast());
-	
+		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyField_no_preprocessing());
 		blocker.setMeasureBlockSizes(true);
-		//Write debug results to file:
+		
+		// write debug results to file:
 		blocker.collectBlockSizeData("data/output/debugResultsBlockingTest.csv", 100);
 		
-		// Initialize Matching Engine
+		// initialize Matching Engine
 		MatchingEngine<Athlete, Attribute> engine = new MatchingEngine<>();
 		
-		// Execute the matching
+		// execute the matching
 		System.out.println("*\n*\tRunning identity resolution\n*");
 		Processable<Correspondence<Athlete, Attribute>> correspondences = engine.runIdentityResolution(
-				dataAthletesGymnast, dataAthletesFigshare, null, matchingRule,
-				blocker);
+				dataAthletesField, dataAthletesFigshare, null, matchingRule, blocker);
 
-		// Create a top-1 global matching
-		correspondences = engine.getTopKInstanceCorrespondences(correspondences, 2, 0.0);
-
-		// Alternative: Create a maximum-weight, bipartite matching
-		// MaximumBipartiteMatchingAlgorithm<Movie,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
-		// maxWeight.run();
-		// correspondences = maxWeight.getResult();
+		// global matching: create a maximum-weight, bipartite matching
+		MaximumBipartiteMatchingAlgorithm<Athlete,Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondences);
+		maxWeight.run();
+		correspondences = maxWeight.getResult();
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/field_figshare_gym_correspondences.csv"), correspondences);
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/field_figshare_LC_correspondences.csv"), correspondences);
 
 		// load the gold standard (test set)
 		System.out.println("*\n*\tLoading gold standard\n*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
-		gsTest.loadFromCSVFile(new File(
-				"data/goldstandard/gs_fig_gym_v1.csv"));
+		gsTest.loadFromCSVFile(new File("data/goldstandard/gs_figshare_field.csv"));
 		
+		// evaluate result
 		System.out.println("*\n*\tEvaluating result\n*");
-		// evaluate your result
 		MatchingEvaluator<Athlete, Attribute> evaluator = new MatchingEvaluator<Athlete, Attribute>();
-		Performance perfTest = evaluator.evaluateMatching(correspondences,
-				gsTest);
+		Performance perfTest = evaluator.evaluateMatching(correspondences, gsTest);
 
 		// print the evaluation result
-		System.out.println("gymnast <-> figshare");
+		System.out.println("FieldAthletes <-> figshare");
 		System.out.println(String.format(
 				"Precision: %.4f",perfTest.getPrecision()));
 		System.out.println(String.format(
