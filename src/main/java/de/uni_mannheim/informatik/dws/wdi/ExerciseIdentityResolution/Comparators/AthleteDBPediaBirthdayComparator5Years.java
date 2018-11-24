@@ -29,16 +29,14 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athle
 
 //
 ///**
-// * {@link Comparator} for {@link Movie}s based on the {@link Movie#getDate()}
-// * value, with a maximal difference of 5 years.
+// * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getDate()}
+// * value, with a maximal difference of 5 years. In case of missing values, we compare names using MongeElkan.
 // * 
 // * @author Max
 // * 
 // */
 
 
-// Größe: beide minus 1, kleinere durch größere, ergebnis ^4
-// Gewicht: kleinere durch größere, ergebnis ^4
 
 
 public class AthleteDBPediaBirthdayComparator5Years implements Comparator<Athlete, Attribute> {
@@ -62,7 +60,7 @@ public class AthleteDBPediaBirthdayComparator5Years implements Comparator<Athlet
    
 	private ComparatorLogger comparisonLog;
 
-//	 public AthleteDBPediaBirthdayComparator2Years(int n) {
+//	 public AthleteDBPediaBirthdayComparator5Years(int n) {
 //	        gramSize = n;
 //	    }
 	

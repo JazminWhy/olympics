@@ -32,7 +32,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
  * {@link BlockingKeyGenerator} for the DBpedia athlete dataset, which generates a blocking
- * key based on the year and gender
+ * key based on name (get first two letters of first and last token, ordered alphabetically) and gender
  * 
  * @author Maximilian Philipp Barth 
  * 
