@@ -58,6 +58,7 @@ public class IR_dbpedia_figshare_machine_learning {
 		
 		// create a matching rule
 		String options[] = new String[] { "" };
+		// choose from list: NaiveBayes, SimpleLogistic, DecisionTable, ...
 		String modelType = "NaiveBayes" + "";
 		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.6005, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000);
