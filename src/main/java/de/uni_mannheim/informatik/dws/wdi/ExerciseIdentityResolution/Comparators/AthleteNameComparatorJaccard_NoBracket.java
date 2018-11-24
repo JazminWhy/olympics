@@ -21,7 +21,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athle
 
 /**
  * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getName()}
- * value and their {@link TokenizingJaccardSimilarity} value with the no-brackets preprocessing.
+ * value and their {@link TokenizingJaccardSimilarity} value with no-brackets preprocessing.
  * 
  * @author Jasmin Weimueller
  * 

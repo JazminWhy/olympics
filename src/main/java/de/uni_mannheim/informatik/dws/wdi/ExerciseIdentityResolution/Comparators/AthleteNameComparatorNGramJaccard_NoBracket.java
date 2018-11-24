@@ -27,7 +27,7 @@ import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 
 /**
 * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getName()}
-* value and their {@link TokenizingJaccardSimilarity} value on n-grams with the no-brackets preprocessing.
+* value and their {@link TokenizingJaccardSimilarity} value on n-grams with no-brackets preprocessing.
 * 
 * @author Jasmin Weimueller
 * 

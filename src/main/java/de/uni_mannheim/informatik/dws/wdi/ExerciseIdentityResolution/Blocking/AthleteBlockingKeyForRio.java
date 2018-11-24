@@ -33,7 +33,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
  * {@link BlockingKeyGenerator}  for the rio dataset, which generates a blocking
- * key based on first letter of name, 2 first letters of nationality tokens, gender and last year of participation to block by Rio2016 Participations
+ * key based on first letter of name, 2 first letters of nationality tokens, gender and last year of participation to block by Rio 2016 Participations
  * 
  * @author Jasmin Weimueller
  * 

@@ -36,7 +36,7 @@ import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.*;
 
 /**
-* Identity resolution using linear combination for rio and figshare dataset.
+* Identity resolution using a linear combination matching rule for rio and figshare dataset.
 * 
 * @author Jasmin Weimueller
 * 

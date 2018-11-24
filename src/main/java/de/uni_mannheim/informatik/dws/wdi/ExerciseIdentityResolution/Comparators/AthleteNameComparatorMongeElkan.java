@@ -30,7 +30,7 @@ import de.uni_mannheim.informatik.dws.winter.similarity.SimilarityMeasure;
 
 /**
 * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getName()}
-* value and their {@link MongeElkan} value with the no-brackets preprocessing.
+* value and their {@link MongeElkan} value with no-brackets preprocessing.
 * 
 * @author Tido Felix Marschall
 * 

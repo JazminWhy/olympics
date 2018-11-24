@@ -55,7 +55,7 @@ import weka.core.converters.CSVLoader;
 import weka.core.pmml.jaxbbindings.NeuralNetwork;
 
 /**
-* Identity resolution using linear combination for rio and figshare dataset.
+* Identity resolution using machine learning for rio and figshare dataset.
 * 
 * @author Jasmin Weimueller
 * 

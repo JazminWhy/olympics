@@ -21,7 +21,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athle
 
 /**
  * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getWeight()}
- * value, with a max default difference of 0.2, but can be set individually.
+ * value, with a max default difference of 0.2, but value can be set individually.
  * 
  * @author Jasmin Weimueller
  * 
