@@ -33,7 +33,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
  * {@link BlockingKeyGenerator}  for the rio dataset, which generates a blocking
- * key based on first letter of name, max i.e. last year of participation and gender
+ * key based on first letter of name, 2 first letters of nationality tokens, gender and last year of participation to block by Rio2016 Participations
  * 
  * @author Jasmin Weimueller
  * 
@@ -71,6 +71,13 @@ public class AthleteBlockingKeyForRio extends
 
 				for(int i = 0; i < 1; i++) {
 					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(1,tokensOrdered.get(i).length())).toUpperCase();
+				}
+				
+				//Block by Nationality
+				String[] tokensStr  = record.getNationality().split(" ");
+				
+				for(int i = 0; i <= 3 && i < tokensStr.length; i++) {
+					blockingKeyValue += tokensStr[i].substring(0, Math.min(2,tokensStr[i].length())).toUpperCase();
 				}
 				
 				// Block By Gender

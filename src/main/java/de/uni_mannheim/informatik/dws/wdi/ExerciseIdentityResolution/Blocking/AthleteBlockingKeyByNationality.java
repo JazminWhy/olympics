@@ -29,7 +29,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
  * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
- * key based on their nationality.
+ * key based on their nationality, gender and last year of participation but not with name
  * 
  * @author Jasmin Weimueller
  * 

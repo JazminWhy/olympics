@@ -20,24 +20,24 @@ import de.uni_mannheim.informatik.dws.winter.similarity.numeric.AbsoluteDifferen
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 
 /**
- * {@link Comparator} for {@link Athlete}s based on the {@link Movie#getHeight()} and {@link Movie#getWeight()}
- * values.
+ * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getHeight()} 
+ * with a max default difference of 0.2, but can be set individually.
  * 
  * @author Jasmin Weimueller
  * 
  */
 
-public class AthleteHeightWeightcomparatorsRange implements Comparator<Athlete, Attribute> {
+public class AthleteHeightcomparatorsRange implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	private AbsoluteDifferenceSimilarity sim;
 	private double absolute = 0.2;
 	private ComparatorLogger comparisonLog;
 	
-	public AthleteHeightWeightcomparatorsRange(double absolute) {
+	public AthleteHeightcomparatorsRange(double absolute) {
 	this.absolute = absolute;
 	    }
-	public AthleteHeightWeightcomparatorsRange() {
+	public AthleteHeightcomparatorsRange() {
 		
 		    }
 	@Override
