@@ -4,7 +4,6 @@ import java.io.File;
 import org.apache.logging.log4j.Logger;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.*;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorNGramJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.AthleteXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -66,8 +65,11 @@ public class IR_dbpedia_figshare_linear_combination
 		
 		// add comparators
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.05);
-		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator2Years(), 0.2);
+		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator5Years(), 0.2);
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.75);
+//		matchingRule.addComparator(new AthleteNationalityComparatorLevenshtein(), 0.1);
+//		matchingRule.addComparator(new AthleteDBPediaNationalityComparatorMongeElkan(), 0.2);
+//		matchingRule.addComparator(new AthleteNameComparatorJaccard_NoBracket(), 0.5);
 
 		// create a blocker (blocking strategy)
 		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyDBPedia());

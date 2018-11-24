@@ -198,10 +198,10 @@ public class IR_rio_figshare_machine_learning {
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(4));
 		matchingRule.addComparator(new AthleteNameComparatorEqual_NoBrackets());
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan_NoBrackets());
-		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator2Years());
+		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator5Years());
 		matchingRule.addComparator(new AthleteHeightWeightcomparatorsRange());
 		matchingRule.addComparator(new AthleteWeightcomparatorsRange());
-		//matchingRule.addComparator(new AthleteDBPediaBirthdayComparator2Years());
+		//matchingRule.addComparator(new AthleteDBPediaBirthdayComparator5Years());
 		matchingRule.addComparator(new AthleteSexComparator());
 		//matchingRule.addComparator(new AthleteNationalityComparatorMongeElkan(), 0.15);
 		matchingRule.addComparator(new AthleteNationalityComparatorLevenshtein());

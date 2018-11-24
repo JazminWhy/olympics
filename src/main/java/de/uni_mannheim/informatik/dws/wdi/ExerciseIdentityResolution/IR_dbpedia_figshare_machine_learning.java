@@ -64,7 +64,7 @@ public class IR_dbpedia_figshare_machine_learning {
 		matchingRule.setBackwardSelection(true);
 		
 		// add comparators
-		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator2Years());
+		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator5Years());
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(2));
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3));
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(4));

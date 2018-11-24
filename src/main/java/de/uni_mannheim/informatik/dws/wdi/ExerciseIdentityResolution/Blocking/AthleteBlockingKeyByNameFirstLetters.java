@@ -78,12 +78,13 @@ public class AthleteBlockingKeyByNameFirstLetters extends
 				}
 				
 				//Get Nationality
-				String[] tokensStr  = record.getNationality().split(" ");
+//				String[] tokensStr  = record.getNationality().split(" ");
+//				
+//		
+//				for(int i = 0; i <= 2 && i < tokensStr.length; i++) {
+//					blockingKeyValue += tokensStr[i].substring(0, Math.min(2,tokensStr[i].length())).toUpperCase();
+//				}
 				
-		
-				for(int i = 0; i <= 2 && i < tokensStr.length; i++) {
-					blockingKeyValue += tokensStr[i].substring(0, Math.min(2,tokensStr[i].length())).toUpperCase();
-				}
 				
 				// Max Year of Participation
 				Set<String> OlympicParticipations1 = new HashSet<>();

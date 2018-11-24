@@ -41,22 +41,22 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athle
 // Gewicht: kleinere durch größere, ergebnis ^4
 
 
-public class AthleteDBPediaBirthdayComparator2Years implements Comparator<Athlete, Attribute> {
+public class AthleteDBPediaBirthdayComparator5Years implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	private YearSimilarity sim = new YearSimilarity(5);
 //	private int gramSize = 3;
     private MongeElkan me;
     
-    public AthleteDBPediaBirthdayComparator2Years() {
+    public AthleteDBPediaBirthdayComparator5Years() {
     	me = new MongeElkan();
     }
     
-    public AthleteDBPediaBirthdayComparator2Years(AbstractStringMetric metricToUse) {
+    public AthleteDBPediaBirthdayComparator5Years(AbstractStringMetric metricToUse) {
     	me = new MongeElkan(metricToUse);
     }
     
-    public AthleteDBPediaBirthdayComparator2Years(InterfaceTokeniser tokeniserToUse, AbstractStringMetric metricToUse) {
+    public AthleteDBPediaBirthdayComparator5Years(InterfaceTokeniser tokeniserToUse, AbstractStringMetric metricToUse) {
     	me = new MongeElkan(tokeniserToUse, metricToUse);
     }
    

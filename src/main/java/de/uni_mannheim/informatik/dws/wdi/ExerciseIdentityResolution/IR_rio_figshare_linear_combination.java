@@ -7,7 +7,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.At
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyForRio;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.AthleteBlockingKeyForRio_NoParticipation;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteBirthdayComparator2Years;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteDBPediaBirthdayComparator2Years;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteDBPediaBirthdayComparator5Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteHeightWeightcomparatorsRange;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorEqual;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.AthleteNameComparatorEqual_NoBrackets;
@@ -118,7 +118,7 @@ public class IR_rio_figshare_linear_combination
 		matchingRule.addComparator(new AthleteNameComparatorEqual_NoBrackets(), 0.1);
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan_NoBrackets(), 0.2);
 		//matchingRule.addComparator(new AthleteBirthdayComparator2Years(), 0.2);
-		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator2Years(), 0.2);
+		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator5Years(), 0.2);
 		//matchingRule.addComparator(new AthleteSexComparator(), 0.1);
 		matchingRule.addComparator(new AthleteNationalityComparatorLevenshtein(),0.1);
 		matchingRule.addComparator(new AthleteHeightWeightcomparatorsRange(0.1), 0.1);
