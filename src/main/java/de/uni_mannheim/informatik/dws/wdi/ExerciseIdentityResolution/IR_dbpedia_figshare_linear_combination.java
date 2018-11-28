@@ -112,5 +112,10 @@ public class IR_dbpedia_figshare_linear_combination
 				"Recall: %.4f",	perfTest.getRecall()));
 		System.out.println(String.format(
 				"F1: %.4f",perfTest.getF1()));
+		
+		// print error analysis
+		ErrorAnalysis eAnalysis = new ErrorAnalysis();
+		eAnalysis.printFalseNegatives(dataAthletesDBpedia,dataAthletesFigshare,correspondences,gsTest);
+		eAnalysis.printFalsePositives(correspondences, gsTest);
     }
 }
