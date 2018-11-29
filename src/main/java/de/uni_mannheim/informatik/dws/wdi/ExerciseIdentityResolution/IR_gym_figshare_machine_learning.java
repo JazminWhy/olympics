@@ -51,9 +51,9 @@ public class IR_gym_figshare_machine_learning {
 		// loading data
     	System.out.println("*\n*\tLoading datasets\n*");
     	HashedDataSet<Athlete, Attribute> dataAthletesGymnast = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_Gymnasts.xml"), "/WinningAthletes/Athlete", dataAthletesGymnast);
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_Gymnasts_Final.xml"), "/WinningAthletes/Athlete", dataAthletesGymnast);
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
 		
 		// create a matching rule
 		String options[] = new String[] { "" };
@@ -73,7 +73,7 @@ public class IR_gym_figshare_machine_learning {
 
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_figshare_gym.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_figshare_gymnasts_balanced.csv"));
 
 		// train the matching rule's model
 		System.out.println("*\n*\tLearning matching rule\n*");
@@ -105,7 +105,7 @@ public class IR_gym_figshare_machine_learning {
 		// load the gold standard (test set)
 		System.out.println("*\n*\tLoading gold standard\n*");
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
-		gsTest.loadFromCSVFile(new File("data/goldstandard/gs_figshare_gym.csv"));
+		gsTest.loadFromCSVFile(new File("data/goldstandard/gs_figshare_gymnasts.csv"));
 		
 		// evaluate your result
 		System.out.println("*\n*\tEvaluating result\n*");

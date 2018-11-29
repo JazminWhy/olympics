@@ -74,7 +74,7 @@ public class IR_field_figshare_machine_learning {
 
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_figshare_field.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_figshare_field_balanced.csv"));
 
 		// train the matching rule's model
 		System.out.println("*\n*\tLearning matching rule\n*");
