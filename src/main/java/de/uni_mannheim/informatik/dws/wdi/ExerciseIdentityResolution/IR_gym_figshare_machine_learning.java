@@ -120,5 +120,10 @@ public class IR_gym_figshare_machine_learning {
 				"Recall: %.4f",	perfTest.getRecall()));
 		System.out.println(String.format(
 				"F1: %.4f",perfTest.getF1()));
+		
+		// perform error analysis
+		ErrorAnalysis ea = new ErrorAnalysis();
+		ea.printFalseNegatives(dataAthletesGymnast, dataAthletesFigshare, correspondences, gsTest);
+		ea.printFalsePositives(correspondences, gsTest);
     }
 }

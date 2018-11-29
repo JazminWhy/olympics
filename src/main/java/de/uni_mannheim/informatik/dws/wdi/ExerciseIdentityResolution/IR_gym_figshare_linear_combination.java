@@ -49,9 +49,9 @@ public class IR_gym_figshare_linear_combination {
 		// loading data
 		System.out.println("*\n*\tLoading datasets\n*");
 		HashedDataSet<Athlete, Attribute> dataAthletesGymnast = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_Gymnasts.xml"), "/WinningAthletes/Athlete", dataAthletesGymnast);
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181027_Gymnasts_Final.xml"), "/WinningAthletes/Athlete", dataAthletesGymnast);
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
 		
 
 		// load the training set
@@ -111,5 +111,10 @@ public class IR_gym_figshare_linear_combination {
 				"Recall: %.4f",	perfTest.getRecall()));
 		System.out.println(String.format(
 				"F1: %.4f",perfTest.getF1()));
+		
+		// perform error analysis
+		ErrorAnalysis ea = new ErrorAnalysis();
+		ea.printFalseNegatives(dataAthletesGymnast, dataAthletesFigshare, correspondences, gsTest);
+		ea.printFalsePositives(correspondences, gsTest);
     }
 }

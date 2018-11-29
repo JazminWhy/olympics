@@ -110,5 +110,10 @@ public class IR_field_figshare_linear_combination {
 				"Recall: %.4f",	perfTest.getRecall()));
 		System.out.println(String.format(
 				"F1: %.4f",perfTest.getF1()));
+		
+		// perform error analysis
+		ErrorAnalysis ea = new ErrorAnalysis();
+	    ea.printFalseNegatives(dataAthletesField, dataAthletesFigshare, correspondences, gsTest);
+	    ea.printFalsePositives(correspondences, gsTest);
     }
 }
