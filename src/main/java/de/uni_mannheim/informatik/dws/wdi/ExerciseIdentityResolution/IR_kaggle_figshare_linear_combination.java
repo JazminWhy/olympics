@@ -121,5 +121,9 @@ public class IR_kaggle_figshare_linear_combination {
 		System.out.println(String.format("Precision: %.4f", perfTest.getPrecision()));
 		System.out.println(String.format("Recall: %.4f", perfTest.getRecall()));
 		System.out.println(String.format("F1: %.4f", perfTest.getF1()));
+		
+		ErrorAnalysis ea = new ErrorAnalysis();
+		ea.printFalseNegatives(dataAthletesKaggle, dataAthletesFigshare, correspondences, gsTest);
+		ea.printFalsePositives(correspondences, gsTest);
 	}
 }

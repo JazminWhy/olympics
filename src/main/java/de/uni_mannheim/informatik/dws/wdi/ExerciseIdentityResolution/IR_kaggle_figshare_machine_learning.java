@@ -68,7 +68,7 @@ public class IR_kaggle_figshare_machine_learning {
 		
 		// create a matching rule
 		String options[] = new String[] { "" };
-		String modelType = "SimpleLogistic"
+		String modelType = "NaiveBayes"
 				+ ""; // use a logistic regression
 		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.4, modelType, options);
 		// 0.4 for SimpleLogistic and NaiveBayes, 0.2 for J48
@@ -137,5 +137,9 @@ public class IR_kaggle_figshare_machine_learning {
 				"Recall: %.4f",	perfTest.getRecall()));
 		System.out.println(String.format(
 				"F1: %.4f",perfTest.getF1()));
+		
+		ErrorAnalysis ea = new ErrorAnalysis();
+		ea.printFalseNegatives(dataAthletesKaggle, dataAthletesFigshare, correspondences, gsTest);
+		ea.printFalsePositives(correspondences, gsTest);
     }
 }
