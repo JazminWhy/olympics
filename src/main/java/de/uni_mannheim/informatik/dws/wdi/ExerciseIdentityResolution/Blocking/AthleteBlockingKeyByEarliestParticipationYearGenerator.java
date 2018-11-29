@@ -29,7 +29,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
  * {@link BlockingKeyGenerator} for {@link Athlete}s, which generates a blocking
- * key based on earliest participation year.
+ * key based on year and nationality of the first {@link OlympicParticipation} and gender.
  * 
  * @author Hendrik Roeder & Tido Felix Marschall
  * 

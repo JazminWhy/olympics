@@ -60,17 +60,17 @@ public class IR_kaggle_figshare_linear_combination {
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
 
 		// Read discipline mapping
-		CSVReader reader = new CSVReader(new FileReader("data/input/20181025_discipline mapping_final.csv"));
+		CSVReader reader = new CSVReader(new FileReader("data/input/20181025_DisciplineMapping_final.csv"));
 		DisciplineMapping = reader.readAll();
 		reader.close();
 
 		// load the training set
 		MatchingGoldStandard kfTraining = new MatchingGoldStandard();
-		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_kaggle_figshare_merged_2.csv"));
+		kfTraining.loadFromCSVFile(new File("data/goldstandard/gs_figshare_kaggle.csv"));
 
 		// create a matching rule
-		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.75); // 0.75
-																							// 0.57
+		LinearCombinationMatchingRule<Athlete, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.75);
+		// 0.75 if MongeElkan is included, otherwise 0.57
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, kfTraining);
 
 		// add comparators

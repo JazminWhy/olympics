@@ -58,13 +58,14 @@ public class IR_dbpedia_figshare_machine_learning {
 		
 		// create a matching rule
 		String options[] = new String[] { "" };
+		// choose from list: NaiveBayes, SimpleLogistic, DecisionTable, ...
 		String modelType = "NaiveBayes" + "";
 		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.6005, modelType, options);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000);
 		matchingRule.setBackwardSelection(true);
 		
 		// add comparators
-		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator2Years());
+		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator5Years());
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(2));
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3));
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(4));

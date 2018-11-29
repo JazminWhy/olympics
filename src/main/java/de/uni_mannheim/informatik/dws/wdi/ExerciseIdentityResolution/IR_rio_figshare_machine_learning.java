@@ -44,6 +44,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Record;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.ErrorAnalysis;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro;
@@ -55,7 +56,7 @@ import weka.core.converters.CSVLoader;
 import weka.core.pmml.jaxbbindings.NeuralNetwork;
 
 /**
-* Identity resolution using linear combination for rio and figshare dataset.
+* Identity resolution using machine learning for rio and figshare dataset.
 * 
 * @author Jasmin Weimueller
 * 
@@ -90,18 +91,16 @@ public class IR_rio_figshare_machine_learning {
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
 		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
 		
-		/*
+		/* we gave MLPs a try
 		//TrainingTest
 		
 		CSVLoader loader = new CSVLoader();
 		loader.setSource(new File("data/goldstandard/newGS2.csv"));
-
 		String[] options = new String[1]; 
 		options[0] = "-H";
 		loader.setOptions(options);
-
 		Instances trainingSet = loader.getDataSet();
-		//FileReader trainreaderSplit = new FileReader("data/goldstandard/newGS2.csv");
+		//FileReader trainreaderSplit = new FileReader("data/goldstandard/gs_figshare_rio_balanced.csv");
 		//Instances trainingSet = new Instances(trainreaderSplit);
 		
 		trainingSet.randomize(new java.util.Random(0));
@@ -110,9 +109,8 @@ public class IR_rio_figshare_machine_learning {
 		Instances train = new Instances(trainingSet, 0, trainSize);
 		Instances test = new Instances(trainingSet, trainSize, testSize);
 		
-		//NeuralNet Training
+		//Training
 		MultilayerPerceptron mlp = new MultilayerPerceptron();
-		NeuralNetwork nn = new NeuralNetwork();
 		
 		 try{
 			//Reading training arff or csv file
@@ -167,43 +165,23 @@ public class IR_rio_figshare_machine_learning {
 		// create a matching rule
 		String optionsModel[] = new String[] { "" };
 		
-		// NeuralNetwork(org.w3c.dom.Element model, Instances dataDictionary, MiningSchema miningSchema)
-		String modelType = "NaiveBayes" //"RandomCommittee"
+		String modelType = "J48" //"RandomCommittee"
 				+ ""; // use a logistic regression
 		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.6, modelType, optionsModel);
-		//matchingRule.setClassifier(lb);
-		//WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
+		//matchingRule.setClassifier(mlp);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000);
 		matchingRule.setForwardSelection(true);
 		
 		// add comparators
-		/*
-		//old _ good version
-		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(2));
-		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3));
-		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(4));
-		matchingRule.addComparator(new AthleteNameComparatorJaccard());
-		matchingRule.addComparator(new AthleteNameComparatorEqual());
-		matchingRule.addComparator(new AthleteNameComparatorMongeElkan());
-		//matchingRule.addComparator(new AthleteNameComparatorMongeElkan(new ));
-		matchingRule.addComparator(new AthleteBirthdayComparator2Years());
-		//matchingRule.addComparator(new AthleteNationalityComparatorMongeElkan());
-		matchingRule.addComparator(new AthleteNationalityComparatorLevenshtein());
-		
-		*/
-		
-		// new version
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(2));
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(3));
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(4));
 		matchingRule.addComparator(new AthleteNameComparatorEqual_NoBrackets());
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan_NoBrackets());
-		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator2Years());
-		matchingRule.addComparator(new AthleteHeightWeightcomparatorsRange());
+		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator5Years());
+		matchingRule.addComparator(new AthleteHeightcomparatorsRange());
 		matchingRule.addComparator(new AthleteWeightcomparatorsRange());
-		//matchingRule.addComparator(new AthleteDBPediaBirthdayComparator2Years());
 		matchingRule.addComparator(new AthleteSexComparator());
-		//matchingRule.addComparator(new AthleteNationalityComparatorMongeElkan(), 0.15);
 		matchingRule.addComparator(new AthleteNationalityComparatorLevenshtein());
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan_NoBrackets(new Jaro()));
 		
@@ -265,6 +243,10 @@ public class IR_rio_figshare_machine_learning {
 				"Recall: %.4f",	perfTest.getRecall()));
 		System.out.println(String.format(
 				"F1: %.4f",perfTest.getF1()));
+		
+		ErrorAnalysis ea = new ErrorAnalysis();
+		ea.printFalseNegatives(dataAthletesRio, dataAthletesFigshare, correspondences, gsTest);
+		ea.printFalsePositives(correspondences, gsTest);
 		
     }
 }

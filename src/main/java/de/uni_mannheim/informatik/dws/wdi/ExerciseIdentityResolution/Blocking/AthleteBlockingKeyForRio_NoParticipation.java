@@ -31,7 +31,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 /**
  * {@link BlockingKeyGenerator}  for the rio dataset, which generates a blocking
- * key based on first letter of name, first three letters of nationality and gender
+ * key based on first letter of name, first two letters of nationality and gender.
  * 
  * @author Jasmin Weimueller
  * 

@@ -73,7 +73,9 @@ public class IR_kaggle_figshare_machine_learning {
 		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.4, modelType, options);
 		// 0.4 for SimpleLogistic and NaiveBayes, 0.2 for J48
 		
+		// Enable backward selection to include a cross validation
 		matchingRule.setBackwardSelection(true);
+		
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000);  
 		
 		// add comparators

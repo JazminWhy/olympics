@@ -32,8 +32,8 @@ public class ErrorAnalysis {
 				
 				// print both records to the console
 				logger.info("[Incorrect Correspondence]");
-				logger.info(String.format("\t%s", a1));	
-				logger.info(String.format("\t%s", a2));	
+				logger.info(String.format("\t%s", a1.getName()));	
+				logger.info(String.format("\t%s", a2.getName()));	
 			}
 		}		
 	}
@@ -81,8 +81,8 @@ public class ErrorAnalysis {
 			
 			// print both records to the console
 			logger.info("[Missing Correspondence]");
-			logger.info(String.format("\t%s", a1));	
-			logger.info(String.format("\t%s", a2));	
+			logger.info(String.format("\t%s", a1.getName()));	
+			logger.info(String.format("\t%s", a2.getName()));	
 		}
 	}
 }

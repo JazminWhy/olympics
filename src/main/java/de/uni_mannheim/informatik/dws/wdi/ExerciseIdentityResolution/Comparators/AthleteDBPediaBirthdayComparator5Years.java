@@ -29,40 +29,38 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athle
 
 //
 ///**
-// * {@link Comparator} for {@link Movie}s based on the {@link Movie#getDate()}
-// * value, with a maximal difference of 5 years.
+// * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getDate()}
+// * value, with a maximal difference of 5 years. In case of missing values, we compare names using MongeElkan.
 // * 
 // * @author Max
 // * 
 // */
 
 
-// Größe: beide minus 1, kleinere durch größere, ergebnis ^4
-// Gewicht: kleinere durch größere, ergebnis ^4
 
 
-public class AthleteDBPediaBirthdayComparator2Years implements Comparator<Athlete, Attribute> {
+public class AthleteDBPediaBirthdayComparator5Years implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	private YearSimilarity sim = new YearSimilarity(5);
 //	private int gramSize = 3;
     private MongeElkan me;
     
-    public AthleteDBPediaBirthdayComparator2Years() {
+    public AthleteDBPediaBirthdayComparator5Years() {
     	me = new MongeElkan();
     }
     
-    public AthleteDBPediaBirthdayComparator2Years(AbstractStringMetric metricToUse) {
+    public AthleteDBPediaBirthdayComparator5Years(AbstractStringMetric metricToUse) {
     	me = new MongeElkan(metricToUse);
     }
     
-    public AthleteDBPediaBirthdayComparator2Years(InterfaceTokeniser tokeniserToUse, AbstractStringMetric metricToUse) {
+    public AthleteDBPediaBirthdayComparator5Years(InterfaceTokeniser tokeniserToUse, AbstractStringMetric metricToUse) {
     	me = new MongeElkan(tokeniserToUse, metricToUse);
     }
    
 	private ComparatorLogger comparisonLog;
 
-//	 public AthleteDBPediaBirthdayComparator2Years(int n) {
+//	 public AthleteDBPediaBirthdayComparator5Years(int n) {
 //	        gramSize = n;
 //	    }
 	
