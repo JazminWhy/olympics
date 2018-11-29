@@ -52,9 +52,9 @@ public class IR_dbpedia_figshare_machine_learning {
 		// loading data
     	System.out.println("*\n*\tLoading datasets\n*");
 		HashedDataSet<Athlete, Attribute> dataAthletesDBpedia = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181025_DBpedia.xml"), "/WinningAthletes/Athlete", dataAthletesDBpedia);
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181025_DBpedia_Final.xml"), "/WinningAthletes/Athlete", dataAthletesDBpedia);
 		HashedDataSet<Athlete, Attribute> dataAthletesFigshare = new HashedDataSet<>();
-		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
+		new AthleteXMLReader().loadFromXML(new File("data/input/20181029_figshare_Final.xml"), "/WinningAthletes/Athlete", dataAthletesFigshare);
 		
 		// create a matching rule
 		String options[] = new String[] { "" };
@@ -124,5 +124,10 @@ public class IR_dbpedia_figshare_machine_learning {
 				"Recall: %.4f",	perfTest.getRecall()));
 		System.out.println(String.format(
 				"F1: %.4f",perfTest.getF1()));
+		
+		// print error analysis
+		ErrorAnalysis eAnalysis = new ErrorAnalysis();
+		eAnalysis.printFalseNegatives(dataAthletesDBpedia,dataAthletesFigshare,correspondences,gsTest);
+		eAnalysis.printFalsePositives(correspondences, gsTest);
     }
 }
