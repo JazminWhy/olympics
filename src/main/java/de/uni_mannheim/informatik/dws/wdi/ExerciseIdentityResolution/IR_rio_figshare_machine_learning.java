@@ -44,6 +44,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Record;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.ErrorAnalysis;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro;
@@ -164,7 +165,7 @@ public class IR_rio_figshare_machine_learning {
 		// create a matching rule
 		String optionsModel[] = new String[] { "" };
 		
-		String modelType = "SimpleLogistic" //"RandomCommittee"
+		String modelType = "J48" //"RandomCommittee"
 				+ ""; // use a logistic regression
 		WekaMatchingRule<Athlete, Attribute> matchingRule = new WekaMatchingRule<>(0.6, modelType, optionsModel);
 		//matchingRule.setClassifier(mlp);
@@ -200,10 +201,10 @@ public class IR_rio_figshare_machine_learning {
 		//StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyForRio_NoParticipation());
 		
 		// BLOCKER 2
-		//StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNationality());
+		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNationality());
 
 		// BLOCKER 3
-		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyForRio());
+		//StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyForRio());
 		blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
 		
 		// initialize Matching Engine
@@ -242,6 +243,10 @@ public class IR_rio_figshare_machine_learning {
 				"Recall: %.4f",	perfTest.getRecall()));
 		System.out.println(String.format(
 				"F1: %.4f",perfTest.getF1()));
+		
+		ErrorAnalysis ea = new ErrorAnalysis();
+		ea.printFalseNegatives(dataAthletesRio, dataAthletesFigshare, correspondences, gsTest);
+		ea.printFalsePositives(correspondences, gsTest);
 		
     }
 }

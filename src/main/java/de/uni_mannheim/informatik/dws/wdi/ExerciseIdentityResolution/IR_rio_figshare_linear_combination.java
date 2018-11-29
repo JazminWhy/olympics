@@ -80,17 +80,17 @@ public class IR_rio_figshare_linear_combination
 				0.6);
 		matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, riofTraining);
 		
-		
+		/*
 		// Name-MongeElkan; Name Jaccard
 		
 		//matchingRule.addComparator(new AthleteNameComparatorEqual(), 0.5);
 		//matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.5);
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(2), 0.4);
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.6); 
+		*/
 		
-
 		// COMPLEX
-		/*
+		
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard_NoBracket(2), 0.2);
 		matchingRule.addComparator(new AthleteNameComparatorEqual_NoBrackets(), 0.1);
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan_NoBrackets(), 0.2);
@@ -98,7 +98,7 @@ public class IR_rio_figshare_linear_combination
 		matchingRule.addComparator(new AthleteNationalityComparatorLevenshtein(),0.1);
 		matchingRule.addComparator(new AthleteHeightcomparatorsRange(0.1), 0.1);
 		matchingRule.addComparator(new AthleteNameComparatorMongeElkan_NoBrackets(new JaccardSimilarity()), 0.1);
-		*/
+		
 		
 		
 		// other test
@@ -127,10 +127,10 @@ public class IR_rio_figshare_linear_combination
 		//StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyForRio_NoParticipation());
 		
 		// BLOCKER 2
-		//StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNationality());
+		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyByNationality());
 		
 		// BLOCKER 3
-		StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyForRio());
+		//StandardRecordBlocker<Athlete, Attribute> blocker = new StandardRecordBlocker<Athlete, Attribute>(new AthleteBlockingKeyForRio());
 		blocker.setMeasureBlockSizes(true);
 		
 		// write debug results to file:
@@ -172,6 +172,8 @@ public class IR_rio_figshare_linear_combination
 		System.out.println(String.format(
 				"F1: %.4f",perfTest.getF1()));
 		
-	
+		ErrorAnalysis ea = new ErrorAnalysis();
+		ea.printFalseNegatives(dataAthletesRio, dataAthletesFigshare, correspondences, gsTest);
+		ea.printFalsePositives(correspondences, gsTest);
     }
 }
