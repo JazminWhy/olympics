@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="https://wdi.org/Project/OlympicDataIntegration" elementFormDefault="qualified" xmlns="https://wdi.org/Project/OlympicDataIntegration" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="WinningAthletes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Athlete" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:string"/>
+							<xs:element name="Name" type="xs:string"/>
+							<xs:element name="Birthday" minOccurs="0" maxOccurs="1"/>
+							<xs:element name="PlaceOfBirth" minOccurs="0" maxOccurs="1" type="xs:string"/>
+							<xs:element name="Sex" minOccurs="0" maxOccurs="1" type="xs:string"/>
+							<xs:element name="Nationality" minOccurs="0" maxOccurs="1" type="xs:string"/>
+							<xs:element name="Weight" minOccurs="0" maxOccurs="1" type="xs:string"/>
+							<xs:element name="Height" minOccurs="0" maxOccurs="1" type="xs:string"/>
+							<xs:element name="OlympicParticipations" minOccurs="0" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="OlympicParticipation" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="P-ID" type="xs:string"/>
+													<xs:element name="Year" minOccurs="0" maxOccurs="1" type="xs:integer"/>
+													<xs:element name="Season" minOccurs="0" maxOccurs="1" type="xs:string"/>
+													<xs:element name="City" minOccurs="0" maxOccurs="1" type="xs:string"/>
+													<xs:element name="OlympicTeam" minOccurs="0" maxOccurs="1" type="xs:string"/>
+													<xs:element name="Disciplines" minOccurs="0" maxOccurs="1" type="xs:string"/>
+													<xs:element name="Event" minOccurs="0" maxOccurs="1" type="xs:string"/>
+													<xs:element name="Medal" minOccurs="0" maxOccurs="1" type="xs:string"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

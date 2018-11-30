@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2018r2sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="Gen_ID" library="user" uid="17" kind="19" visible="0" blackbox="0">
+					<view ltx="568" lty="-81" rbx="616" rby="-64"/>
+					<data>
+						<root>
+							<header>
+								<namespaces/>
+							</header>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="id" outkey="10" componentid="16"/>
+						</root>
+					</data>
+				</component>
+				<component name="group-by" library="core" uid="136" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="155"/>
+						<datapoint pos="1" key="154"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="153"/>
+						<datapoint/>
+					</targets>
+					<view ltx="521" lty="-45" rbx="635" rby="9"/>
+				</component>
+				<component name="distinct-values" library="core" uid="139" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="161"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="160"/>
+					</targets>
+					<view ltx="581" lty="89" rbx="682" rby="127"/>
+				</component>
+				<component name="normalizing" library="user" uid="135" kind="19" visible="0" blackbox="0">
+					<view ltx="320" lty="188" rbx="455" rby="273"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string4" inpkey="139" componentid="128"/>
+							<entry name="string3" inpkey="140" componentid="127"/>
+							<entry name="string5" inpkey="141" componentid="129"/>
+							<entry name="string" inpkey="142" componentid="125"/>
+							<entry name="string2" inpkey="143" componentid="126"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="values2" outkey="144" componentid="134"/>
+							<entry name="City" outkey="145" componentid="133"/>
+							<entry name="Event" outkey="146" componentid="130"/>
+							<entry name="Season" outkey="147" componentid="131"/>
+							<entry name="Disciplines" outkey="148" componentid="132"/>
+						</root>
+					</data>
+				</component>
+				<component name="min-string" library="core" uid="151" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="181"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="182"/>
+					</targets>
+					<view ltx="618" lty="188" rbx="739" rby="242"/>
+				</component>
+				<component name="distinct-values" library="core" uid="137" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="157"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="156"/>
+					</targets>
+					<view ltx="521" lty="29" rbx="622" rby="67"/>
+				</component>
+				<component name="distinct-values" library="core" uid="138" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="159"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="158"/>
+					</targets>
+					<view ltx="551" lty="59" rbx="652" rby="97"/>
+				</component>
+				<component name="Gen_ID_participation" library="user" uid="116" kind="19" visible="0" blackbox="0">
+					<view ltx="860" lty="204" rbx="908" rby="221"/>
+					<data>
+						<root>
+							<header>
+								<namespaces/>
+							</header>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="id" outkey="138" componentid="115"/>
+						</root>
+					</data>
+				</component>
+				<component name="min-string" library="core" uid="148" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="179"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="180"/>
+					</targets>
+					<view ltx="668" lty="329" rbx="789" rby="383"/>
+				</component>
+				<component name="calc_possible_bd" library="user" uid="69" kind="19" visible="0" blackbox="0">
+					<view ltx="446" lty="329" rbx="588" rby="363"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="value1" inpkey="87" componentid="65"/>
+							<entry name="a" inpkey="88" componentid="66"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Birthday" outkey="89" componentid="67"/>
+							<entry name="PlaceOfBirth" outkey="90" componentid="68"/>
+						</root>
+					</data>
+				</component>
+				<component name="lowercase" library="lang" uid="153" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="183"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="184"/>
+					</targets>
+					<view ltx="523" lty="226" rbx="601" rby="264"/>
+				</component>
+				<component name="lowercase" library="lang" uid="158" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="187"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="186"/>
+					</targets>
+					<view ltx="604" lty="276" rbx="682" rby="314"/>
+				</component>
+				<component name="20181025_TargetXML" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="954" lty="-81" rbx="1240" rby="362"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="https://wdi.org/Project/OlympicDataIntegration"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="WinningAthletes" expanded="1">
+										<entry name="Athlete" inpkey="166" expanded="1">
+											<entry name="ID" inpkey="151"/>
+											<entry name="Name" inpkey="27"/>
+											<entry name="Birthday" inpkey="86"/>
+											<entry name="PlaceOfBirth" inpkey="85"/>
+											<entry name="Sex" inpkey="28"/>
+											<entry name="Nationality" inpkey="29"/>
+											<entry name="Weight" inpkey="30"/>
+											<entry name="Height" inpkey="31"/>
+											<entry name="OlympicParticipations" expanded="1">
+												<entry name="OlympicParticipation" inpkey="167" expanded="1">
+													<entry name="P-ID" inpkey="188"/>
+													<entry name="Year" inpkey="169"/>
+													<entry name="Season" inpkey="170"/>
+													<entry name="City" inpkey="171"/>
+													<entry name="OlympicTeam" inpkey="172"/>
+													<entry name="Disciplines" inpkey="173"/>
+													<entry name="Event" inpkey="174"/>
+													<entry name="Medal" inpkey="175"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="20181025_TargetXML.xsd" outputinstance="20181029_figshare_Final.xml" instanceroot="{https://wdi.org/Project/OlympicDataIntegration}WinningAthletes"/>
+					</data>
+				</component>
+				<component name="height_cm_to_m" library="user" uid="89" kind="19" visible="0" blackbox="0">
+					<view ltx="309" lty="100" rbx="444" rby="117"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="valuefalse" inpkey="149" componentid="87"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="values3" outkey="150" componentid="88"/>
+						</root>
+					</data>
+				</component>
+				<component name="20181025_figshare_inkl_team" library="text" uid="2" kind="16">
+					<properties/>
+					<view ltx="-5" lty="-61" rbx="227" rby="324"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Rows" outkey="11" expanded="1">
+										<entry name="ID" outkey="12"/>
+										<entry name="Name" outkey="13"/>
+										<entry name="Sex" outkey="14"/>
+										<entry name="Age" outkey="69"/>
+										<entry name="Height" outkey="15"/>
+										<entry name="Weight" outkey="16"/>
+										<entry name="Team" outkey="185"/>
+										<entry name="NOC" outkey="17"/>
+										<entry name="Games" outkey="64"/>
+										<entry name="Year" outkey="18"/>
+										<entry name="Season" outkey="19"/>
+										<entry name="City" outkey="20"/>
+										<entry name="Sport" outkey="21"/>
+										<entry name="Event" outkey="22"/>
+										<entry name="Medal" outkey="23"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" inputinstance="Input\20181025_figshare_inkl_team.csv" encoding="1000" byteorder="1" byteordermark="0">
+							<settings separator=";" quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="20181025_figshare_inkl_team" block="Rows">
+									<field0 name="ID" type="string"/>
+									<field1 name="Name" type="string"/>
+									<field2 name="Sex" type="string"/>
+									<field3 name="Age" type="string"/>
+									<field4 name="Height" type="string"/>
+									<field5 name="Weight" type="string"/>
+									<field6 name="Team" type="string"/>
+									<field7 name="NOC" type="string"/>
+									<field8 name="Games" type="string"/>
+									<field9 name="Year" type="string"/>
+									<field10 name="Season" type="string"/>
+									<field11 name="City" type="string"/>
+									<field12 name="Sport" type="string"/>
+									<field13 name="Event" type="string"/>
+									<field14 name="Medal" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="Weight" library="user" uid="180" kind="19" visible="0" blackbox="0">
+					<view ltx="357" lty="57" rbx="491" rby="74"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="valuefalse" inpkey="209" componentid="178"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Weight" outkey="210" componentid="179"/>
+						</root>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="156">
+						<edges>
+							<edge vertexkey="27"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="158">
+						<edges>
+							<edge vertexkey="28"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="182">
+						<edges>
+							<edge vertexkey="29"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="210">
+						<edges>
+							<edge vertexkey="30"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="160">
+						<edges>
+							<edge vertexkey="31"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="90">
+						<edges>
+							<edge vertexkey="85"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="180">
+						<edges>
+							<edge vertexkey="86"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="87"/>
+							<edge vertexkey="169"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="69">
+						<edges>
+							<edge vertexkey="88"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="139"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="140"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="141"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="142"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="143"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="149"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="151"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="154"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="155"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="144">
+						<edges>
+							<edge vertexkey="157"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="159"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="150">
+						<edges>
+							<edge vertexkey="161"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="153">
+						<edges>
+							<edge vertexkey="166"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="64">
+						<edges>
+							<edge vertexkey="167"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="147">
+						<edges>
+							<edge vertexkey="170"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="145">
+						<edges>
+							<edge vertexkey="171"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="184">
+						<edges>
+							<edge vertexkey="172"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="148">
+						<edges>
+							<edge vertexkey="173"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="146">
+						<edges>
+							<edge vertexkey="174"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="186">
+						<edges>
+							<edge vertexkey="175"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="89">
+						<edges>
+							<edge vertexkey="179"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="181"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="185">
+						<edges>
+							<edge vertexkey="183"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="187"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="138">
+						<edges>
+							<edge vertexkey="188"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="209"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="Gen_ID" library="user" uid="11" editable="1" inline="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="14" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="300" lty="159" rbx="338" rby="176"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="auto-number" library="core" uid="13" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="5"/>
+						<datapoint pos="2" key="2"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="379" lty="57" rbx="517" rby="143"/>
+				</component>
+				<component name="concat" library="core" uid="12" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="7"/>
+						<datapoint pos="1" key="4"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="575" lty="30" rbx="653" rby="86"/>
+				</component>
+				<component name="id" library="core" uid="16" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="9"/>
+					</sources>
+					<view ltx="717" rbx="755" rby="38"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="id"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="15" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="435" lty="-16" rbx="494" rby="1"/>
+					<data>
+						<constant value="fig_" datatype="string"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2"/>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="distincting" library="user" uid="26" editable="1" inline="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="distinct-values" library="core" uid="27" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="13"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="300" lty="74" rbx="401" rby="112"/>
+				</component>
+				<component name="distinct-values" library="core" uid="28" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="3"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="330" lty="104" rbx="431" rby="142"/>
+				</component>
+				<component name="distinct-values" library="core" uid="29" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="6"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="360" lty="134" rbx="461" rby="172"/>
+				</component>
+				<component name="distinct-values" library="core" uid="30" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="390" lty="164" rbx="491" rby="202"/>
+				</component>
+				<component name="distinct-values" library="core" uid="31" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="7"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="420" lty="194" rbx="521" rby="232"/>
+				</component>
+				<component name="group-by" library="core" uid="32" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="12"/>
+						<datapoint pos="1" key="9"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="11"/>
+						<datapoint/>
+					</targets>
+					<view ltx="300" rbx="414" rby="54"/>
+				</component>
+				<component name="values2" library="core" uid="35" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="21"/>
+					</targets>
+					<view lty="100" rbx="91" rby="138"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="values2"/>
+					</data>
+				</component>
+				<component name="key" library="core" uid="36" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="22"/>
+					</targets>
+					<view lty="50" rbx="70" rby="88"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="key"/>
+					</data>
+				</component>
+				<component name="nodesrows" library="core" uid="37" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="23"/>
+					</targets>
+					<view rbx="110" rby="38"/>
+					<data>
+						<input datatype="anyType"/>
+						<parameter usageKind="input" name="nodesrows"/>
+					</data>
+				</component>
+				<component name="values3" library="core" uid="38" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="24"/>
+					</targets>
+					<view lty="200" rbx="91" rby="238"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="values3"/>
+					</data>
+				</component>
+				<component name="values4" library="core" uid="39" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="25"/>
+					</targets>
+					<view lty="250" rbx="91" rby="288"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="values4"/>
+					</data>
+				</component>
+				<component name="values5" library="core" uid="40" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="26"/>
+					</targets>
+					<view lty="300" rbx="91" rby="338"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="values5"/>
+					</data>
+				</component>
+				<component name="document" library="xml" uid="33" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="621" rbx="771" rby="200"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace uid="https://wdi.org/Project/OlympicDataIntegration"/>
+								</namespaces>
+							</header>
+							<entry name="WinningAthletes" inpkey="14" expanded="1">
+								<entry name="Athlete">
+									<entry name="Name" inpkey="15"/>
+									<entry name="Sex" inpkey="16"/>
+									<entry name="Nationality" inpkey="17"/>
+									<entry name="Weight" inpkey="18"/>
+									<entry name="Height" inpkey="19"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="20181015_TargetXML_Alternative.xsd" instanceroot="{https://wdi.org/Project/OlympicDataIntegration}WinningAthletes"/>
+						<parameter usageKind="output" name="TargetXML_Alternative"/>
+					</data>
+				</component>
+				<component name="values" library="core" uid="34" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="20"/>
+					</targets>
+					<view lty="150" rbx="85" rby="188"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="values"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="14"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="16"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="19"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="calc_possible_bd" library="user" uid="56" editable="1" inline="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="equal" library="core" uid="57" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="3"/>
+						<datapoint pos="1" key="5"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="338" rbx="394" rby="54"/>
+				</component>
+				<component name="constant" library="core" uid="59" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="11"/>
+					</targets>
+					<view ltx="317" lty="145" rbx="355" rby="162"/>
+					<data>
+						<constant value="0" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="61" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="7"/>
+						<datapoint pos="1" key="12"/>
+						<datapoint pos="2" key="13"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="419" rbx="519" rby="73"/>
+				</component>
+				<component name="value1" library="core" uid="65" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="20"/>
+					</targets>
+					<view rbx="86" rby="38"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="value1"/>
+					</data>
+				</component>
+				<component name="a" library="core" uid="66" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="21"/>
+					</targets>
+					<view lty="50" rbx="59" rby="88"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="a"/>
+					</data>
+				</component>
+				<component name="set-xsi-nil" library="core" uid="60" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="419" lty="124" rbx="495" rby="162"/>
+				</component>
+				<component name="Birthday" library="core" uid="67" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="22"/>
+					</sources>
+					<view ltx="932" rbx="1003" rby="38"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="Birthday"/>
+					</data>
+				</component>
+				<component name="PlaceOfBirth" library="core" uid="68" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="23"/>
+					</sources>
+					<view ltx="956" lty="50" rbx="1048" rby="88"/>
+					<data>
+						<output datatype="anyType"/>
+						<parameter usageKind="output" name="PlaceOfBirth"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="58" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="300" lty="97" rbx="355" rby="114"/>
+					<data>
+						<constant value="NA" datatype="string"/>
+					</data>
+				</component>
+				<component name="subtract" library="core" uid="62" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2"/>
+						<datapoint pos="1" key="10"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view ltx="535" rbx="613" rby="56"/>
+				</component>
+				<component name="constant" library="core" uid="142" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="24"/>
+					</targets>
+					<view ltx="322" lty="230" rbx="394" rby="247"/>
+					<data>
+						<constant value="-01-01" datatype="string"/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="144" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="25"/>
+						<datapoint pos="1" key="26"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="27"/>
+					</targets>
+					<view ltx="546" lty="205" rbx="624" rby="261"/>
+				</component>
+				<component name="if-else" library="core" uid="63" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="8"/>
+						<datapoint pos="1" key="16"/>
+						<datapoint pos="2" key="15"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="17"/>
+					</targets>
+					<view ltx="703" lty="15" rbx="803" rby="88"/>
+				</component>
+				<component name="set-xsi-nil" library="core" uid="157" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="29"/>
+					</targets>
+					<view ltx="338" lty="183" rbx="414" rby="221"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="3"/>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="7"/>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="16"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="22"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="23"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="25"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="26"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="height_cm_to_m" library="user" uid="79" editable="1" inline="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="84" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="15"/>
+					</targets>
+					<view ltx="412" lty="283" rbx="450" rby="300"/>
+					<data>
+						<constant value="0" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="86" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="302" lty="132" rbx="355" rby="149"/>
+					<data>
+						<constant value="0.01" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="values3" library="core" uid="88" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="19"/>
+					</sources>
+					<view ltx="794" rbx="860" rby="38"/>
+					<data>
+						<output datatype="anyType"/>
+						<parameter usageKind="output" name="values3"/>
+					</data>
+				</component>
+				<component name="multiply" library="core" uid="80" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="9"/>
+						<datapoint pos="1" key="4"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="11"/>
+					</targets>
+					<view ltx="447" rbx="525" rby="56"/>
+				</component>
+				<component name="if-else" library="core" uid="82" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="7"/>
+						<datapoint pos="1" key="16"/>
+						<datapoint pos="2" key="17"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="490" lty="192" rbx="590" rby="265"/>
+				</component>
+				<component name="valuefalse" library="core" uid="87" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="18"/>
+					</targets>
+					<view rbx="104" rby="38"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="valuefalse"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="83" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="5"/>
+						<datapoint pos="1" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="394" lty="211" rbx="450" rby="265"/>
+				</component>
+				<component name="if-else" library="core" uid="81" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="13"/>
+						<datapoint pos="1" key="14"/>
+						<datapoint pos="2" key="12"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="594" lty="93" rbx="694" rby="166"/>
+				</component>
+				<component name="constant" library="core" uid="85" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="302" lty="248" rbx="357" rby="265"/>
+					<data>
+						<constant value="NA" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="159" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="20"/>
+					</targets>
+					<view ltx="285" lty="211" rbx="325" rby="228"/>
+					<data>
+						<constant datatype="string"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="5"/>
+							<edge vertexkey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="7"/>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="14"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="16"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="19"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="normalize_lowercase" library="user" uid="102" editable="1" inline="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="lowercase" library="lang" uid="103" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="300" rbx="378" rby="38"/>
+				</component>
+				<component name="normalize-space" library="core" uid="104" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="4"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="408" rbx="518" rby="38"/>
+				</component>
+				<component name="string" library="core" uid="105" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view rbx="83" rby="38"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string"/>
+					</data>
+				</component>
+				<component name="City" library="core" uid="106" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="6"/>
+					</sources>
+					<view ltx="618" rbx="665" rby="38"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="City"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="Gen_ID_participation" library="user" uid="110" editable="1" inline="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="concat" library="core" uid="112" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="6"/>
+						<datapoint pos="1" key="8"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="632" lty="24" rbx="710" rby="80"/>
+				</component>
+				<component name="auto-number" library="core" uid="113" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="4"/>
+						<datapoint pos="2" key="3"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="379" lty="51" rbx="517" rby="137"/>
+				</component>
+				<component name="constant" library="core" uid="114" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="300" lty="153" rbx="338" rby="170"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="id" library="core" uid="115" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="9"/>
+					</sources>
+					<view ltx="810" rbx="848" rby="38"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="id"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="111" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="505" rbx="576" rby="17"/>
+					<data>
+						<constant value="fig_p_" datatype="string"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="3"/>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="normalizing" library="user" uid="119" editable="1" inline="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="normalize_lowercase" library="user" uid="121" kind="19" visible="0" blackbox="0">
+					<view ltx="384" lty="223" rbx="478" rby="240"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string" inpkey="2" componentid="105"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="City" outkey="3" componentid="106"/>
+						</root>
+					</data>
+				</component>
+				<component name="normalize_lowercase" library="user" uid="123" kind="19" visible="0" blackbox="0">
+					<view ltx="561" lty="227" rbx="655" rby="244"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string" inpkey="6" componentid="105"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="City" outkey="7" componentid="106"/>
+						</root>
+					</data>
+				</component>
+				<component name="normalize_lowercase" library="user" uid="124" kind="19" visible="0" blackbox="0">
+					<view ltx="531" lty="197" rbx="625" rby="214"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string" inpkey="8" componentid="105"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="City" outkey="9" componentid="106"/>
+						</root>
+					</data>
+				</component>
+				<component name="string" library="core" uid="125" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="11"/>
+					</targets>
+					<view lty="150" rbx="83" rby="188"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string"/>
+					</data>
+				</component>
+				<component name="string2" library="core" uid="126" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="12"/>
+					</targets>
+					<view lty="200" rbx="89" rby="238"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string2"/>
+					</data>
+				</component>
+				<component name="string3" library="core" uid="127" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="13"/>
+					</targets>
+					<view lty="50" rbx="89" rby="88"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string3"/>
+					</data>
+				</component>
+				<component name="string5" library="core" uid="129" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="15"/>
+					</targets>
+					<view lty="100" rbx="89" rby="138"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string5"/>
+					</data>
+				</component>
+				<component name="Event" library="core" uid="130" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="16"/>
+					</sources>
+					<view ltx="755" lty="100" rbx="811" rby="138"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="Event"/>
+					</data>
+				</component>
+				<component name="Season" library="core" uid="131" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="17"/>
+					</sources>
+					<view ltx="755" lty="150" rbx="820" rby="188"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="Season"/>
+					</data>
+				</component>
+				<component name="Disciplines" library="core" uid="132" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="18"/>
+					</sources>
+					<view ltx="755" lty="200" rbx="838" rby="238"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="Disciplines"/>
+					</data>
+				</component>
+				<component name="City" library="core" uid="133" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="19"/>
+					</sources>
+					<view ltx="755" lty="50" rbx="802" rby="88"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="City"/>
+					</data>
+				</component>
+				<component name="normalize_lowercase" library="user" uid="122" kind="19" visible="0" blackbox="0">
+					<view ltx="414" lty="253" rbx="508" rby="270"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string" inpkey="4" componentid="105"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="City" outkey="5" componentid="106"/>
+						</root>
+					</data>
+				</component>
+				<component name="string4" library="core" uid="128" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view rbx="89" rby="38"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="string4"/>
+					</data>
+				</component>
+				<component name="values2" library="core" uid="134" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="20"/>
+					</sources>
+					<view ltx="755" rbx="821" rby="38"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="values2"/>
+					</data>
+				</component>
+				<component name="normalize_lowercase" library="user" uid="120" kind="19" visible="0" blackbox="0">
+					<view ltx="300" rbx="394" rby="17"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="string" inpkey="10" componentid="105"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="City" outkey="1" componentid="106"/>
+						</root>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="16"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="19"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="20"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="Weight" library="user" uid="169" editable="1" inline="1" blackbox="0">
+		<properties/>
+		<description/>
+		<structure>
+			<children>
+				<component name="equal" library="core" uid="175" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="4"/>
+						<datapoint pos="1" key="17"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="332" rbx="388" rby="54"/>
+				</component>
+				<component name="constant" library="core" uid="176" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="16"/>
+					</targets>
+					<view ltx="210" lty="49" rbx="265" rby="66"/>
+					<data>
+						<constant value="NA" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="174" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="505" lty="37" rbx="545" rby="54"/>
+					<data>
+						<constant datatype="string"/>
+					</data>
+				</component>
+				<component name="valuefalse" library="core" uid="178" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="19"/>
+					</targets>
+					<view rbx="104" rby="38"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="valuefalse"/>
+					</data>
+				</component>
+				<component name="Weight" library="core" uid="179" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="20"/>
+					</sources>
+					<view ltx="1079" rbx="1145" rby="38"/>
+					<data>
+						<output datatype="anyType"/>
+						<parameter usageKind="output" name="Weight"/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="171" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="13"/>
+						<datapoint pos="1" key="10"/>
+						<datapoint pos="2" key="15"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="599" lty="-19" rbx="699" rby="54"/>
+				</component>
+				<component name="distinct-values" library="core" uid="182" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="21"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="22"/>
+					</targets>
+					<view ltx="877" rbx="978" rby="38"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="4"/>
+							<edge vertexkey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="20"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="21"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>
