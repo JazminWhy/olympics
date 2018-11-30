@@ -66,8 +66,8 @@ public class AthleteBlockingKeyDBPedia extends
 				tokensOrdered.add(lastToken);
 				Collections.sort(tokensOrdered);
 
-				for(int i = 0; i < 2; i++) {
-					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(2,tokensOrdered.get(i).length())).toUpperCase();
+				for(int i = 0; i < 1; i++) {
+					blockingKeyValue += tokensOrdered.get(i).substring(0, Math.min(3,tokensOrdered.get(i).length())).toUpperCase();
 				}
 	
 				// Block By Gender

@@ -66,9 +66,9 @@ public class IR_dbpedia_figshare_linear_combination
 		// add comparators
 		matchingRule.addComparator(new AthleteNameComparatorNGramJaccard(3), 0.05);
 		matchingRule.addComparator(new AthleteDBPediaBirthdayComparator5Years(), 0.2);
-		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.75);
+		matchingRule.addComparator(new AthleteNameComparatorMongeElkan(), 0.65);
 //		matchingRule.addComparator(new AthleteNationalityComparatorLevenshtein(), 0.1);
-//		matchingRule.addComparator(new AthleteDBPediaNationalityComparatorMongeElkan(), 0.2);
+		matchingRule.addComparator(new AthleteDBPediaNationalityComparatorMongeElkan(), 0.1);
 //		matchingRule.addComparator(new AthleteNameComparatorJaccard_NoBracket(), 0.5);
 
 		// create a blocker (blocking strategy)
