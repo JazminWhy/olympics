@@ -138,7 +138,7 @@ public class IR_kaggle_figshare_machine_learning {
 		System.out.println(String.format(
 				"F1: %.4f",perfTest.getF1()));
 		
-		ErrorAnalysis ea = new ErrorAnalysis();
+		IR_ErrorAnalysis ea = new IR_ErrorAnalysis();
 		ea.printFalseNegatives(dataAthletesKaggle, dataAthletesFigshare, correspondences, gsTest);
 		ea.printFalsePositives(correspondences, gsTest);
     }

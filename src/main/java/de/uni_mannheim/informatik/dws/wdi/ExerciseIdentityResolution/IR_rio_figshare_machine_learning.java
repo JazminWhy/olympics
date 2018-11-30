@@ -44,7 +44,7 @@ import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Record;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.ErrorAnalysis;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.IR_ErrorAnalysis;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.Jaro;
@@ -244,7 +244,7 @@ public class IR_rio_figshare_machine_learning {
 		System.out.println(String.format(
 				"F1: %.4f",perfTest.getF1()));
 		
-		ErrorAnalysis ea = new ErrorAnalysis();
+		IR_ErrorAnalysis ea = new IR_ErrorAnalysis();
 		ea.printFalseNegatives(dataAthletesRio, dataAthletesFigshare, correspondences, gsTest);
 		ea.printFalsePositives(correspondences, gsTest);
 		

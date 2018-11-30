@@ -126,7 +126,7 @@ public class IR_dbpedia_figshare_machine_learning {
 				"F1: %.4f",perfTest.getF1()));
 		
 		// print error analysis
-		ErrorAnalysis eAnalysis = new ErrorAnalysis();
+		IR_ErrorAnalysis eAnalysis = new IR_ErrorAnalysis();
 		eAnalysis.printFalseNegatives(dataAthletesDBpedia,dataAthletesFigshare,correspondences,gsTest);
 		eAnalysis.printFalsePositives(correspondences, gsTest);
     }

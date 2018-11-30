@@ -172,7 +172,7 @@ public class IR_rio_figshare_linear_combination
 		System.out.println(String.format(
 				"F1: %.4f",perfTest.getF1()));
 		
-		ErrorAnalysis ea = new ErrorAnalysis();
+		IR_ErrorAnalysis ea = new IR_ErrorAnalysis();
 		ea.printFalseNegatives(dataAthletesRio, dataAthletesFigshare, correspondences, gsTest);
 		ea.printFalsePositives(correspondences, gsTest);
     }

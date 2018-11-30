@@ -20,30 +20,19 @@ import de.uni_mannheim.informatik.dws.winter.similarity.date.YearSimilarity;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.AbstractStringMetric;
 import uk.ac.shef.wit.simmetrics.similaritymetrics.MongeElkan;
 import uk.ac.shef.wit.simmetrics.tokenisers.InterfaceTokeniser;
-
-import com.wcohen.ss.Jaccard;
-import com.wcohen.ss.tokens.NGramTokenizer;
-import com.wcohen.ss.tokens.SimpleTokenizer;
-
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Athlete;
 
-//
-///**
-// * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getDate()}
-// * value, with a maximal difference of 5 years. In case of missing values, we compare names using MongeElkan.
-// * 
-// * @author Max
-// * 
-// */
-
-
-
-
+/**
+ * {@link Comparator} for {@link Athlete}s based on the {@link Athlete#getDate()}
+ * value, with a maximal difference of 5 years. In case of missing values, we compare names using MongeElkan.
+ * 
+ * @author Max
+ * 
+ */
 public class AthleteDBPediaBirthdayComparator5Years implements Comparator<Athlete, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	private YearSimilarity sim = new YearSimilarity(5);
-//	private int gramSize = 3;
     private MongeElkan me;
     
     public AthleteDBPediaBirthdayComparator5Years() {
@@ -60,10 +49,6 @@ public class AthleteDBPediaBirthdayComparator5Years implements Comparator<Athlet
    
 	private ComparatorLogger comparisonLog;
 
-//	 public AthleteDBPediaBirthdayComparator5Years(int n) {
-//	        gramSize = n;
-//	    }
-	
 	@Override
 	public double compare(Athlete record1, Athlete record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
@@ -107,17 +92,4 @@ public class AthleteDBPediaBirthdayComparator5Years implements Comparator<Athlet
         
         return me.getSimilarity(first, second);
     }
-	
-	
-    
-//    public double calculate(String first, String second) {
-//        if(first == null || second == null) {
-//            return 0.0;
-//        }
-//        
-//        NGramTokenizer tok = new NGramTokenizer(gramSize, gramSize, false, SimpleTokenizer.DEFAULT_TOKENIZER);
-//        Jaccard j = new Jaccard(tok);
-//        return j.score(first, second);
-//    }
-
 }

@@ -28,7 +28,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 
 /**
-* Identity resolution using linear combination for kaggle and figshare dataset.
+* Identity resolution using linear combination for Kaggle and figshare dataset.
 * 
 * @author Hendrik Roeder & Tido Felix Marschall
 * 
@@ -103,7 +103,7 @@ public class IR_kaggle_figshare_linear_combination {
 		correspondences = maxWeight.getResult();
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/Kaggle_figshare_LC_correspondences.csv"),
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/kaggle_figshare_LC_correspondences.csv"),
 				correspondences);
 
 		// load the gold standard (test set)
@@ -122,7 +122,7 @@ public class IR_kaggle_figshare_linear_combination {
 		System.out.println(String.format("Recall: %.4f", perfTest.getRecall()));
 		System.out.println(String.format("F1: %.4f", perfTest.getF1()));
 		
-		ErrorAnalysis ea = new ErrorAnalysis();
+		IR_ErrorAnalysis ea = new IR_ErrorAnalysis();
 		ea.printFalseNegatives(dataAthletesKaggle, dataAthletesFigshare, correspondences, gsTest);
 		ea.printFalsePositives(correspondences, gsTest);
 	}

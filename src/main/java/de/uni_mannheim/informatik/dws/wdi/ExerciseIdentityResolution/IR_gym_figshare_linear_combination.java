@@ -113,7 +113,7 @@ public class IR_gym_figshare_linear_combination {
 				"F1: %.4f",perfTest.getF1()));
 		
 		// perform error analysis
-		ErrorAnalysis ea = new ErrorAnalysis();
+		IR_ErrorAnalysis ea = new IR_ErrorAnalysis();
 		ea.printFalseNegatives(dataAthletesGymnast, dataAthletesFigshare, correspondences, gsTest);
 		ea.printFalsePositives(correspondences, gsTest);
     }
